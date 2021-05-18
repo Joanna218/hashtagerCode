@@ -77,7 +77,7 @@
     <div class="bg-primary"></div>
 </div> -->
 
-<!-- @yield('content') -->
+@yield('content')
 
 <!-- Core scripts -->
 <!-- Core scripts -->
@@ -92,7 +92,7 @@
 <!-- Page -->
 <script src="{{ asset(mix('js/front.js')) }}"></script>
 
-<!-- @yield('scripts') -->
+@yield('scripts')
 
 </body>
 </html>
