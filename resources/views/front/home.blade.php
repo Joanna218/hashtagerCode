@@ -57,23 +57,63 @@
     </div>
 </div>
 
+<!-- 區塊三 -->
 <div id="slider">
     <div class="uk-position-relative uk-visible-toggle uk-light"
-        tabindex="-1" uk-slideshow="animation: fade;autoplay: true;autoplay-interval: 2500;pause-on-hover: true" >
+        tabindex="-1" uk-slideshow="animation: fade;autoplay: false;autoplay-interval: 2500;pause-on-hover: true;max-height: 520;">
         <ul class="uk-slideshow-items">
             <li>
-                <img src="https://fakeimg.pl/1920x520?text=banner1" width="100%" alt="">
+                <img src="https://fakeimg.pl/1920x520?text=banner1" alt="" uk-cover uk-img>
             </li>
             <li>
-                <img src="https://fakeimg.pl/1920x520?text=banner2" width="100%" alt="">
+                <img src="https://fakeimg.pl/1920x520?text=banner2" alt="" uk-cover uk-img>
             </li>
             <li>
-                <img src="https://fakeimg.pl/1920x520?text=banner3" width="100%" alt="">
+                <img src="https://fakeimg.pl/1920x520?text=banner3" alt="" uk-cover uk-img>
             </li>
         </ul>
     </div>
-
 </div>
 
+<!-- 區塊四 -->
+<div id="tager-todo">
+    <div class="container">
+        <div class="d-flex justify-content-end">
+            <img src="../images/index/todoBg.png" width="800" alt="">
+        </div>
+
+        <div id="todo-contents">
+            <h2>貼嗑可以為你做什麼</h2>
+            <p>
+                一站式活動服務，幫助你上架新活動、產品，尋找優質報名者、彙整線上聲量，並提供圖文素材再利用、行銷的加值服務，輕鬆進行體驗活動，並一步步將所有無形聲量轉換成可見的品牌價值與產品銷量。
+            </p>
+
+            <h3>
+                <div class="num">1</div>
+                增加品牌及產品曝光
+            </h3>
+
+            <h3>
+                <div class="num">2</div>
+                快速找到優質的體驗⼤使
+                <br>
+                為品牌及產品證言
+            </h3>
+
+            <h3>
+                <div class="num">3</div>
+                增加IG社群內容
+            </h3>
+
+            <h3>
+                <div class="num">4</div>
+                累積可再次利用的圖文素材
+            </h3>
+
+            <a href="#" class="yellow-btn">申請活動上架</a>
+
+        </div>
+    </div>
+</div>
 
 @endsection
