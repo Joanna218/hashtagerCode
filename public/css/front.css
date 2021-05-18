@@ -23,6 +23,14 @@ body,
 #navs > .container {
   height: 80px;
 }
+#navs > .container .navbar-brand {
+  padding: 10px 0px;
+}
+#navs > .container .navbar-brand span {
+  font-size: 18px;
+  color: #7f7f7f;
+  font-weight: 600;
+}
 #navs > .container .navbar-nav > li > a {
   font-size: 18px;
   line-height: 40px;
@@ -40,13 +48,13 @@ body,
 #navs > .container .nav-item.active > .nav-link,
 #navs > .container .nav-item:hover > .nav-link {
   font-weight: 600;
-  background-image: url("../images/index/menuline1.png");
+  background-image: url("../images/nav/menuline1.png");
   background-repeat: no-repeat;
   background-position: 0 35px;
 }
 #navs > .container .nav-item.menuline2.active > .nav-link,
 #navs > .container .nav-item.menuline2:hover > .nav-link {
-  background-image: url("../images/index/menuline2.png");
+  background-image: url("../images/nav/menuline2.png");
 }
 #navs > .container .nav-consultant-item > .nav-link-consultant {
   font-size: 18px;
@@ -63,7 +71,7 @@ body,
 }
 #navs > .container .nav-consultant-item.active-consultant > .nav-link-consultant {
   color: #fff;
-  background-image: url("../images/index/start_btn.png");
+  background-image: url("../images/nav/start_btn.png");
 }
 
 @media (min-width: 992px) {

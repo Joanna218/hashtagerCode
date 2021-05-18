@@ -40,6 +40,17 @@ body,
 #navs > .container {
     height: 80px;
 
+    // hashtager 我要辦活動
+    .navbar-brand {
+        padding: 10px 0px;
+
+        span {
+            font-size: 18px;
+            color: #7f7f7f;
+            font-weight: 600;
+        }
+    }
+
     .navbar-nav > li > a {
         font-size: 18px;
         line-height: 40px;
@@ -62,7 +73,7 @@ body,
     .nav-item.active > .nav-link,
     .nav-item:hover > .nav-link {
         font-weight: 600;
-        background-image: url("../images/index/menuline1.png");
+        background-image: url("../images/nav/menuline1.png");
         background-repeat: no-repeat;
         background-position: 0 35px;
     }
@@ -70,7 +81,7 @@ body,
     // menuline2
     .nav-item.menuline2.active > .nav-link,
     .nav-item.menuline2:hover > .nav-link {
-        background-image: url("../images/index/menuline2.png");
+        background-image: url("../images/nav/menuline2.png");
     }
 
     // 上架諮詢
@@ -92,7 +103,7 @@ body,
     // 點擊選取
     .nav-consultant-item.active-consultant > .nav-link-consultant {
         color: #fff;
-        background-image: url("../images/index/start_btn.png");
+        background-image: url("../images/nav/start_btn.png");
     }
 }
 

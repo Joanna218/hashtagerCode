@@ -23,7 +23,7 @@
         <div class="d-flex justify-content-end align-items-center gotobg ">
             <a href="https://hashtager.com.tw/" target="_blank">
                 前往hashtager貼嗑
-                <img src="https://fakeimg.pl/18x18" alt="">
+                <img src="../images/nav/arrow_r.png" width="18" height="18" alt="">
             </a>
         </div>
     </div>
@@ -32,8 +32,9 @@
 <div id="navs">
     <div class="container">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <img src="https://fakeimg.pl/230x48" alt="">
+            <a class="navbar-brand d-flex align-items-end" href="#">
+                <img class="mr-2" src="../images/nav/hashtager_logo.svg" width="150" height="48" alt="">
+                <span>我要辦活動</span>
             </a>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
