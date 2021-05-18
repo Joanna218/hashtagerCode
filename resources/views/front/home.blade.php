@@ -116,4 +116,81 @@
     </div>
 </div>
 
+<!-- 區塊五 -->
+<div id="tager-hot-event">
+    <div class="container">
+        <h2>
+            在
+            <span class="tager-font">貼嗑</span>
+            上舉辦這些熱門活動
+        </h2>
+        <div class="d-flex justify-content-between">
+            <div class="box-event">
+                <div class="toptitle">
+                    #試用體驗活動
+                </div>
+
+                <div class="title">
+                    <a href="#">
+                    吃喝玩樂美妝與生活 <br>
+                    募集素人品牌大使
+                    </a>
+                </div>
+
+                <p>
+                    舉辦免費試吃、試用，真實體驗後給予的心得分享，
+                    最具公信力、說服力。產品的好，讓更多人知道！
+                </p>
+
+                <div class="pic">
+                    <div class="whitetag">#長期招募 素人體驗！</div>
+                    <img src="https://fakeimg.pl/344x217?text=pic1" alt="">
+                </div>
+            </div>
+            <div class="box-event">
+                <div class="toptitle">
+                    #新品搶先體驗
+                </div>
+
+                <div class="title">
+                    <a href="#">
+                    與愛嚐鮮的貼嗑人 <br>
+                    一起開箱體驗新品
+                    </a>
+                </div>
+
+                <p>
+                    新品上市體驗活動，讓貼嗑上喜歡嚐鮮的體驗大使們，即刻搶先試用分享！新品推出，立即享有口碑。
+                </p>
+
+                <div class="pic">
+                    <div class="whitetag">#高迴響 反應熱烈</div>
+                    <img src="https://fakeimg.pl/344x217?text=pic2" alt="">
+                </div>
+            </div>
+            <div class="box-event">
+                <div class="toptitle">
+                    #線下體驗活動
+                </div>
+
+                <div class="title">
+                    <a href="#">
+                    熱門話題產生器 <br>
+                    增加與參與者的連結性
+                    </a>
+                </div>
+
+                <p>
+                    線下快閃活動、打卡活動，都可以同步在貼嗑舉辦加碼活動，刺激參與者分享實況，為活動加溫不停歇。
+                </p>
+
+                <div class="pic">
+                    <div class="whitetag">#拓展不同客群與市場</div>
+                    <img src="https://fakeimg.pl/344x217?text=pic2" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
