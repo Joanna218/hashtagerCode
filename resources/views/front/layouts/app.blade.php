@@ -32,13 +32,15 @@
     <link rel="stylesheet" href="{{ asset('theme/vendor/css/rtl/appwork.css') }}" class="theme-settings-appwork-css">
     <link rel="stylesheet" href="{{ asset('theme/vendor/css/rtl/theme-corporate.css') }}" class="theme-settings-theme-css">
     <link rel="stylesheet" href="{{ asset('theme/vendor/css/rtl/colors.css') }}" class="theme-settings-colors-css">
-    <link rel="stylesheet" href="{{ asset('theme/vendor/css/rtl/uikit.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('theme/vendor/css/rtl/uikit.css') }}"> -->
+    <link rel="stylesheet" href="{{ asset('theme/vendor/css/uikit.min.css') }}">
 
     <script src="{{ asset('theme/vendor/js/material-ripple.js') }}"></script>
     <script src="{{ asset('theme/vendor/js/layout-helpers.js') }}"></script>
 
     <!-- Core scripts -->
     <script src="{{ asset('theme/vendor/js/pace.js') }}"></script>
+    <script src="{{ asset('theme/vendor/js/uikit.min.js') }}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Libs -->

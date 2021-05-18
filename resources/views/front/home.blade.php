@@ -57,5 +57,23 @@
     </div>
 </div>
 
+<div id="slider">
+    <div class="uk-position-relative uk-visible-toggle uk-light"
+        tabindex="-1" uk-slideshow="animation: fade;autoplay: true;autoplay-interval: 2500;pause-on-hover: true" >
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="https://fakeimg.pl/1920x520?text=banner1" width="100%" alt="">
+            </li>
+            <li>
+                <img src="https://fakeimg.pl/1920x520?text=banner2" width="100%" alt="">
+            </li>
+            <li>
+                <img src="https://fakeimg.pl/1920x520?text=banner3" width="100%" alt="">
+            </li>
+        </ul>
+    </div>
+
+</div>
+
 
 @endsection
