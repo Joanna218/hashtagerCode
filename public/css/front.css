@@ -236,6 +236,7 @@ a:hover {
 #platform-advantage {
   padding: 50px 0 80px 0;
   background-color: #ffd248;
+  color: #000;
 }
 #platform-advantage .container {
   max-width: 1540px;
@@ -285,10 +286,92 @@ a:hover {
 #platform-advantage #advantage-contents .desc-list .box-list p {
   font-size: 18px;
   line-height: 30px;
+  margin-top: 0;
   margin-bottom: 24px;
   text-align: left;
   padding-left: 58px;
   font-weight: 100;
+}
+
+#increase-product-sales {
+  background-color: #fff;
+  padding: 30px 0 80px 0;
+}
+
+#tager-marketing {
+  background-color: #f5f5f5;
+  padding: 50px 0 80px 0;
+}
+#tager-marketing h2 {
+  margin-bottom: 60px;
+}
+#tager-marketing #tager-marketing-contents {
+  display: flex;
+  justify-content: space-around;
+}
+#tager-marketing #tager-marketing-contents .content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#tager-marketing #tager-marketing-contents .content-box .title {
+  font-weight: 900;
+  font-size: 26px;
+  color: #000;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+#tager-marketing #tager-marketing-contents .content-box .more a {
+  height: 40px;
+  line-height: 40px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #ffd248;
+  color: #000;
+  display: inline;
+  width: 130px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+#tager-marketing #tager-marketing-contents .content-box .more a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#tager-experience-share {
+  background-color: #fff;
+  padding: 30px 0 80px 0;
+}
+
+#start-campaign {
+  background-color: #ffd248;
+  color: #000;
+  padding: 50px 0;
+}
+#start-campaign .container h2 {
+  margin: 0;
+  line-height: 80px;
+}
+#start-campaign .container p {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+#start-campaign .container a {
+  width: 207px;
+  height: 57px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  display: block;
+  background-image: url("../images/nav/start_btn.png");
+  line-height: 57px;
+  margin: 15px auto;
 }
 
 /*

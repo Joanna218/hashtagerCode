@@ -257,4 +257,60 @@
         </div>
 </div>
 
+<!-- 區塊八 -->
+<div id="increase-product-sales">
+    <div class="container">
+        <h2>累積素人體驗 一步步提升產品銷量</h2>
+        <img src="https://fakeimg.pl/1150x646" alt="">
+    </div>
+</div>
+
+<!-- 區塊九 -->
+<div id="tager-marketing">
+    <div class="container">
+        <h2>貼嗑行銷配套服務 讓你的活動更出色</h2>
+        <div id="tager-marketing-contents">
+            <div class="content-box">
+                <img src="https://fakeimg.pl/155x140" alt="">
+                <div class="title">活動企劃</div>
+                <div class="more">
+                    <a href="#">瞭解更多</a>
+                </div>
+            </div>
+            <div class="content-box">
+                <img src="https://fakeimg.pl/155x140" alt="">
+                <div class="title">整合行銷宣傳</div>
+                <div class="more">
+                    <a href="#">瞭解更多</a>
+                </div>
+            </div>
+            <div class="content-box">
+                <img src="https://fakeimg.pl/155x140" alt="">
+                <div class="title">UGC蒐集再利用</div>
+                <div class="more">
+                    <a href="#">瞭解更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 區塊十 -->
+<div id="tager-experience-share">
+    <div class="container">
+        <h2>貼嗑體驗大使的精彩分享</h2>
+        <img src="https://fakeimg.pl/1063x200" alt="">
+    </div>
+</div>
+
+<!-- 區塊十一 -->
+<div id="start-campaign">
+    <div class="container">
+        <h2>開始辦活動</h2>
+        <p>貼嗑一站式辦活動，讓你不費吹灰之力，輕鬆舉辦體驗活動</p>
+        <a href="#" class="go-btn">GO</a>
+    </div>
+</div>
+
+
 @endsection
