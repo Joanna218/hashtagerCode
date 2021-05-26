@@ -193,4 +193,68 @@
     </div>
 </div>
 
+<!-- 區塊六 -->
+<div id="ready-to-promote">
+    <div class="container">
+    <h2>上千位優質素人體驗大使  準備好與你一起推廣產品！</h2>
+    <img src="https://fakeimg.pl/1150x413" alt="">
+    </div>
+</div>
+
+<!-- 區塊七 -->
+<div id="platform-advantage">
+    <div class="container">
+        <h2>平台優勢特色</h2>
+    </div>
+    <div id="advantage-contents">
+            <div class="desc-list">
+                <div class="box-list">
+                    <div class="title">
+                        <div class="white_num">1</div>
+                        <span>簡單步驟一站式 輕鬆上架新活動</span>
+                    </div>
+                    <p>
+                        內建模板
+                        <br>
+                        簡易設定流程
+                        <br>
+                        一天內可直接上線活動
+                        <br>
+                        並自動彙整報名資訊
+                    </p>
+                </div>
+
+                <div class="box-list">
+                    <div class="title">
+                        <div class="white_num">2</div>
+                        <span>快速找到 出彩素人體驗大使</span>
+                    </div>
+                    <p>
+                        不怕活動沒人參與，貼嗑有大量優秀的社群經營者能夠分享您的活動與產品。
+                    </p>
+                </div>
+
+                <div class="box-list">
+                    <div class="title">
+                        <div class="white_num">3</div>
+                        <span class="two-line-title">串連Instagram <br> 掌握每個活動體驗心得</span>
+                    </div>
+                    <p>
+                        自動收集活動體驗大使創作出的IG分享內容，您可以在後台查看，並進行之後的素材再利用。
+                    </p>
+                </div>
+
+                <div class="box-list">
+                    <div class="title">
+                        <div class="white_num">4</div>
+                        <span class="two-line-title">事先取得IG貼文授權 <br> 素材再行銷不設限</span>
+                    </div>
+                    <p>
+                        貼嗑體驗大使所分享的體驗心得，可以與品牌的後續行銷活動結合，讓活動效應得以延續。
+                    </p>
+                </div>
+            </div>
+        </div>
+</div>
+
 @endsection
