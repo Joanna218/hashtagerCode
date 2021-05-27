@@ -374,6 +374,36 @@ a:hover {
   margin: 15px auto;
 }
 
+footer #footer-nav {
+  background-color: #282828;
+  padding: 30px 0;
+}
+footer #footer-nav .col h2 {
+  line-height: 40px;
+  font-size: 18px;
+  color: #cacaca;
+  font-weight: 700;
+  border-bottom: 1px solid #979797;
+  margin-bottom: 10px;
+  text-align: left;
+}
+footer #footer-nav .col a {
+  font-size: 16px;
+  color: #fff;
+  line-height: 32px;
+  display: block;
+}
+footer #copy-rights {
+  background-color: #000;
+  height: 50px;
+}
+footer #copy-rights .container {
+  font-size: 13px;
+  text-align: center;
+  color: #cacaca;
+  line-height: 46px;
+}
+
 /*
 // global style setting
 html,
