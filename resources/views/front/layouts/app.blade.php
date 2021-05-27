@@ -79,7 +79,11 @@
     <div class="bg-primary"></div>
 </div> -->
 
+@include('front.components.nav')
+
 @yield('content')
+
+@include('front.components.footer')
 
 <!-- Core scripts -->
 <!-- Core scripts -->

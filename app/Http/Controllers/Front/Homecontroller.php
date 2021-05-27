@@ -11,4 +11,9 @@ class Homecontroller extends Controller
     {
         return view('front.home');
     }
+
+    public function ugc()
+    {
+        return view('front.ugc');
+    }
 }

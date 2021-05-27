@@ -20,4 +20,5 @@ use App\Http\Controllers\Front\Homecontroller;
 
 Route::group(['as' => 'front.'], function() {
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/ugc', [HomeController::class, 'ugc'])->name('ugc');
 });

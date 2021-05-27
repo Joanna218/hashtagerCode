@@ -1,61 +1,6 @@
 @extends('front.layouts.app')
 
-
-@section('scripts')
-<script>
-  $('.nav-item').on('click', function(e) {
-    $(this).toggleClass('active').siblings().removeClass('active');
-    $('.active-consultant').removeClass('active-consultant');
-  });
-
-  $('.nav-consultant-item').on('click', function(e) {
-    $(this).toggleClass('active-consultant').siblings().removeClass('active-consultant');
-    $('.nav-item').removeClass('active');
-  });
-</script>
-@endsection
-
-
 @section('content')
-<!-- 區塊一 -->
-<div id="gototop">
-  <div class="container">
-    <div class="d-flex justify-content-end align-items-center gotobg ">
-      <a href="https://hashtager.com.tw/" target="_blank">
-        前往hashtager貼嗑
-        <img src="../images/nav/arrow_r.png" width="18" height="18" alt="">
-      </a>
-    </div>
-  </div>
-</div>
-<!-- 區塊二 -->
-<div id="navs">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand d-flex align-items-end" href="#">
-        <img class="mr-2" src="../images/nav/hashtager_logo.svg" width="150" height="48" alt="">
-        <span>我要辦活動</span>
-      </a>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">優勢特色 <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item menuline2">
-            <a class="nav-link" href="#">什麼是UGC活動行銷</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">配套服務</a>
-          </li>
-          <li class="nav-consultant-item">
-            <a class="nav-link-consultant" href="#">上架諮詢</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</div>
 
 <!-- 區塊三 -->
 <div id="slider">
@@ -311,43 +256,5 @@
     <a href="#" class="go-btn">GO</a>
   </div>
 </div>
-
-<!-- footer -->
-<footer>
-  <div id="footer-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col col-xl-3 d-flex flex-column">
-          <h2>企業連結</h2>
-          <a href="#">i-Buzz口碑網路研究中心</a>
-          <a href="#" target="_parent">聯絡我們</a>
-        </div>
-        <div class="col col-xl-3 d-flex flex-column">
-          <h2>其他服務</h2>
-          <a href="#" target="_blank">AsiaKOL亞洲達人通</a>
-          <a href="#" target="_blank">FansTogather粉絲團聯盟</a>
-          <a href="#" target="_blank">TPOC台灣輿情中心</a>
-          <a href="#" target="_blank">Togather博思網路</a>
-        </div>
-        <div class="col col-xl-3 d-flex flex-column">
-          <h2>政策與條款</h2>
-          <a href="#">隱私政策</a>
-        </div>
-        <div class="col col-xl-3 d-flex flex-column">
-          <h2>關注我們</h2>
-          <img src="https://fakeimg.pl/95x45" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="copy-rights">
-    <div class="container">
-        © 2021 亞洲指標數位行銷顧問股份有限公司. 版權所有
-    </div>
-  </div>
-
-</footer>
-
 
 @endsection
