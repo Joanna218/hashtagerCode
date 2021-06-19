@@ -35,11 +35,40 @@
         <a class="navbar-brand hold-campaign" href="#">我要辦活動</a>
       </div>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-2x fa-bars"></i>
-      </button>
+      <input type="checkbox" id="active" class="d-md-none">
+      <label for="active" class="d-md-none menu-btn"><span></span></label>
+      <label for="active" class="d-md-none close"></label>
 
-      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+      <!-- 手機版 -->
+      <div class="wrapper justify-content-end align-items-center">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url('/') }}">優勢特色1 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('ugc') }}">UGC活動行銷</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">配套服務</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">貼嗑運作模式</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">常見問題</a>
+          </li>
+          <li class="">
+            <a class="nav-link nav-consultant-item" href="#">上架諮詢</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-2x fa-bars"></i>
+      </button> -->
+
+      <!-- 電腦版 -->
+      <div class="d-none d-md-flex collapse navbar-collapse justify-content-end align-items-center">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="{{ url('/') }}">優勢特色 <span class="sr-only">(current)</span></a>
@@ -61,6 +90,7 @@
           </li>
         </ul>
       </div>
+
     </nav>
   </div>
 </div>
