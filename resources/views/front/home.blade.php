@@ -1,6 +1,6 @@
 @extends('front.layouts.app')
 
-@section('content')
+@section('content2')
 
 <!-- 區塊三 -->
 <div id="slider">

@@ -1,5 +1,5 @@
 <!-- footer -->
-<footer>
+<!-- <footer>
   <div id="footer-nav">
     <div class="container">
       <div class="row">
@@ -33,4 +33,4 @@
     </div>
   </div>
 
-</footer>
+</footer> -->
