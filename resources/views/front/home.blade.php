@@ -1,20 +1,20 @@
 @extends('front.layouts.app')
 
-@section('content2')
+@section('content')
 
 <!-- 區塊三 -->
 <div id="slider">
   <div class="uk-position-relative uk-visible-toggle uk-light"
-    tabindex="-1" uk-slideshow="animation: fade;autoplay: false;autoplay-interval: 2500;pause-on-hover: true;max-height: 520;">
-    <ul class="uk-slideshow-items">
+    tabindex="-1" uk-slideshow="animation: fade;autoplay: true;autoplay-interval: 2500;pause-on-hover: true;">
+    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
       <li>
-        <img src="https://fakeimg.pl/1920x520?text=banner1" alt="" uk-cover uk-img>
+        <img src="../images/nav/banner01.png" alt="" uk-cover uk-img>
       </li>
       <li>
-        <img src="https://fakeimg.pl/1920x520?text=banner2" alt="" uk-cover uk-img>
+        <img src="../images/nav/banner02.png" alt="" uk-cover uk-img>
       </li>
       <li>
-        <img src="https://fakeimg.pl/1920x520?text=banner3" alt="" uk-cover uk-img>
+        <img src="../images/nav/banner03.png" alt="" uk-cover uk-img>
       </li>
     </ul>
   </div>

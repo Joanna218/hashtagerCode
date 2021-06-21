@@ -5,6 +5,7 @@ body,
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "noto sans tc", "microsoft jhenghei", sans-serif;
+  background-color: #fff;
 }
 
 a {
@@ -168,6 +169,14 @@ a:hover {
 #navs > .container .nav-consultant-item:hover {
   background-color: #000;
   color: #fff;
+}
+
+#slider {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+#slider img {
+  max-width: 100%;
 }
 
 #tager-todo {

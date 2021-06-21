@@ -1,19 +1,6 @@
 
-<script>
-  $('.nav-item').on('click', function(e) {
-    $(this).toggleClass('active').siblings().removeClass('active');
-    $('.active-consultant').removeClass('active-consultant');
-  });
-
-  $('.nav-consultant-item').on('click', function(e) {
-    $(this).toggleClass('active-consultant').siblings().removeClass('active-consultant');
-    $('.nav-item').removeClass('active');
-  });
-</script>
-
-
 <!-- 區塊一 -->
-<div id="gototop" class="bg-white">
+<div id="gototop">
   <div class="container d-none d-md-block">
     <div class="d-flex justify-content-end align-items-center gotobg ">
       <a href="https://hashtager.com.tw/" target="_blank">
@@ -25,7 +12,7 @@
 </div>
 
 <!-- 區塊二 -->
-<div id="navs" class="bg-white">
+<div id="navs">
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="d-flex align-items-end">
@@ -62,10 +49,6 @@
           </li>
         </ul>
       </div>
-
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-2x fa-bars"></i>
-      </button> -->
 
       <!-- 電腦版 -->
       <div class="d-none d-md-flex collapse navbar-collapse justify-content-end align-items-center">
