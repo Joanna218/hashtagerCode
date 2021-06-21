@@ -53,6 +53,15 @@ a:hover {
   background: rgba(0, 0, 0, 0.16);
   transition: all 0.6s ease-in-out;
 }
+#navs > .container .wrapper .navbar-nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navs > .container .wrapper .navbar-nav .nav-item {
+  margin: 10px;
+}
 #navs > .container #active:checked ~ .wrapper {
   right: 0px;
 }

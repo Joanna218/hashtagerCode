@@ -55,7 +55,7 @@ a {
 #navs > .container {
 
   /* RWD MENU */
-  .wrapper{
+  .wrapper {
     position: fixed;
     top: 0;
     right: -100%;
@@ -63,6 +63,15 @@ a {
     width: 100%;
     background: rgba(0, 0, 0, 0.16);
     transition: all 0.6s ease-in-out;
+    .navbar-nav {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nav-item {
+        margin: 10px;
+      }
+    }
   }
   #active:checked ~ .wrapper{
     right:0px;
