@@ -20,43 +20,25 @@
   </div>
 </div>
 
-<!-- 區塊四 -->
-<div id="tager-todo">
-  <div class="container">
+<!-- 區塊四 共同推廣-->
+<div id="common-promote">
+  <div class="container-fluid">
     <div class="d-flex justify-content-end">
-      <img src="../images/index/todoBg.png" width="800" alt="">
-    </div>
+      <div class="desc align-items-end">
+        <div>
+          <h1>與真正喜歡你產品的消費者 <br> 共同推廣</h1>
+          <div class="desc-text">
+          Hashtager貼嗑上聚集上萬位在朋友圈中具有影響力的KOC（Key Opinion Consumer，翻譯為關鍵意見消費者，廣義稱為素人網紅，是IG粉絲數介於500至5,000人）。他們熱愛嚐鮮、喜歡體驗新的事物，並且熱衷於分享生活中的大小事，他們各個是IG上的活躍人物，我們稱他們為貼嗑仔。
+          </div>
+          <div class="desc-text">
+          透過在Hashtager貼嗑上舉辦活動，你可以快速從中找到對你的產品、品牌感興趣並且符合品牌、產品理念的KOC，讓他們來為你的產品發表體驗後的真實感受，在對產品、品牌高度興趣之下分享出來的口碑心得，口碑影響力更勝於一般KOC。
+          </div>
+        </div>
 
-    <div id="todo-contents">
-      <h2>貼嗑可以為你做什麼</h2>
-      <p>
-        一站式活動服務，幫助你上架新活動、產品，尋找優質報名者、彙整線上聲量，並提供圖文素材再利用、行銷的加值服務，輕鬆進行體驗活動，並一步步將所有無形聲量轉換成可見的品牌價值與產品銷量。
-      </p>
-
-      <h3>
-        <div class="num">1</div>
-        增加品牌及產品曝光
-      </h3>
-
-      <h3>
-        <div class="num">2</div>
-        快速找到優質的體驗⼤使
-        <br>
-        為品牌及產品證言
-      </h3>
-
-      <h3>
-        <div class="num">3</div>
-        增加IG社群內容
-      </h3>
-
-      <h3>
-        <div class="num">4</div>
-        累積可再次利用的圖文素材
-      </h3>
-
-      <a href="#" class="yellow-btn">申請活動上架</a>
-
+      </div>
+      <div class="promote-img">
+        <img class="img-fluid" src="../images/index/top_img.png" alt="">
+      </div>
     </div>
   </div>
 </div>
