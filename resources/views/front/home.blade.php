@@ -156,4 +156,39 @@
 
 </div>
 
+<!-- Hashtag活動 -->
+<div id="hashtager-campaign">
+  <div class="container">
+    <h2>
+      每月3000元，持續舉辦#Hashtag活動， <br>
+      建立自己的IG口碑牆
+    </h2>
+    <h4>
+      如果你的消費者族群屬於年輕世代，你就更需要注重產品在IG上的口碑。
+    </h4>
+
+    <div class="d-flex justify-content-center mt-4">
+      <div class="hashtager-campaign-img">
+        <img class="img-fluid" src="{{ asset('images/index/img_index-2@2x.png') }}" alt="Hashtag活動">
+      </div>
+      <div class="desc">
+        <div>
+          <h1>
+            有了Hashtager貼嗑， <br>
+            找到適合的KOC不再需要 <br>
+            大海撈針
+          </h1>
+          <div class="desc-text">
+            根據統計顯示，高達92%的使用者都曾經因為在IG上看到商品或是服務，被打動後追蹤品牌並且購買產品。
+            而現在IG的#Hashtag功能甚至成為年輕人的搜尋引擎，透過#Hashtag搜尋那些感興趣的內容，例如餐廳、打卡景點、美妝、科技等產品。
+          </div>
+          <div class="desc-text">
+            因此對於品牌而言，長期在IG上耕耘，創造聲量，並且在重要的#Hashtag牆中露出自家的產品內容，建立屬於自己的#Hashtag牆，是提升與其他品牌競爭力的關鍵。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 @endsection
