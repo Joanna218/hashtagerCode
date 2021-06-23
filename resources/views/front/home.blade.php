@@ -268,10 +268,9 @@
 
 <!-- 平台優勢 -->
 <div id="platform-advantage">
-  <div class="container-fluid">
+  <div class="container">
     <h2>平台優勢特色</h2>
     <div class="d-flex">
-      <!-- <div id="advantage-contents"> -->
       <div class="desc-list">
         <div class="box-list">
           <div class="title">
@@ -293,8 +292,8 @@
             <span class="text-black">快速找到出彩的KOC素人體驗大使</span>
           </div>
           <p class="text-black">
-            不怕活動沒人參加！ <br>
-            Hashtager貼嗑有大量且有自我風格、優秀的社群 <br>
+            不怕活動沒人參加！
+            Hashtager貼嗑有大量且有自我風格、優秀的社群
             經營者，能夠分享你的活動、品牌與產品。
           </p>
         </div>
@@ -303,13 +302,13 @@
           <div class="title">
             <div class="white_num">3</div>
             <span class="two-line-title text-black">
-              事先取得IG貼文的授權 <br>
+              事先取得IG貼文的授權
               素材再行銷不設限制
             </span>
           </div>
           <p class="text-black">
-            事前報名就取得貼文的授權，活動體驗大使們所分 <br>
-            享的體驗心得，可以與品牌後續的行銷活動做結 <br>
+            事前報名就取得貼文的授權，活動體驗大使們所分
+            享的體驗心得，可以與品牌後續的行銷活動做結
             合，讓活動效應可以擴大且延續效果。
           </p>
         </div>
@@ -323,78 +322,19 @@
             </span>
           </div>
           <p class="text-black">
-            自動搜集活動體驗大使創作出的IG分享圖文，你可 <br>
-            以直接在專屬後台查看、打包，並進行之後的素材 <br>
+            自動搜集活動體驗大使創作出的IG分享圖文，你可
+            以直接在專屬後台查看、打包，並進行之後的素材
             再利用。
           </p>
         </div>
       </div>
-      <div class="desc-img"></div>
-  <!-- </div> -->
     </div>
+  </div>
+  <div class="seven-days-bg">
+    <img class="img-fluid" src="{{ asset('images/index/seven-days.png') }}" alt="koc 合作平台背景圖">
   </div>
   <div class="platform-advantage-bg">
     <img class="img-fluid" src="{{ asset('images/index/bg_02@2x.png') }}" alt="koc 合作平台背景圖">
   </div>
-
-  <!-- <div id="advantage-contents">
-    <div class="desc-list">
-      <div class="box-list">
-        <div class="title">
-          <div class="white_num">1</div>
-          <span class="text-black">簡單一站式步驟 就能輕鬆上架新活動</span>
-        </div>
-        <p class="text-black">
-          內建多種活動模板 <br>
-          一步步帶領你設定流程 <br>
-          一天內就可直接上線活動 <br>
-          迅速自動收集整理報名資訊 <br>
-          擁有屬於自己的專屬系統後台 <br>
-        </p>
-      </div>
-
-      <div class="box-list">
-        <div class="title">
-          <div class="white_num">2</div>
-          <span class="text-black">快速找到出彩的KOC素人體驗大使</span>
-        </div>
-        <p class="text-black">
-          不怕活動沒人參加！ <br>
-          Hashtager貼嗑有大量且有自我風格、優秀的社群 <br>
-          經營者，能夠分享你的活動、品牌與產品。
-        </p>
-      </div>
-
-      <div class="box-list">
-        <div class="title">
-          <div class="white_num">3</div>
-          <span class="two-line-title text-black">
-            事先取得IG貼文的授權 <br>
-            素材再行銷不設限制
-          </span>
-        </div>
-        <p class="text-black">
-          事前報名就取得貼文的授權，活動體驗大使們所分 <br>
-          享的體驗心得，可以與品牌後續的行銷活動做結 <br>
-          合，讓活動效應可以擴大且延續效果。
-        </p>
-      </div>
-
-      <div class="box-list">
-        <div class="title">
-          <div class="white_num">4</div>
-          <span class="two-line-title text-black">
-            自動串連IG <br>
-            簡單掌握每個活動體驗心得圖文
-          </span>
-        </div>
-        <p class="text-black">
-          自動搜集活動體驗大使創作出的IG分享圖文，你可 <br>
-          以直接在專屬後台查看、打包，並進行之後的素材 <br>
-          再利用。
-        </p>
-      </div>
-    </div>
-  </div> -->
 </div>
 @endsection
