@@ -80,5 +80,31 @@
   <div class="bottom-bg"></div>
 </div>
 
+<!-- tager-KOC -->
+<div id="tager-KOC">
+  <div class="container d-flex justify-content-between">
+    <div class="koc-img">
+      <img class="img-fluid" src="{{ asset('images/index/img_index-1@2x.png') }}" alt="KOC">
+    </div>
+    <div class="desc">
+      <div>
+        <h1>
+          有了Hashtager貼嗑， <br>
+          找到適合的KOC不再需要 <br>
+          大海撈針
+        </h1>
+        <div class="desc-text">
+          我們了解對於新的品牌、產品還有中小企業們來說，要找到合適的KOC既耗時又費力氣，但是社群行銷又非常講求時效。
+        </div>
+        <div class="desc-text">
+          因此，我們致力於讓品牌及KOC的資訊透明化，交流能夠更加快速，利於將不同的品牌類別需求與素人的特性相結合，
+          幫助品牌能夠用更短的時間找到更適合的KOC。同時，Hashtager貼嗑擁有完善的後台追蹤系統。
+          不只能夠幫助品牌加快行銷節奏，同時省下中間找尋KOC的時間與力氣。
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 @endsection
