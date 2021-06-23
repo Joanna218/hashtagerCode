@@ -107,4 +107,53 @@
 
 </div>
 
+<!-- 萬名優質的KOC -->
+<div id="excellent-koc">
+  <div class="container">
+  <h2>
+    Hashtager貼嗑已累積上萬名優質的KOC， <br>
+    成功舉辦百檔活動
+  </h2>
+  <img src="https://fakeimg.pl/1150x413" alt="">
+  </div>
+</div>
+
+<!-- koc 合作平台 -->
+<div id="koc-platform">
+  <div class="container">
+    <h2>
+    Hashtager貼嗑與一般KOC合作平台 <br>
+    有什麼不同呢？
+    </h2>
+    <div class="different-content">
+      <div class="different-item">
+        <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+        <span>在Hashtager貼嗑上只需要提供產品，就可以開始招募產品的體驗者，非常簡單！</span>
+      </div>
+    </div>
+    <div class="different-content">
+      <div class="different-item">
+        <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+        <span>Hashtager貼嗑上的KOC是真實對產品、品牌感興趣，並且是真的有需求，不以得到稿費為目的，因次更能夠以生活化的方式，自然帶出產品的優點。</span>
+      </div>
+    </div>
+    <div class="different-content">
+      <div class="different-item">
+        <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+        <span>體驗者們都是主動來報名，並且會在報名的時候填寫報名原因，讓品牌能夠更了解每個體驗者與產品的關聯性，並更加熟悉這位體驗者。</span>
+      </div>
+    </div>
+    <div class="different-content">
+      <div class="different-item">
+        <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+        <span>更好的是，在貼嗑是以公開的方式舉辦活動，可以同時增加品牌、產品的曝光度，讓更多人認識你的產品！</span>
+      </div>
+    </div>
+  </div>
+  <div class="koc-platform-bg">
+    <img class="img-fluid" src="{{ asset('images/index/bg_01@2x.png') }}" alt="koc 合作平台背景圖">
+  </div>
+
+</div>
+
 @endsection
