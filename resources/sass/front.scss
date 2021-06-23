@@ -15,6 +15,7 @@ body,
   -webkit-font-smoothing: antialiased;
   font-family: "noto sans tc", "microsoft jhenghei", sans-serif;
   background-color:#fff;
+  color: #494949;
   background: transparent;
 }
 
@@ -37,9 +38,13 @@ a {
   }
 }
 
+.text-black {
+  color: #000;
+}
+
 * {
   box-sizing: border-box;
-  // border: 1px solid;
+  border: 1px solid;
 }
 
 // 區塊一
@@ -306,76 +311,6 @@ a {
   }
 }
 
-// 區塊五
-#tager-hot-event {
-    .container {
-        padding: 50px 0px 80px 0px;
-        h2 {
-            font-size: 46px;
-            font-weight: 900;
-            color: #000;
-            width: 100%;
-            clear: both;
-            line-height: 90px;
-            margin-bottom: 30px;
-            text-align: center;
-
-            .tager-font {
-                color: #ffd248;
-            }
-        }
-
-        .box-event {
-            width: 347px;
-
-            .toptitle {
-                background-image: url("../images/index/titlebg.png");
-                color: #fff;
-                font-weight: 900;
-                text-align: center;
-                font-size: 20px;
-                width: 173px;
-                height: 39px;
-                line-height: 39px;
-                margin-bottom: 10px;
-            }
-
-            .title {
-                a {
-                    line-height: 30px;
-                    font-weight: 700;
-                    font-size: 22px;
-                    color: #000;
-                }
-            }
-
-            p {
-                font-size: 18px;
-                line-height: 30px;
-                margin-bottom: 24px;
-                text-align: left;
-                color: #000;
-            }
-
-            .pic {
-                width: 100%;
-                height: 215px;
-                position: relative;
-
-                .whitetag {
-                    position: absolute;
-                    font-size: 20px;
-                    color: #fff;
-                    font-weight: 700;
-                    z-index: 2;
-                    left: 15px;
-                    bottom: 20px;
-                }
-            }
-        }
-    }
-}
-
 // tager-KOC
 #tager-KOC {
   padding: 350px 0px 60px 0;
@@ -458,6 +393,9 @@ a {
             padding: 10px;
           }
         }
+        .text-black {
+          color: #000;
+        }
       }
     }
   }
@@ -486,7 +424,7 @@ a {
     @include media-breakpoint-down(lg) {
       width: 169%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
     @include media-breakpoint-down(md) {
       width: 202%;
@@ -494,39 +432,133 @@ a {
   }
   .desc {
     max-width: 470px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 30px;
-    h1 {
-      font-size: 36px;
-      font-weight: 900;
-      color: #000;
-      @include media-breakpoint-down(md) {
-        font-size: 26px;
-      }
-    }
     .desc-text {
       margin-top: 20px;
       font-size: 16px;
       @include media-breakpoint-down(lg) {
-        margin-top: 10px;
+        // margin-top: 20px;
       }
       @include media-breakpoint-down(md) {
+        margin-top: 10px;
         font-size: 10px;
       }
     }
+
+    .free-program {
+      margin-top: 45px;
+      @media (min-width: 1440px) {
+        margin-top: 100px;
+      }
+      a {
+        background-color: #FFD248;
+        color: #000;
+        padding: 5px 20px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        @include media-breakpoint-down(md) {
+          font-size: 12px;
+        }
+
+        &:hover {
+          background-color: #FFDB6C;
+        }
+      }
+    }
+
   }
 }
 
-// 區塊七
+// 貼嗑上的熱門活動
+#tager-hot-event {
+  .container {
+      padding: 50px 0px 80px 0px;
+      h2 {
+          font-size: 34px;
+          font-weight: 900;
+          color: #000;
+          width: 100%;
+          clear: both;
+          line-height: 90px;
+          margin-bottom: 30px;
+          text-align: center;
+      }
+
+      .box-event {
+          // width: 480px;
+          box-shadow: 3px 3px 10px 3px rgb(0 0 0 / 16%);
+          padding: 10px;
+          margin: 0 10px;
+          border-radius: 10px;
+          .toptitle {
+              color: #F58A07;
+              font-size: 20px;
+              width: 173px;
+              height: 39px;
+              line-height: 39px;
+              margin-bottom: 10px;
+          }
+
+          .title {
+            margin: 10px 0px;
+              a {
+                  line-height: 30px;
+                  font-weight: 700;
+                  font-size: 16px;
+                  color: #000;
+              }
+              p {
+                font-size: 16px;
+                margin: 0;
+                margin-bottom: 24px;
+                text-align: left;
+                color: #000;
+            }
+          }
+
+          .pic {
+              width: 100%;
+              // height: 215px;
+              position: relative;
+
+              .whitetag {
+                  position: absolute;
+                  font-size: 20px;
+                  color: #fff;
+                  font-weight: 700;
+                  z-index: 2;
+                  left: 15px;
+                  bottom: 20px;
+              }
+          }
+      }
+  }
+}
+
+// 平台優勢
 #platform-advantage {
     padding: 50px 0 80px 0;
-    background-color: #ffd248;
-    color: #000;
-    .container {
-        max-width: 1540px;
+    position: relative;
+    // background-color: #ffd248;
+    // color: #000;
+    .container-fluid {
+        // max-width: 1540px;
         h2 {
-            margin-bottom: 50px;
+          font-size: 34px;
+          text-align: center;
         }
+    }
+    .platform-advantage-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -999;
+      img {
+        width: 100%;
+        height: 820px;
+      }
     }
     #advantage-contents {
         display: flex;
@@ -571,7 +603,6 @@ a {
                     margin-bottom: 24px;
                     text-align: left;
                     padding-left: 58px;
-                    font-weight: 100;
                 }
             }
         }

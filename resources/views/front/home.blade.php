@@ -128,25 +128,25 @@
     <div class="different-content">
       <div class="different-item">
         <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
-        <span>在Hashtager貼嗑上只需要提供產品，就可以開始招募產品的體驗者，非常簡單！</span>
+        <span class="text-black">在Hashtager貼嗑上只需要提供產品，就可以開始招募產品的體驗者，非常簡單！</span>
       </div>
     </div>
     <div class="different-content">
       <div class="different-item">
         <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
-        <span>Hashtager貼嗑上的KOC是真實對產品、品牌感興趣，並且是真的有需求，不以得到稿費為目的，因次更能夠以生活化的方式，自然帶出產品的優點。</span>
+        <span class="text-black">Hashtager貼嗑上的KOC是真實對產品、品牌感興趣，並且是真的有需求，不以得到稿費為目的，因次更能夠以生活化的方式，自然帶出產品的優點。</span>
       </div>
     </div>
     <div class="different-content">
       <div class="different-item">
         <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
-        <span>體驗者們都是主動來報名，並且會在報名的時候填寫報名原因，讓品牌能夠更了解每個體驗者與產品的關聯性，並更加熟悉這位體驗者。</span>
+        <span class="text-black">體驗者們都是主動來報名，並且會在報名的時候填寫報名原因，讓品牌能夠更了解每個體驗者與產品的關聯性，並更加熟悉這位體驗者。</span>
       </div>
     </div>
     <div class="different-content">
       <div class="different-item">
         <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
-        <span>更好的是，在貼嗑是以公開的方式舉辦活動，可以同時增加品牌、產品的曝光度，讓更多人認識你的產品！</span>
+        <span class="text-black">更好的是，在貼嗑是以公開的方式舉辦活動，可以同時增加品牌、產品的曝光度，讓更多人認識你的產品！</span>
       </div>
     </div>
   </div>
@@ -166,18 +166,12 @@
     <h4>
       如果你的消費者族群屬於年輕世代，你就更需要注重產品在IG上的口碑。
     </h4>
-
     <div class="d-flex justify-content-center mt-4">
       <div class="hashtager-campaign-img">
         <img class="img-fluid" src="{{ asset('images/index/img_index-2@2x.png') }}" alt="Hashtag活動">
       </div>
       <div class="desc">
         <div>
-          <h1>
-            有了Hashtager貼嗑， <br>
-            找到適合的KOC不再需要 <br>
-            大海撈針
-          </h1>
           <div class="desc-text">
             根據統計顯示，高達92%的使用者都曾經因為在IG上看到商品或是服務，被打動後追蹤品牌並且購買產品。
             而現在IG的#Hashtag功能甚至成為年輕人的搜尋引擎，透過#Hashtag搜尋那些感興趣的內容，例如餐廳、打卡景點、美妝、科技等產品。
@@ -185,10 +179,222 @@
           <div class="desc-text">
             因此對於品牌而言，長期在IG上耕耘，創造聲量，並且在重要的#Hashtag牆中露出自家的產品內容，建立屬於自己的#Hashtag牆，是提升與其他品牌競爭力的關鍵。
           </div>
+          <div class="free-program">
+            <a href="#">諮詢免費方案</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+</div>
+
+<!-- 貼嗑上的熱門活動 -->
+<div id="tager-hot-event">
+  <div class="container">
+    <h2>
+      貼嗑上的熱門活動
+    </h2>
+    <div class="d-flex justify-content-between">
+      <div class="box-event">
+        <div class="toptitle">
+          試用體驗活動
+        </div>
+
+        <div class="pic">
+          <div class="whitetag">#長期招募 素人體驗！</div>
+          <div>
+            <img class="img-fluid" src="{{ asset('images/index/img_index-3.png') }}" alt="">
+          </div>
+        </div>
+
+        <div class="title">
+          <a href="#">
+            吃喝玩樂美妝與生活 募集素人品牌大使
+          </a>
+          <p>
+          舉辦免費試吃、試用，真實體驗後給予的心得分享，
+          最具公信力、說服力。產品的好，讓更多人知道！
+        </p>
+        </div>
+      </div>
+      <div class="box-event">
+        <div class="toptitle">
+          新品搶先體驗
+        </div>
+
+        <div class="pic">
+          <div class="whitetag">#高迴響 反應熱烈</div>
+          <div>
+            <img class="img-fluid" src="{{ asset('images/index/img_index-4.png') }}" alt="">
+          </div>
+
+        </div>
+
+        <div class="title">
+          <a href="#">
+          與愛嚐鮮的貼嗑人 一起開箱體驗新品
+          </a>
+          <p>
+            新品上市體驗活動，讓貼嗑上喜歡嚐鮮的體驗大使們，即刻搶先試用分享！新品推出，立即享有口碑。
+          </p>
+        </div>
+
+      </div>
+      <div class="box-event">
+        <div class="toptitle">
+          線下體驗活動
+        </div>
+
+        <div class="pic">
+          <div class="whitetag">#拓展不同客群與市場</div>
+          <div>
+            <img class="img-fluid" src="{{ asset('images/index/img_index-5.png') }}" alt="">
+          </div>
+        </div>
+
+        <div class="title">
+          <a href="#">
+          熱門話題產生器 增加與參與者的連結性
+          </a>
+          <p>
+            線下快閃活動、打卡活動，都可以同步在貼嗑舉辦加碼活動，刺激參與者分享實況，為活動加溫不停歇。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 平台優勢 -->
+<div id="platform-advantage">
+  <div class="container-fluid">
+    <h2>平台優勢特色</h2>
+    <div class="d-flex">
+      <!-- <div id="advantage-contents"> -->
+      <div class="desc-list">
+        <div class="box-list">
+          <div class="title">
+            <div class="white_num">1</div>
+            <span class="text-black">簡單一站式步驟 就能輕鬆上架新活動</span>
+          </div>
+          <p class="text-black">
+            內建多種活動模板 <br>
+            一步步帶領你設定流程 <br>
+            一天內就可直接上線活動 <br>
+            迅速自動收集整理報名資訊 <br>
+            擁有屬於自己的專屬系統後台 <br>
+          </p>
+        </div>
+
+        <div class="box-list">
+          <div class="title">
+            <div class="white_num">2</div>
+            <span class="text-black">快速找到出彩的KOC素人體驗大使</span>
+          </div>
+          <p class="text-black">
+            不怕活動沒人參加！ <br>
+            Hashtager貼嗑有大量且有自我風格、優秀的社群 <br>
+            經營者，能夠分享你的活動、品牌與產品。
+          </p>
+        </div>
+
+        <div class="box-list">
+          <div class="title">
+            <div class="white_num">3</div>
+            <span class="two-line-title text-black">
+              事先取得IG貼文的授權 <br>
+              素材再行銷不設限制
+            </span>
+          </div>
+          <p class="text-black">
+            事前報名就取得貼文的授權，活動體驗大使們所分 <br>
+            享的體驗心得，可以與品牌後續的行銷活動做結 <br>
+            合，讓活動效應可以擴大且延續效果。
+          </p>
+        </div>
+
+        <div class="box-list">
+          <div class="title">
+            <div class="white_num">4</div>
+            <span class="two-line-title text-black">
+              自動串連IG <br>
+              簡單掌握每個活動體驗心得圖文
+            </span>
+          </div>
+          <p class="text-black">
+            自動搜集活動體驗大使創作出的IG分享圖文，你可 <br>
+            以直接在專屬後台查看、打包，並進行之後的素材 <br>
+            再利用。
+          </p>
+        </div>
+      </div>
+      <div class="desc-img"></div>
+  <!-- </div> -->
+    </div>
+  </div>
+  <div class="platform-advantage-bg">
+    <img class="img-fluid" src="{{ asset('images/index/bg_02@2x.png') }}" alt="koc 合作平台背景圖">
+  </div>
+
+  <!-- <div id="advantage-contents">
+    <div class="desc-list">
+      <div class="box-list">
+        <div class="title">
+          <div class="white_num">1</div>
+          <span class="text-black">簡單一站式步驟 就能輕鬆上架新活動</span>
+        </div>
+        <p class="text-black">
+          內建多種活動模板 <br>
+          一步步帶領你設定流程 <br>
+          一天內就可直接上線活動 <br>
+          迅速自動收集整理報名資訊 <br>
+          擁有屬於自己的專屬系統後台 <br>
+        </p>
+      </div>
+
+      <div class="box-list">
+        <div class="title">
+          <div class="white_num">2</div>
+          <span class="text-black">快速找到出彩的KOC素人體驗大使</span>
+        </div>
+        <p class="text-black">
+          不怕活動沒人參加！ <br>
+          Hashtager貼嗑有大量且有自我風格、優秀的社群 <br>
+          經營者，能夠分享你的活動、品牌與產品。
+        </p>
+      </div>
+
+      <div class="box-list">
+        <div class="title">
+          <div class="white_num">3</div>
+          <span class="two-line-title text-black">
+            事先取得IG貼文的授權 <br>
+            素材再行銷不設限制
+          </span>
+        </div>
+        <p class="text-black">
+          事前報名就取得貼文的授權，活動體驗大使們所分 <br>
+          享的體驗心得，可以與品牌後續的行銷活動做結 <br>
+          合，讓活動效應可以擴大且延續效果。
+        </p>
+      </div>
+
+      <div class="box-list">
+        <div class="title">
+          <div class="white_num">4</div>
+          <span class="two-line-title text-black">
+            自動串連IG <br>
+            簡單掌握每個活動體驗心得圖文
+          </span>
+        </div>
+        <p class="text-black">
+          自動搜集活動體驗大使創作出的IG分享圖文，你可 <br>
+          以直接在專屬後台查看、打包，並進行之後的素材 <br>
+          再利用。
+        </p>
+      </div>
+    </div>
+  </div> -->
 </div>
 @endsection
