@@ -219,6 +219,59 @@ a:hover {
   max-width: 860px;
 }
 
+#tager-feature {
+  position: relative;
+}
+#tager-feature h2 {
+  color: #F58A07;
+  font-weight: 900;
+  font-size: 32px;
+}
+#tager-feature .nav {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  top: 113px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#tager-feature .nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+#tager-feature .nav .nav-item .item-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+#tager-feature .nav .nav-item .item-img img {
+  border-radius: 50%;
+}
+#tager-feature .nav .nav-item p {
+  margin: 5 0 0 0;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  background-color: transparent;
+}
+#tager-feature .bottom-bg {
+  background-color: #FFD248;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 150px;
+}
+
 #tager-hot-event .container {
   padding: 50px 0px 80px 0px;
 }
