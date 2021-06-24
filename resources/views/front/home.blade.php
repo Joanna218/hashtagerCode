@@ -4,8 +4,26 @@
 
 <!-- 區塊三 -->
 <div id="slider">
-  <div class="uk-position-relative uk-visible-toggle uk-light"
-    tabindex="-1" uk-slideshow="animation: fade;autoplay: true;autoplay-interval: 2500;pause-on-hover: true;">
+
+  <!-- 手機 -->
+  <div class="d-sm-block d-md-none uk-position-relative uk-visible-toggle uk-light"
+    tabindex="-1" uk-slideshow="animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
+    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 15">
+      <li>
+        <img src="{{ asset('images/mobile/630@2x.png') }}" alt="手機輪播圖01" uk-cover uk-img>
+      </li>
+      <li>
+        <img src="{{ asset('images/mobile/631@2x.png') }}" alt="手機輪播圖02" uk-cover uk-img>
+      </li>
+      <li>
+        <img src="{{ asset('images/mobile/632@2x.png') }}" alt="手機輪播圖03" uk-cover uk-img>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 平板以上 -->
+  <div class="d-none d-md-block uk-position-relative uk-visible-toggle uk-light"
+    tabindex="-1" uk-slideshow="animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
     <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
       <li>
         <img src="{{ asset('images/nav/banner01.png') }}" alt="輪播圖01" uk-cover uk-img>
