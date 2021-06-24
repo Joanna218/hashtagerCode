@@ -619,6 +619,39 @@ a:hover {
   margin: 20px 0px;
 }
 
+#start-campaign {
+  background-color: #ffd248;
+  color: #000;
+  padding: 50px 0;
+}
+#start-campaign .container h2 {
+  margin: 0;
+  line-height: 80px;
+}
+#start-campaign .container p {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  color: #000;
+}
+#start-campaign .container a {
+  width: 150px;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  background-color: #FF6B39;
+  line-height: 38px;
+  margin: 15px auto;
+}
+#start-campaign .container a:hover {
+  background-color: #FF7C50;
+}
+
 #tager-marketing {
   background-color: #f5f5f5;
   padding: 50px 0 80px 0;
@@ -663,36 +696,6 @@ a:hover {
 #tager-experience-share {
   background-color: #fff;
   padding: 30px 0 80px 0;
-}
-
-#start-campaign {
-  background-color: #ffd248;
-  color: #000;
-  padding: 50px 0;
-}
-#start-campaign .container h2 {
-  margin: 0;
-  line-height: 80px;
-}
-#start-campaign .container p {
-  font-size: 22px;
-  line-height: 30px;
-  font-weight: 700;
-  margin: 0;
-  text-align: center;
-}
-#start-campaign .container a {
-  width: 207px;
-  height: 57px;
-  font-size: 22px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  display: block;
-  background-image: url("../images/nav/start_btn.png");
-  line-height: 57px;
-  margin: 15px auto;
 }
 
 footer #footer-nav {

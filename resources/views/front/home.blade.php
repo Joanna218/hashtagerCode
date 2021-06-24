@@ -381,4 +381,14 @@
   </div>
 </div>
 
+<!-- 開始辦活動 -->
+<div id="start-campaign">
+  <div class="container">
+    <h2>開始辦活動</h2>
+    <p>貼嗑一站式辦活動，讓你不費吹灰之力，輕鬆舉辦體驗活動</p>
+    <a href="#" class="go-btn">GO</a>
+  </div>
+</div>
+
+
 @endsection
