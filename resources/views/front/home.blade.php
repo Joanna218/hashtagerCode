@@ -337,4 +337,48 @@
     <img class="img-fluid" src="{{ asset('images/index/bg_02@2x.png') }}" alt="koc 合作平台背景圖">
   </div>
 </div>
+
+<!-- 素人體驗 -->
+<div id="increase-product-sales">
+  <div class="container">
+    <h2>累積素人體驗心得 一步步提升產品銷量</h2>
+    <div>
+      <img class="img-fluid" src="{{ asset('images/index/img_index-7.png') }}" alt="提升產品銷量">
+    </div>
+  </div>
+</div>
+
+<!-- 貼嗑的行銷配套 -->
+<div id="tager-marketing">
+  <div class="container">
+    <h2>
+      Hashtager貼嗑的行銷配套服務 <br>
+      讓你的活動更出色
+    </h2>
+    <div class="marketing-contents">
+      <div class="marketing-item">
+        <h3 class="text-black">活動企劃</h3>
+        <div class="marketing-icon">
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-4.png') }}" alt="">
+        </div>
+        <a class="more-btn" href="#">暸解更多</a>
+      </div>
+      <div class="marketing-item">
+        <h3 class="text-black">整合行銷服務</h3>
+        <div class="marketing-icon">
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-5.png') }}" alt="">
+        </div>
+        <a class="more-btn" href="#">暸解更多</a>
+      </div>
+      <div class="marketing-item">
+        <h3 class="text-black">UGC彙整於官網</h3>
+        <div class="marketing-icon">
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-6.png') }}" alt="">
+        </div>
+        <a class="more-btn" href="#">暸解更多</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 @endsection
