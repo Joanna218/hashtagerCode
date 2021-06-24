@@ -24,15 +24,15 @@
   <!-- 平板以上 -->
   <div class="d-none d-md-block uk-position-relative uk-visible-toggle uk-light"
     tabindex="-1" uk-slideshow="animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
-    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
+    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 15">
       <li>
-        <img src="{{ asset('images/nav/banner01.png') }}" alt="輪播圖01" uk-cover uk-img>
+        <img class="img-fluid" src="{{ asset('images/nav/banner01.png') }}" alt="輪播圖01" uk-cover uk-img>
       </li>
       <li>
-        <img src="{{ asset('images/nav/banner02.png') }}" alt="輪播圖02" uk-cover uk-img>
+        <img class="img-fluid" src="{{ asset('images/nav/banner02.png') }}" alt="輪播圖02" uk-cover uk-img>
       </li>
       <li>
-        <img src="{{ asset('images/nav/banner03.png') }}" alt="輪播圖03" uk-cover uk-img>
+        <img class="img-fluid" src="{{ asset('images/nav/banner03.png') }}" alt="輪播圖03" uk-cover uk-img>
       </li>
     </ul>
   </div>
