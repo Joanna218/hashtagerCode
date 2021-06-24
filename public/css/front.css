@@ -191,42 +191,71 @@ a:hover {
 }
 
 #common-promote {
-  max-width: 1920px;
-  margin: 0 auto;
+  position: relative;
 }
-#common-promote .container-fluid {
-  padding-right: 0px;
-}
-#common-promote .container-fluid .desc {
-  width: 50%;
+#common-promote .container .desc {
+  width: 528px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#common-promote .container-fluid .desc h1 {
+@media (min-width: 1200px) {
+  #common-promote .container .desc {
+    height: 600px;
+  }
+}
+@media (max-width: 991.98px) {
+  #common-promote .container .desc {
+    width: 350px;
+    height: 500px;
+  }
+}
+#common-promote .container .desc h1 {
   font-size: 36px;
   font-weight: 900;
   color: #000;
   max-width: 533px;
 }
 @media (max-width: 991.98px) {
-  #common-promote .container-fluid .desc h1 {
-    font-size: 26px;
+  #common-promote .container .desc h1 {
+    font-size: 28px;
   }
 }
-#common-promote .container-fluid .desc .desc-text {
+#common-promote .container .desc .desc-text {
   margin-top: 10px;
   font-size: 16px;
   max-width: 533px;
 }
-@media (max-width: 991.98px) {
-  #common-promote .container-fluid .desc .desc-text {
-    font-size: 10px;
+#common-promote .promote-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42%;
+}
+@media (min-width: 1200px) {
+  #common-promote .promote-img {
+    width: 50%;
   }
 }
-#common-promote .container-fluid .promote-img {
-  width: 50%;
-  max-width: 860px;
+@media (max-width: 991.98px) {
+  #common-promote .promote-img {
+    width: 50%;
+  }
+}
+#common-promote .promote-img img {
+  height: 520px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  #common-promote .promote-img img {
+    height: 600px;
+  }
+}
+@media (max-width: 991.98px) {
+  #common-promote .promote-img img {
+    height: 500px;
+  }
 }
 
 #tager-feature {
