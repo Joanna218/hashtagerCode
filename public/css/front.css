@@ -395,10 +395,12 @@ h4 {
 #koc-platform {
   position: relative;
 }
-#koc-platform .container h2 {
-  padding: 80px 0 20px 0;
+#koc-platform h1 {
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-weight: 900;
 }
-#koc-platform .container .different-content {
+#koc-platform .different-content {
   font-size: 24px;
   height: 100px;
   background: #fff;
@@ -410,17 +412,17 @@ h4 {
   color: black;
   margin: 25px 0px;
 }
-#koc-platform .container .different-content .different-item {
+#koc-platform .different-content .different-item {
   display: flex;
   align-items: center;
   padding-right: 30px;
 }
-#koc-platform .container .different-content .different-item .arrow-icon {
+#koc-platform .different-content .different-item .arrow-icon {
   background-color: #FF6B39;
   border-radius: 50%;
   margin-right: 10px;
 }
-#koc-platform .container .different-content .different-item .arrow-icon i {
+#koc-platform .different-content .different-item .arrow-icon i {
   color: #fff;
   display: flex;
   align-items: center;
@@ -428,7 +430,7 @@ h4 {
   font-size: 24px;
   padding: 10px;
 }
-#koc-platform .container .different-content .different-item .text-black {
+#koc-platform .different-content .different-item .text-black {
   color: #000;
 }
 #koc-platform .koc-platform-bg {
@@ -440,69 +442,102 @@ h4 {
 }
 #koc-platform .koc-platform-bg img {
   width: 100%;
-  height: 820px;
+  height: 750px;
+}
+@media (max-width: 767.98px) {
+  #koc-platform h1 {
+    font-size: 34px;
+  }
+  #koc-platform .different-content {
+    position: relative;
+    padding: 0px 0 0 35px;
+    height: 100%;
+    border-radius: 10px;
+  }
+  #koc-platform .different-content .different-item {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  #koc-platform .different-content .different-item .arrow-icon {
+    position: absolute;
+    top: -10px;
+    left: -15px;
+  }
+  #koc-platform .different-content .different-item .text-black {
+    font-size: 14px;
+    padding: 10px 0;
+  }
 }
 
 #hashtager-campaign {
-  padding: 200px 0 60px 0;
+  padding: 140px 0 60px 0;
 }
-#hashtager-campaign h4 {
+#hashtager-campaign h1 {
   text-align: center;
+  font-weight: 900;
+}
+@media (max-width: 991.98px) {
+  #hashtager-campaign h1 {
+    font-size: 36px;
+  }
+}
+#hashtager-campaign h3 {
   color: #F58A07;
+  text-align: center;
 }
 #hashtager-campaign .hashtager-campaign-img {
   width: 50%;
 }
 @media (max-width: 1199.98px) {
   #hashtager-campaign .hashtager-campaign-img {
-    width: 169%;
     display: flex;
-    align-items: flex-start;
-  }
-}
-@media (max-width: 991.98px) {
-  #hashtager-campaign .hashtager-campaign-img {
-    width: 202%;
+    align-items: center;
   }
 }
 #hashtager-campaign .desc {
-  max-width: 470px;
-  margin-bottom: 20px;
+  width: 50%;
+  margin-top: 20px;
   margin-left: 30px;
 }
 #hashtager-campaign .desc .desc-text {
-  margin-top: 20px;
-  font-size: 16px;
+  margin-bottom: 10px;
 }
-@media (max-width: 991.98px) {
+@media (min-width: 1200px) {
   #hashtager-campaign .desc .desc-text {
-    margin-top: 10px;
-    font-size: 10px;
+    padding-right: 30px;
   }
 }
 #hashtager-campaign .desc .free-program {
   margin-top: 45px;
-}
-@media (min-width: 1440px) {
-  #hashtager-campaign .desc .free-program {
-    margin-top: 100px;
-  }
 }
 #hashtager-campaign .desc .free-program a {
   background-color: #FFD248;
   color: #000;
   padding: 5px 20px;
   border-radius: 50px;
-  font-size: 18px;
   font-weight: 500;
-}
-@media (max-width: 991.98px) {
-  #hashtager-campaign .desc .free-program a {
-    font-size: 12px;
-  }
 }
 #hashtager-campaign .desc .free-program a:hover {
   background-color: #FFDB6C;
+}
+@media (max-width: 767.98px) {
+  #hashtager-campaign h3 {
+    font-size: 23px;
+  }
+  #hashtager-campaign .hashtager-campaign-img {
+    width: 100%;
+  }
+  #hashtager-campaign .desc {
+    width: 100%;
+    margin: 0;
+  }
+  #hashtager-campaign .desc .free-program {
+    text-align: center;
+  }
+  #hashtager-campaign .desc .free-program a {
+    font-size: 18px;
+    padding: 10px 25px;
+  }
 }
 
 #tager-hot-event .container {

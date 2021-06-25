@@ -138,10 +138,10 @@
 <!-- koc 合作平台 -->
 <div id="koc-platform">
   <div class="container">
-    <h2>
+    <h1>
     Hashtager貼嗑與一般KOC合作平台 <br>
     有什麼不同呢？
-    </h2>
+    </h1>
     <div class="different-content">
       <div class="different-item">
         <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
@@ -176,15 +176,18 @@
 <!-- Hashtag活動 -->
 <div id="hashtager-campaign">
   <div class="container">
-    <h2>
+    <div class="hashtager-campaign-img d-sm-block d-md-none">
+        <img class="img-fluid" src="{{ asset('images/index/img_index-2@2x.png') }}" alt="Hashtag活動">
+    </div>
+    <h1>
       每月3000元，持續舉辦#Hashtag活動， <br>
       建立自己的IG口碑牆
-    </h2>
-    <h4>
+    </h1>
+    <h3>
       如果你的消費者族群屬於年輕世代，你就更需要注重產品在IG上的口碑。
-    </h4>
+    </h3>
     <div class="d-flex justify-content-center mt-4">
-      <div class="hashtager-campaign-img">
+      <div class="hashtager-campaign-img d-none d-md-block">
         <img class="img-fluid" src="{{ asset('images/index/img_index-2@2x.png') }}" alt="Hashtag活動">
       </div>
       <div class="desc">
@@ -196,8 +199,11 @@
           <div class="desc-text">
             因此對於品牌而言，長期在IG上耕耘，創造聲量，並且在重要的#Hashtag牆中露出自家的產品內容，建立屬於自己的#Hashtag牆，是提升與其他品牌競爭力的關鍵。
           </div>
-          <div class="free-program">
+          <div class="free-program d-none d-md-block">
             <a href="#">諮詢免費方案</a>
+          </div>
+          <div class="free-program d-sm-block d-md-none">
+            <a href="#">申請活動上架</a>
           </div>
         </div>
       </div>
