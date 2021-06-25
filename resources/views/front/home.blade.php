@@ -60,11 +60,11 @@
 <!-- 嗑仔們的特質 -->
 <div id="tager-feature">
   <div class="container">
-    <h2 class="text-center">這些貼嗑仔們的特質...</h2>
+    <h1 class="text-center">這些貼嗑仔們的特質...</h1>
     <nav class="nav nav-pills">
       <div class="nav-item">
         <div class="item-img">
-          <img class="img-fluid" src="{{ asset('images/index/icon_index-1.png') }}" alt="貼嗑特質1">
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-1@2x.png') }}" alt="貼嗑特質1">
         </div>
         <p>
           貼文內容生活化，有一套自己的 <br>
@@ -73,7 +73,7 @@
       </div>
       <div class="nav-item">
         <div class="item-img">
-          <img class="img-fluid" src="{{ asset('images/index/icon_index-2.png') }}" alt="貼嗑特質2">
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-2@2x.png') }}" alt="貼嗑特質2">
         </div>
         <p>
           對你的產品及品牌有高度興趣， <br>
@@ -82,7 +82,7 @@
       </div>
       <div class="nav-item">
         <div class="item-img">
-          <img class="img-fluid" src="{{ asset('images/index/icon_index-3.png') }}" alt="貼嗑特質3">
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-3@2x.png') }}" alt="貼嗑特質3">
         </div>
         <p>
           口碑心得是真實的回饋， <br>

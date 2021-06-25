@@ -306,10 +306,10 @@ h4 {
 // 嗑仔們的特質
 #tager-feature {
   position: relative;
-  h2 {
+  h1{
     color: #F58A07;
     font-weight: 900;
-    font-size: 32px;
+    padding: 25px;
   }
 
   .nav {
@@ -369,9 +369,9 @@ h4 {
       padding: 20px 0px;
     }
 
-    h2 {
+    h1 {
       color: #000;
-      padding: 25px;
+      padding: 20px 0;
     }
     .nav {
       position: unset;
