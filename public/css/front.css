@@ -8,6 +8,7 @@ body,
   background-color: #fff;
   color: #494949;
   background: transparent;
+  font-size: 18px;
 }
 
 a {
@@ -17,17 +18,24 @@ a:hover {
   text-decoration: none;
 }
 
-.container h2, .container-fluid h2 {
-  font-size: 46px;
-  font-weight: 900;
+h1 {
+  font-size: 40px;
   color: #000;
-  width: 100%;
-  text-align: center;
 }
-@media (max-width: 991.98px) {
-  .container h2, .container-fluid h2 {
-    font-size: 34px;
-  }
+
+h2 {
+  font-size: 36px;
+  color: #000;
+}
+
+h3 {
+  font-size: 24px;
+  color: #000;
+}
+
+h4 {
+  font-size: 20px;
+  color: #000;
 }
 
 .text-black {
@@ -189,68 +197,42 @@ a:hover {
 #common-promote {
   position: relative;
 }
-#common-promote .container .desc {
-  width: 528px;
-  height: 520px;
+#common-promote .desc {
+  width: 50%;
+  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 1200px) {
-  #common-promote .container .desc {
-    height: 600px;
-  }
-}
-@media (max-width: 991.98px) {
-  #common-promote .container .desc {
-    width: 350px;
-    height: 500px;
-  }
-}
-#common-promote .container .desc h1 {
-  font-size: 36px;
+#common-promote .desc h2 {
   font-weight: 900;
-  color: #000;
-  max-width: 533px;
 }
-@media (max-width: 991.98px) {
-  #common-promote .container .desc h1 {
-    font-size: 28px;
-  }
-}
-#common-promote .container .desc .desc-text {
+#common-promote .desc .desc-text {
   margin-top: 10px;
-  font-size: 16px;
-  max-width: 533px;
 }
 #common-promote .promote-img {
   position: absolute;
   top: 0;
   right: 0;
-  width: 42%;
-}
-@media (min-width: 1200px) {
-  #common-promote .promote-img {
-    width: 50%;
-  }
-}
-@media (max-width: 991.98px) {
-  #common-promote .promote-img {
-    width: 50%;
-  }
+  width: 50%;
 }
 #common-promote .promote-img img {
-  height: 520px;
+  height: 750px;
   width: 100%;
 }
-@media (min-width: 1200px) {
-  #common-promote .promote-img img {
+@media (min-width: 768px) and (max-width: 1439px) {
+  #common-promote .desc {
     height: 600px;
   }
-}
-@media (max-width: 991.98px) {
+  #common-promote .promote-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+  }
   #common-promote .promote-img img {
-    height: 500px;
+    height: 600px;
+    width: 100%;
   }
 }
 @media (max-width: 767.98px) {
@@ -394,6 +376,21 @@ a:hover {
   }
 }
 
+@media (max-width: 767.98px) {
+  #tager-KOC {
+    padding: 0;
+  }
+  #tager-KOC .container {
+    flex-direction: column;
+  }
+  #tager-KOC .desc {
+    width: 100%;
+    margin: 0;
+  }
+  #tager-KOC .koc-img {
+    width: unset;
+  }
+}
 #excellent-koc {
   padding: 60px 0px;
 }

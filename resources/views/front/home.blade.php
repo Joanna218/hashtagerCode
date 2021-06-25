@@ -42,8 +42,8 @@
 <div id="common-promote">
   <div class="container">
     <div class="desc">
-      <h1 class="d-sm-block d-md-none">與真正喜歡你產品的<br>消費者共同推廣</h1>
-      <h1 class="d-none d-md-block">與真正喜歡你產品的消費者 <br> 共同推廣</h1>
+      <h2 class="d-sm-block d-md-none">與真正喜歡你產品的<br>消費者共同推廣</h2>
+      <h2 class="d-none d-md-block">與真正喜歡你產品的消費者 <br> 共同推廣</h2>
       <div class="desc-text">
         Hashtager貼嗑上聚集上萬位在朋友圈中具有影響力的KOC（Key Opinion Consumer，翻譯為關鍵意見消費者，廣義稱為素人網紅，是IG粉絲數介於500至5,000人）。他們熱愛嚐鮮、喜歡體驗新的事物，並且熱衷於分享生活中的大小事，他們各個是IG上的活躍人物，我們稱他們為貼嗑仔。
       </div>
@@ -91,7 +91,7 @@
       </div>
     </nav>
   </div>
-  <div class="bottom-bg d-none d-sm-block"></div>
+  <div class="bottom-bg d-none d-md-block"></div>
 </div>
 
 <!-- tager-KOC -->

@@ -7,6 +7,11 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 
 // global style setting
+// 大標題 40 h1
+// 內文標題 36 h2
+// 內文大標題 24 h3
+// 內文次標題 20 h4
+// 內文 18
 
 html,
 body,
@@ -17,6 +22,7 @@ body,
   background-color:#fff;
   color: #494949;
   background: transparent;
+  font-size: 18px;
 }
 
 a {
@@ -26,16 +32,33 @@ a {
   }
 }
 
-.container h2, .container-fluid h2 {
-  font-size: 46px;
-  font-weight: 900;
+h1 {
+  font-size: 40px;
   color: #000;
-  width: 100%;
+}
+h2 {
+  font-size: 36px;
+  color: #000;
+}
+h3 {
+  font-size: 24px;
+  color: #000;
+}
+h4 {
+  font-size: 20px;
+  color: #000;
+}
+
+.container h2, .container-fluid h2 {
+  // font-size: 46px;
+  // font-weight: 900;
+  // color: #000;
+  // width: 100%;
   // line-height: 90px;
-  text-align: center;
-  @include media-breakpoint-down(md) {
-    font-size: 34px;
-  }
+  // text-align: center;
+  // @include media-breakpoint-down(md) {
+  //   font-size: 34px;
+  // }
 }
 
 .text-black {
@@ -219,73 +242,47 @@ a {
 // 共同推廣
 #common-promote {
   position: relative;
-  // max-width: 1920px;
-  // margin: 0 auto;
-  .container {
-    // padding-right: 0px;
-    .desc {
-      width: 528px;
-      height: 520px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      // 1200px 以上
-      @media (min-width:1200px) {
-        height: 600px;
-      }
-      // md 以下
-      @include media-breakpoint-down(md) {
-        width: 350px;
-        height: 500px;
-      }
-      h1 {
-        font-size: 36px;
-        font-weight: 900;
-        color: #000;
-        max-width: 533px;
-        @include media-breakpoint-down(md) {
-          font-size: 28px;
-        }
-      }
-      .desc-text {
-        margin-top: 10px;
-        font-size: 16px;
-        max-width: 533px;
-        // @include media-breakpoint-down(md) {
-        //   font-size: 10px;
-        // }
-      }
+  .desc {
+    width: 50%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      font-weight: 900;
+    }
+    .desc-text {
+      margin-top: 10px;
     }
   }
-
 
   .promote-img {
     position: absolute;
     top: 0;
     right: 0;
-    width: 42%;
-    // 1200px 以上
-    @media (min-width:1200px) {
-      width: 50%;
-    }
-    // md 以下
-    @include media-breakpoint-down(md) {
-      width: 50%;
-    }
+    width: 50%;
     img {
-      height: 520px;
+      height: 750px;
       width: 100%;
-      // 1200px 以上
-      @media (min-width:1200px) {
-        height: 600px;
-      }
-      // md 以下
-      @include media-breakpoint-down(md) {
-        height: 500px;
-      }
     }
   }
 
+  // 768px - 1440px
+  @media (min-width: 768px) and (max-width: 1439px) {
+    .desc {
+      height: 600px;
+    }
+    .promote-img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      img {
+        height: 600px;
+        width: 100%;
+      }
+    }
+  }
   // 手機
   @include media-breakpoint-down(sm) {
     .container {
@@ -424,6 +421,23 @@ a {
         font-size: 10px;
       }
     }
+  }
+}
+
+// tager-KOC-手機版
+@include media-breakpoint-down(sm) {
+  #tager-KOC {
+   padding: 0;
+   .container {
+    flex-direction: column;
+   }
+   .desc {
+     width: 100%;
+     margin: 0;
+   }
+   .koc-img {
+     width: unset;
+   }
   }
 }
 
