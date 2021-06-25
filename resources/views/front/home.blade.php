@@ -102,11 +102,11 @@
     </div>
     <div class="desc">
       <div>
-        <h1>
+        <h2>
           有了Hashtager貼嗑， <br>
           找到適合的KOC不再需要 <br>
           大海撈針
-        </h1>
+        </h2>
         <div class="desc-text">
           我們了解對於新的品牌、產品還有中小企業們來說，要找到合適的KOC既耗時又費力氣，但是社群行銷又非常講求時效。
         </div>
@@ -124,11 +124,14 @@
 <!-- 萬名優質的KOC -->
 <div id="excellent-koc">
   <div class="container">
-  <h2>
-    Hashtager貼嗑已累積上萬名優質的KOC， <br>
-    成功舉辦百檔活動
-  </h2>
-  <img src="https://fakeimg.pl/1150x413" alt="">
+    <h1>
+      Hashtager貼嗑已累積上萬名優質的KOC， <br>
+      成功舉辦百檔活動
+    </h1>
+    <img class="d-none d-md-block img-fluid" src="https://fakeimg.pl/1150x413?text=letro" alt="">
+  </div>
+  <div class="excellent-koc-img d-sm-block d-md-none">
+    <img class="img-fluid" src="https://fakeimg.pl/1150x413?text=letro" alt="">
   </div>
 </div>
 
