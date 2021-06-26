@@ -44,7 +44,6 @@ h4 {
 
 * {
   box-sizing: border-box;
-  border: 1px solid;
 }
 
 #gototop {
@@ -356,6 +355,9 @@ h4 {
 @media (max-width: 767.98px) {
   #tager-KOC {
     padding: 0;
+  }
+  #tager-KOC .koc-img {
+    padding: 30px 0px;
   }
   #tager-KOC .container {
     flex-direction: column;
@@ -798,17 +800,18 @@ h4 {
   color: #000;
   padding: 50px 0;
 }
-#start-campaign .container h2 {
-  margin: 0;
-  line-height: 80px;
-}
-#start-campaign .container p {
-  font-size: 22px;
-  line-height: 30px;
-  font-weight: 700;
-  margin: 0;
+#start-campaign .container h1 {
   text-align: center;
-  color: #000;
+  font-weight: 900;
+}
+#start-campaign .container h3 {
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  #start-campaign .container h3 {
+    font-size: 18px;
+  }
 }
 #start-campaign .container a {
   width: 150px;
@@ -824,6 +827,48 @@ h4 {
 }
 #start-campaign .container a:hover {
   background-color: #FF7C50;
+}
+
+footer #footer-nav {
+  background-color: #282828;
+  padding: 30px 0;
+}
+footer #footer-nav h2 {
+  line-height: 40px;
+  font-size: 20px;
+  color: #cacaca;
+  font-weight: 700;
+  border-bottom: 1px solid #979797;
+  margin-bottom: 10px;
+  text-align: left;
+}
+footer #footer-nav a {
+  font-size: 18px;
+  color: #fff;
+  line-height: 32px;
+  display: block;
+}
+footer #copy-rights {
+  background-color: #000;
+  height: 50px;
+}
+footer #copy-rights .container {
+  font-size: 13px;
+  text-align: center;
+  color: #cacaca;
+  line-height: 46px;
+}
+@media (max-width: 767.98px) {
+  footer #footer-nav .row {
+    flex-direction: column;
+  }
+  footer #footer-nav .row .col {
+    margin: 10px 0px;
+  }
+  footer #footer-nav .row a {
+    color: #fff;
+    font-weight: 500;
+  }
 }
 
 #tager-marketing {
@@ -870,36 +915,6 @@ h4 {
 #tager-experience-share {
   background-color: #fff;
   padding: 30px 0 80px 0;
-}
-
-footer #footer-nav {
-  background-color: #282828;
-  padding: 30px 0;
-}
-footer #footer-nav .col h2 {
-  line-height: 40px;
-  font-size: 18px;
-  color: #cacaca;
-  font-weight: 700;
-  border-bottom: 1px solid #979797;
-  margin-bottom: 10px;
-  text-align: left;
-}
-footer #footer-nav .col a {
-  font-size: 16px;
-  color: #fff;
-  line-height: 32px;
-  display: block;
-}
-footer #copy-rights {
-  background-color: #000;
-  height: 50px;
-}
-footer #copy-rights .container {
-  font-size: 13px;
-  text-align: center;
-  color: #cacaca;
-  line-height: 46px;
 }
 
 /* ======= ugc ======== */
