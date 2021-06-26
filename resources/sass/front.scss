@@ -812,6 +812,13 @@ h4 {
 #tager-marketing {
   background-color: #F4F4F4;
   .container {
+    h1 {
+      text-align: center;
+      font-weight: 900;
+      @include media-breakpoint-down(sm) {
+        font-size: 36px;
+      }
+    }
     .marketing-contents {
       display: flex;
       align-items: center;
@@ -822,21 +829,64 @@ h4 {
         align-items: center;
         justify-content: center;
         h3 {
+          color: #000;
           font-weight: 500;
         }
         .marketing-icon {
           width: 100px;
           height: 100px;
         }
-        .more-btn {
-          background-color: #FFD248;
-          color: #000;
-          padding: 5px 20px;
-          border-radius: 20px;
-          font-weight: 500;
-          font-size: 16px;
-          margin: 20px 0px;
+
+      }
+    }
+
+    .more-btn {
+      background-color: #FFD248;
+      color: #000;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      margin: 20px 0px;
+
+      &:hover {
+        background-color: #FFDB6C;
+      }
+    }
+
+    // 手機
+    @include media-breakpoint-down(sm) {
+      font-size: 36px;
+      .marketing-contents {
+        flex-direction: column;
+        .marketing-item {
+          .marketing-icon {
+            height: 130px;
+            width: 130px;
+          }
+          h3 {
+            margin: 0;
+            font-size: 18px;
+          }
         }
+        .marketing-item2 {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin: 40px 0px;
+          .marketing-icon {
+            height: 130px;
+            width: 130px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+
+        }
+      }
+      .more-btn  {
+        border-radius: 30px;
+        font-size: 24px;
       }
     }
   }

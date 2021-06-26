@@ -384,11 +384,16 @@
 <!-- 貼嗑的行銷配套 -->
 <div id="tager-marketing">
   <div class="container">
-    <h2>
+    <h1 class="d-none d-md-block">
       Hashtager貼嗑的行銷配套服務 <br>
       讓你的活動更出色
-    </h2>
-    <div class="marketing-contents">
+    </h1>
+    <h1 class="d-sm-block d-md-none">
+      Hashtager貼嗑的 <br>
+      行銷配套服務 <br>
+      讓你的活動更出色
+    </h1>
+    <div class="d-none d-md-flex marketing-contents">
       <div class="marketing-item">
         <h3 class="text-black">活動企劃</h3>
         <div class="marketing-icon">
@@ -410,6 +415,29 @@
         </div>
         <a class="more-btn" href="#">暸解更多</a>
       </div>
+    </div>
+    <div class="d-sm-block d-md-none marketing-contents">
+      <div class="marketing-item">
+        <div class="marketing-icon">
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-4.png') }}" alt="">
+        </div>
+        <h3>活動企劃</h3>
+      </div>
+      <div class="marketing-item2">
+        <div class="marketing-item">
+          <div class="marketing-icon">
+            <img class="img-fluid" src="{{ asset('images/index/icon_index-5.png') }}" alt="">
+          </div>
+          <h3>整合行銷服務</h3>
+        </div>
+        <div class="marketing-item">
+          <div class="marketing-icon">
+            <img class="img-fluid" src="{{ asset('images/index/icon_index-6.png') }}" alt="">
+          </div>
+          <h3>UGC彙整於官網</h3>
+        </div>
+      </div>
+      <a class="more-btn" href="#">暸解更多</a>
     </div>
   </div>
 </div>
