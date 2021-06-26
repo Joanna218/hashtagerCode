@@ -292,13 +292,14 @@
 <!-- 平台優勢 -->
 <div id="platform-advantage">
   <div class="container">
-    <h2>平台優勢特色</h2>
+    <h1>平台優勢特色</h1>
     <div class="d-flex">
       <div class="desc-list">
         <div class="box-list">
           <div class="title">
             <div class="white_num">1</div>
-            <span class="text-black">簡單一站式步驟 就能輕鬆上架新活動</span>
+            <h3 class="d-none d-md-block">簡單一站式步驟 就能輕鬆上架新活動</h3>
+            <h3 class="d-sm-block d-md-none">簡單一站式步驟<br>就能輕鬆上架新活動</h3>
           </div>
           <p class="text-black">
             內建多種活動模板 <br>
@@ -312,7 +313,8 @@
         <div class="box-list">
           <div class="title">
             <div class="white_num">2</div>
-            <span class="text-black">快速找到出彩的KOC素人體驗大使</span>
+            <h3 class="d-none d-md-block">快速找到出彩的KOC素人體驗大使</h3>
+            <h3 class="d-sm-block d-md-none">快速找到出彩的<br>KOC素人體驗大使</h3>
           </div>
           <p class="text-black">
             不怕活動沒人參加！
@@ -324,10 +326,10 @@
         <div class="box-list">
           <div class="title">
             <div class="white_num">3</div>
-            <span class="two-line-title text-black">
-              事先取得IG貼文的授權
+            <h3>
+              事先取得IG貼文的授權 <br>
               素材再行銷不設限制
-            </span>
+            </h3>
           </div>
           <p class="text-black">
             事前報名就取得貼文的授權，活動體驗大使們所分
@@ -339,10 +341,14 @@
         <div class="box-list">
           <div class="title">
             <div class="white_num">4</div>
-            <span class="two-line-title text-black">
+            <h3 class="d-none d-md-block">
               自動串連IG <br>
               簡單掌握每個活動體驗心得圖文
-            </span>
+            </h3>
+            <h3 class="d-sm-block d-md-none">
+              自動串連IG <br>
+              簡單掌握每個活動體驗<br>心得圖文
+            </h3>
           </div>
           <p class="text-black">
             自動搜集活動體驗大使創作出的IG分享圖文，你可
@@ -353,7 +359,7 @@
       </div>
     </div>
   </div>
-  <div class="seven-days-bg">
+  <div class="seven-days-bg d-none d-md-block">
     <img class="img-fluid" src="{{ asset('images/index/seven-days.png') }}" alt="koc 合作平台背景圖">
   </div>
   <div class="platform-advantage-bg">
