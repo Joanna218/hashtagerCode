@@ -215,16 +215,16 @@
 <!-- 貼嗑上的熱門活動 -->
 <div id="tager-hot-event">
   <div class="container">
-    <h2>
+    <h1>
       貼嗑上的熱門活動
-    </h2>
-    <div class="d-flex justify-content-between">
+    </h1>
+    <div class="tager-hot-event-content">
       <div class="box-event">
         <div class="toptitle">
           試用體驗活動
         </div>
 
-        <div class="pic">
+        <div class="pic d-none d-md-block">
           <div class="whitetag">#長期招募 素人體驗！</div>
           <div>
             <img class="img-fluid" src="{{ asset('images/index/img_index-3.png') }}" alt="">
@@ -246,7 +246,7 @@
           新品搶先體驗
         </div>
 
-        <div class="pic">
+        <div class="pic d-none d-md-block">
           <div class="whitetag">#高迴響 反應熱烈</div>
           <div>
             <img class="img-fluid" src="{{ asset('images/index/img_index-4.png') }}" alt="">
@@ -269,7 +269,7 @@
           線下體驗活動
         </div>
 
-        <div class="pic">
+        <div class="pic d-none d-md-block">
           <div class="whitetag">#拓展不同客群與市場</div>
           <div>
             <img class="img-fluid" src="{{ asset('images/index/img_index-5.png') }}" alt="">
