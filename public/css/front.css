@@ -704,7 +704,16 @@ h4 {
 
 #increase-product-sales {
   background-color: #fff;
-  padding: 30px 0 80px 0;
+  padding: 40px 0px;
+}
+#increase-product-sales h1 {
+  text-align: center;
+  font-weight: 900;
+}
+@media (max-width: 767.98px) {
+  #increase-product-sales h1 {
+    font-size: 36px;
+  }
 }
 
 #tager-marketing {

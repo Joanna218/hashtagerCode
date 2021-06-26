@@ -370,9 +370,13 @@
 <!-- 素人體驗 -->
 <div id="increase-product-sales">
   <div class="container">
-    <h2>累積素人體驗心得 一步步提升產品銷量</h2>
-    <div>
+    <h1 class="d-none d-md-block">累積素人體驗心得 一步步提升產品銷量</h1>
+    <h1 class="d-sm-block d-md-none">累積素人體驗<br>一步步提升產品銷量</h1>
+    <div class="d-none d-md-block">
       <img class="img-fluid" src="{{ asset('images/index/img_index-7.png') }}" alt="提升產品銷量">
+    </div>
+    <div class="d-sm-block d-md-none">
+      <img class="img-fluid" src="{{ asset('images/mobile/605@3x.png') }}" alt="提升產品銷量">
     </div>
   </div>
 </div>
