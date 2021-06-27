@@ -243,11 +243,11 @@ h4 {
   }
 }
 @media (max-width: 767.98px) {
-  #common-promote .container .desc {
+  #common-promote .desc {
     width: 100%;
     height: 500px;
   }
-  #common-promote .container .desc h2 {
+  #common-promote .desc h2 {
     font-size: 36px;
   }
   #common-promote .promote-img {
@@ -261,10 +261,13 @@ h4 {
   }
 }
 @media (max-width: 320px) {
-  #common-promote .container .desc {
+  #common-promote .desc {
     height: 550px;
   }
-  #common-promote .container .desc h2 {
+  #common-promote .desc .desc-text {
+    font-size: 16px;
+  }
+  #common-promote .desc h2 {
     font-size: 30px;
     margin: 0;
   }
@@ -340,7 +343,15 @@ h4 {
   #tager-feature h1 {
     color: #000;
     padding: 20px 0;
+    font-size: 36px;
   }
+}
+@media (max-width: 767.98px) and (max-width: 320px) {
+  #tager-feature h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767.98px) {
   #tager-feature .nav {
     position: unset;
   }
@@ -388,15 +399,20 @@ h4 {
   #tager-KOC .container {
     flex-direction: column;
   }
-  #tager-KOC h2 {
-    font-size: 34px;
-  }
   #tager-KOC .desc {
     width: 100%;
     margin: 0;
   }
   #tager-KOC .koc-img {
     width: unset;
+  }
+}
+@media (max-width: 320px) {
+  #tager-KOC .desc h2 {
+    font-size: 25px;
+  }
+  #tager-KOC .desc .desc-text {
+    font-size: 16px;
   }
 }
 #excellent-koc {
@@ -409,6 +425,11 @@ h4 {
 @media (max-width: 991.98px) {
   #excellent-koc h1 {
     font-size: 32px;
+  }
+}
+@media (max-width: 320px) {
+  #excellent-koc h1 {
+    font-size: 27px;
   }
 }
 @media (max-width: 767.98px) {
@@ -495,6 +516,14 @@ h4 {
     font-size: 14px;
     padding: 10px 0;
   }
+  #koc-platform .koc-platform-bg img {
+    height: 650px;
+  }
+}
+@media (max-width: 320px) {
+  #koc-platform .koc-platform-bg img {
+    height: 700px;
+  }
 }
 
 #hashtager-campaign {
@@ -549,6 +578,12 @@ h4 {
   background-color: #FFDB6C;
 }
 @media (max-width: 767.98px) {
+  #hashtager-campaign {
+    padding-top: 100px;
+  }
+  #hashtager-campaign h1 {
+    font-size: 34px;
+  }
   #hashtager-campaign h3 {
     font-size: 23px;
   }
@@ -563,8 +598,19 @@ h4 {
     text-align: center;
   }
   #hashtager-campaign .desc .free-program a {
-    font-size: 18px;
+    font-size: 22px;
     padding: 10px 25px;
+  }
+}
+@media (max-width: 320px) {
+  #hashtager-campaign h1 {
+    font-size: 28px;
+  }
+  #hashtager-campaign h3 {
+    font-size: 17px;
+  }
+  #hashtager-campaign .desc-text {
+    font-size: 16px;
   }
 }
 
@@ -625,6 +671,9 @@ h4 {
     padding-right: 1rem;
     padding-left: 1rem;
   }
+  #tager-hot-event .container h1 {
+    font-size: 36px;
+  }
   #tager-hot-event .container .tager-hot-event-content {
     flex-direction: column;
   }
@@ -637,6 +686,17 @@ h4 {
   }
   #tager-hot-event .container .tager-hot-event-content .box-event .title {
     padding-right: 10px;
+  }
+}
+@media (max-width: 320px) {
+  #tager-hot-event .container h1 {
+    font-size: 34px;
+  }
+  #tager-hot-event .container .tager-hot-event-content .box-event .title a {
+    font-size: 15px;
+  }
+  #tager-hot-event .container .tager-hot-event-content .box-event .title p {
+    font-size: 14px;
   }
 }
 
