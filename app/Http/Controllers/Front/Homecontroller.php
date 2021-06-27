@@ -16,4 +16,9 @@ class Homecontroller extends Controller
     {
         return view('front.ugc');
     }
+
+    public function contact()
+    {
+        return view('front.contact');
+    }
 }

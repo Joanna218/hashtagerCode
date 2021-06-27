@@ -198,7 +198,7 @@ h4 {
     margin-right: 1rem;
     margin-left: 1rem;
     color: black;
-    font-size: 16px;
+    font-size: 17px;
     border-bottom: #fff 4px;
     @include media-breakpoint-down(lg) {
       margin-right: .5rem;
@@ -984,6 +984,61 @@ footer {
         }
       }
     }
+  }
+}
+
+// contact
+#contact {
+  padding: 80px 0px;
+  h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 37px;
+  }
+
+  h4 {
+    text-align: center;
+    color: #494949;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    label {
+      color: #000;
+    }
+    .more-contents-label {
+      width: 140px;
+    }
+
+    .more-contents-select {
+      width: 40%;
+    }
+
+    .other {
+      width: 97%;
+      margin: auto .75rem;
+    }
+    .other-required {
+      width: 100%;
+      border-radius: 3px;
+      padding: 10px;
+    }
+
+    .submit-form {
+      background-color: #FFD248;
+      color: #000;
+      font-size: 24px;
+      border-radius: 50px;
+      font-weight: 500;
+      padding: 10px 55px;
+
+      &:hover {
+        background-color: #FFDB6C;
+      }
+    }
+
   }
 }
 
