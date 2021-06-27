@@ -372,10 +372,10 @@
   <div class="container">
     <h1 class="d-none d-md-block">累積素人體驗心得 一步步提升產品銷量</h1>
     <h1 class="d-sm-block d-md-none">累積素人體驗<br>一步步提升產品銷量</h1>
-    <div class="d-none d-md-block">
+    <div class="d-none d-md-block d-flex justify-content-center">
       <img class="img-fluid" src="{{ asset('images/index/img_index-7.png') }}" alt="提升產品銷量">
     </div>
-    <div class="d-sm-block d-md-none">
+    <div class="d-sm-block d-md-none d-flex justify-content-center">
       <img class="img-fluid" src="{{ asset('images/mobile/605@3x.png') }}" alt="提升產品銷量">
     </div>
   </div>
@@ -418,22 +418,16 @@
     </div>
     <div class="d-sm-block d-md-none marketing-contents">
       <div class="marketing-item">
-        <div class="marketing-icon">
-          <img class="img-fluid" src="{{ asset('images/index/icon_index-4.png') }}" alt="">
-        </div>
+        <img class="img-fluid" src="{{ asset('images/index/icon_index-4.png') }}" alt="">
         <h3>活動企劃</h3>
       </div>
       <div class="marketing-item2">
         <div class="marketing-item">
-          <div class="marketing-icon">
-            <img class="img-fluid" src="{{ asset('images/index/icon_index-5.png') }}" alt="">
-          </div>
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-5.png') }}" alt="">
           <h3>整合行銷服務</h3>
         </div>
         <div class="marketing-item">
-          <div class="marketing-icon">
-            <img class="img-fluid" src="{{ asset('images/index/icon_index-6.png') }}" alt="">
-          </div>
+          <img class="img-fluid" src="{{ asset('images/index/icon_index-6.png') }}" alt="">
           <h3>UGC彙整於官網</h3>
         </div>
       </div>

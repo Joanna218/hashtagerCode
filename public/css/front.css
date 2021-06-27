@@ -172,7 +172,7 @@ h4 {
 }
 @media (max-width: 767.98px) {
   #navs > .container .nav-link {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 500;
   }
 }
@@ -701,7 +701,7 @@ h4 {
 }
 
 #platform-advantage {
-  padding: 80px 0;
+  padding: 60px 0;
   position: relative;
 }
 #platform-advantage .container {
@@ -713,17 +713,17 @@ h4 {
 }
 #platform-advantage .seven-days-bg {
   position: absolute;
-  top: 150px;
+  top: 130px;
   right: 0;
   width: 50%;
 }
 #platform-advantage .seven-days-bg img {
   width: 100%;
-  height: 800px;
+  height: 720px;
 }
 @media (max-width: 991.98px) {
   #platform-advantage .seven-days-bg img {
-    height: 900px;
+    height: 850px;
   }
 }
 #platform-advantage .platform-advantage-bg {
@@ -783,10 +783,19 @@ h4 {
   padding-left: 60px;
 }
 @media (max-width: 767.98px) {
+  #platform-advantage {
+    padding: 40px 0;
+  }
+  #platform-advantage .container h1 {
+    font-size: 36px;
+  }
   #platform-advantage .desc-list .box-list {
     width: 100%;
     font-size: 24px;
     padding-right: 30px;
+  }
+  #platform-advantage .desc-list .box-list p {
+    font-size: 16px;
   }
 }
 
@@ -794,13 +803,28 @@ h4 {
   background-color: #fff;
   padding: 40px 0px;
 }
+@media (max-width: 767.98px) {
+  #increase-product-sales {
+    padding: 0px;
+  }
+}
 #increase-product-sales h1 {
   text-align: center;
   font-weight: 900;
 }
+@media (max-width: 991.98px) {
+  #increase-product-sales h1 {
+    font-size: 38px;
+  }
+}
 @media (max-width: 767.98px) {
   #increase-product-sales h1 {
     font-size: 36px;
+  }
+}
+@media (max-width: 320px) {
+  #increase-product-sales h1 {
+    font-size: 30px;
   }
 }
 
@@ -816,24 +840,31 @@ h4 {
     font-size: 36px;
   }
 }
+@media (max-width: 320px) {
+  #tager-marketing .container h1 {
+    font-size: 34px;
+  }
+}
 #tager-marketing .container .marketing-contents {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 #tager-marketing .container .marketing-contents .marketing-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 33%;
 }
 #tager-marketing .container .marketing-contents .marketing-item h3 {
   color: #000;
   font-weight: 500;
 }
 #tager-marketing .container .marketing-contents .marketing-item .marketing-icon {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 #tager-marketing .container .more-btn {
   background-color: #FFD248;
@@ -854,27 +885,60 @@ h4 {
   #tager-marketing .container .marketing-contents {
     flex-direction: column;
   }
-  #tager-marketing .container .marketing-contents .marketing-item .marketing-icon {
+  #tager-marketing .container .marketing-contents .marketing-item {
+    width: 100%;
+  }
+  #tager-marketing .container .marketing-contents .marketing-item img {
     height: 130px;
     width: 130px;
   }
+}
+@media (max-width: 767.98px) and (max-width: 320px) {
+  #tager-marketing .container .marketing-contents .marketing-item img {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-width: 767.98px) {
   #tager-marketing .container .marketing-contents .marketing-item h3 {
     margin: 0;
+    font-size: 22px;
+  }
+}
+@media (max-width: 767.98px) and (max-width: 320px) {
+  #tager-marketing .container .marketing-contents .marketing-item h3 {
     font-size: 18px;
   }
+}
+@media (max-width: 767.98px) {
   #tager-marketing .container .marketing-contents .marketing-item2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 40px 0px;
   }
-  #tager-marketing .container .marketing-contents .marketing-item2 .marketing-icon {
+  #tager-marketing .container .marketing-contents .marketing-item2 img {
     height: 130px;
     width: 130px;
   }
+}
+@media (max-width: 767.98px) and (max-width: 320px) {
+  #tager-marketing .container .marketing-contents .marketing-item2 img {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  #tager-marketing .container .marketing-contents .marketing-item2 h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767.98px) and (max-width: 320px) {
   #tager-marketing .container .marketing-contents .marketing-item2 h3 {
     font-size: 18px;
   }
+}
+@media (max-width: 767.98px) {
   #tager-marketing .container .more-btn {
     border-radius: 30px;
     font-size: 24px;
@@ -899,6 +963,11 @@ h4 {
     font-size: 18px;
   }
 }
+@media (max-width: 320px) {
+  #start-campaign .container h3 {
+    font-size: 15px;
+  }
+}
 #start-campaign .container a {
   width: 150px;
   font-size: 22px;
@@ -919,6 +988,27 @@ footer #footer-nav {
   background-color: #282828;
   padding: 30px 0;
 }
+footer #footer-nav .enterprise {
+  width: 23%;
+  margin: 0 10px;
+}
+footer #footer-nav .other-service {
+  width: 25%;
+  margin: 0 10px;
+}
+footer #footer-nav .policy {
+  width: 15%;
+  margin: 0 10px;
+}
+footer #footer-nav .follow-us {
+  width: 26%;
+  margin: 0 10px;
+}
+@media (max-width: 991.98px) {
+  footer #footer-nav .follow-us {
+    width: 23%;
+  }
+}
 footer #footer-nav h2 {
   line-height: 40px;
   font-size: 20px;
@@ -934,6 +1024,11 @@ footer #footer-nav a {
   line-height: 32px;
   display: block;
 }
+@media (max-width: 991.98px) {
+  footer #footer-nav a {
+    font-size: 15px;
+  }
+}
 footer #copy-rights {
   background-color: #000;
   height: 50px;
@@ -945,13 +1040,24 @@ footer #copy-rights .container {
   line-height: 46px;
 }
 @media (max-width: 767.98px) {
-  footer #footer-nav .row {
-    flex-direction: column;
-  }
-  footer #footer-nav .row .col {
+  footer #footer-nav h2 {
+    font-size: 24px;
     margin: 10px 0px;
   }
-  footer #footer-nav .row a {
+  footer #footer-nav .enterprise {
+    width: 100%;
+  }
+  footer #footer-nav .other-service {
+    width: 100%;
+  }
+  footer #footer-nav .policy {
+    width: 100%;
+  }
+  footer #footer-nav .follow-us {
+    width: 100%;
+  }
+  footer #footer-nav a {
+    font-size: 18px;
     color: #fff;
     font-weight: 500;
   }
@@ -1019,9 +1125,18 @@ footer #copy-rights .container {
   #contact h1 {
     font-size: 33px;
   }
+}
+@media (max-width: 767.98px) and (max-width: 320px) {
+  #contact h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767.98px) {
   #contact h4 {
     font-size: 18px;
   }
+}
+@media (max-width: 767.98px) {
   #contact form .more-contents-label {
     width: 100%;
   }
