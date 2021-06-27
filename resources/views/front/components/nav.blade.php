@@ -16,10 +16,10 @@
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="d-flex align-items-end">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{ url('/') }}">
           <img class="logo-img img-fluid" src="../images/nav/hashtager_logo.svg" alt="">
         </a>
-        <a class="navbar-brand hold-campaign" href="#">我要辦活動</a>
+        <a class="navbar-brand hold-campaign" href="{{ url('/') }}">我要辦活動</a>
       </div>
 
       <input type="checkbox" id="active" class="d-md-none">

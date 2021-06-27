@@ -13,9 +13,9 @@
     <h4 class="d-none d-md-block">如要在Hashtager貼嗑上舉辦活動，可於上架諮詢直接填寫申請。</h4>
     <h4 class="d-sm-block d-md-none">如要在Hashtager貼嗑上舉辦活動，<br>可於上架諮詢直接填寫申請。</h4>
 
+    <!-- 電腦 -->
     <form class="d-none d-md-block">
       <!-- 想要了解的內容 -->
-      <!-- 電腦 -->
       <div class="d-sm-none d-md-flex form-group d-flex">
         <label class="more-contents-label" for="more-contents">想要了解的內容</label>
         <select class="form-control more-contents-select" id="more-contents">
@@ -31,7 +31,6 @@
       </div>
 
       <!-- 聯絡人、聯絡電話 -->
-      <!-- 電腦 -->
       <div class="form-group row">
         <div class="col">
           <label for="contact-person">聯絡人<span class="text-danger">*<span></label>
@@ -44,7 +43,6 @@
       </div>
 
       <!-- 公司全稱、E-mai -->
-      <!-- 電腦 -->
       <div class="form-group row">
         <div class="col">
           <label for="corporation">公司全稱<span class="text-danger">*<span></label>
@@ -69,8 +67,8 @@
       </div>
     </form>
 
+    <!-- 手機 -->
     <form class="d-sm-block d-md-none">
-      <!-- 手機 -->
       <div class="form-group row text-center">
         <label class="more-contents-label" for="more-contents">想要了解的內容</label>
         <select class="form-control more-contents-select" id="more-contents">
@@ -84,8 +82,6 @@
           <option value="異業合作">異業合作</option>
         </select>
       </div>
-
-      <!-- 手機 -->
       <div class="form-group row">
         <label for="contact-person">聯絡人<span class="text-danger">*<span></label>
         <input type="text" class="form-control" id="contact-person">
@@ -94,8 +90,6 @@
         <label for="contact-tel">聯絡電話<span class="text-danger">*<span></label>
         <input type="text" class="form-control" id="contact-tel">
       </div>
-
-      <!-- 手機 -->
       <div class="form-group row">
         <label for="corporation">公司全稱<span class="text-danger">*<span></label>
         <input type="text" class="form-control" id="corporation">
