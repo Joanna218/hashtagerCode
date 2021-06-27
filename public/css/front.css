@@ -871,6 +871,10 @@ footer #copy-rights .container {
   }
 }
 
+#contact-banner img {
+  width: 100%;
+}
+
 #contact {
   padding: 80px 0px;
 }
@@ -878,6 +882,11 @@ footer #copy-rights .container {
   text-align: center;
   font-weight: 900;
   font-size: 37px;
+}
+@media (max-width: 767.98px) {
+  #contact h1 {
+    font-size: 38px;
+  }
 }
 #contact h4 {
   text-align: center;
@@ -916,6 +925,27 @@ footer #copy-rights .container {
 }
 #contact form .submit-form:hover {
   background-color: #FFDB6C;
+}
+@media (max-width: 767.98px) {
+  #contact {
+    padding: 20px 0px;
+  }
+  #contact h1 {
+    font-size: 33px;
+  }
+  #contact h4 {
+    font-size: 18px;
+  }
+  #contact form .more-contents-label {
+    width: 100%;
+  }
+  #contact form .more-contents-select {
+    width: 100%;
+  }
+  #contact form .other {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 #tager-marketing {

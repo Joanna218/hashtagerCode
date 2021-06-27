@@ -988,12 +988,20 @@ footer {
 }
 
 // contact
+#contact-banner {
+  img {
+    width: 100%;
+  }
+}
 #contact {
   padding: 80px 0px;
   h1 {
     text-align: center;
     font-weight: 900;
     font-size: 37px;
+    @include media-breakpoint-down(sm) {
+      font-size: 38px;
+    }
   }
 
   h4 {
@@ -1039,6 +1047,33 @@ footer {
       }
     }
 
+  }
+
+  // 手機
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0px;
+
+    h1 {
+      font-size: 33px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    form {
+      .more-contents-label {
+        width: 100%;
+      }
+
+      .more-contents-select {
+        width: 100%;
+      }
+      .other {
+        width: 100%;
+        margin: 0;
+      }
+    }
   }
 }
 
