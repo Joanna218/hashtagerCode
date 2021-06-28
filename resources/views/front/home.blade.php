@@ -200,7 +200,7 @@
             因此對於品牌而言，長期在IG上耕耘，創造聲量，並且在重要的#Hashtag牆中露出自家的產品內容，建立屬於自己的#Hashtag牆，是提升與其他品牌競爭力的關鍵。
           </div>
           <div class="free-program d-none d-md-block">
-            <a href="#">諮詢免費方案</a>
+            <a href="{{ url('contact') }}" target="_blank">諮詢免費方案</a>
           </div>
           <div class="free-program d-sm-block d-md-none">
             <a href="#">申請活動上架</a>
@@ -372,8 +372,8 @@
   <div class="container">
     <h1 class="d-none d-md-block">累積素人體驗心得 一步步提升產品銷量</h1>
     <h1 class="d-sm-block d-md-none">累積素人體驗<br>一步步提升產品銷量</h1>
-    <div class="d-none d-md-block d-flex justify-content-center">
-      <img class="img-fluid" src="{{ asset('images/index/img_index-7.png') }}" alt="提升產品銷量">
+    <div class="d-none d-md-flex d-flex justify-content-center">
+      <img class="img-fluid d-none d-md-flex" src="{{ asset('images/index/img_index-7.png') }}" alt="提升產品銷量">
     </div>
     <div class="d-sm-block d-md-none d-flex justify-content-center">
       <img class="img-fluid" src="{{ asset('images/mobile/605@3x.png') }}" alt="提升產品銷量">
@@ -442,7 +442,7 @@
     <h1>開始辦活動</h1>
     <h3 class="d-none d-md-block">貼嗑一站式辦活動，讓你不費吹灰之力，輕鬆舉辦體驗活動</h3>
     <h3 class="d-sm-block d-md-none">貼嗑一站式辦活動，讓你不費吹灰之力，<br>輕鬆舉辦體驗活動</h3>
-    <a href="#" class="go-btn">GO</a>
+    <a href="{{ url('contact') }}" target="_blank" class="go-btn">GO</a>
   </div>
 </div>
 

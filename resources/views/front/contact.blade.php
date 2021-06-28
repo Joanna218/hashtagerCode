@@ -34,11 +34,11 @@
       <div class="form-group row">
         <div class="col">
           <label for="contact-person">聯絡人<span class="text-danger">*<span></label>
-          <input type="text" class="form-control" id="contact-person" name="contact-person">
+          <input type="text" class="form-control" id="contact-person" name="contact-person" required>
         </div>
         <div class="col">
           <label for="contact-tel">聯絡電話<span class="text-danger">*<span></label>
-          <input type="text" class="form-control" id="contact-tel">
+          <input type="text" class="form-control" id="contact-tel" name="contact-tel" required>
         </div>
       </div>
 
@@ -46,32 +46,32 @@
       <div class="form-group row">
         <div class="col">
           <label for="corporation">公司全稱<span class="text-danger">*<span></label>
-          <input type="text" class="form-control" id="corporation">
+          <input type="text" class="form-control" id="corporation" name="corporation" required>
         </div>
         <div class="col">
           <label for="eamil">E-mail<span class="text-danger">*<span></label>
-          <input type="email" class="form-control" id="eamil" placeholder="公司E-mail為佳">
+          <input type="email" class="form-control" id="eamil" placeholder="公司E-mail為佳" name="eamil" required>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="other">
-          <textarea class="other-required" id="exampleFormControlTextarea1" placeholder="簡短需求說明(幫助我們安排適合的專員與您聯繫)" rows="10"></textarea>
+          <textarea class="other-required" name="other-required" placeholder="簡短需求說明(幫助我們安排適合的專員與您聯繫)" rows="10"></textarea>
         </div>
       </div>
-      <div class="form-group row justify-content-center mt-4">
+      <!-- <div class="form-group row justify-content-center mt-4">
         <img src="https://fakeimg.pl/150x50/" alt="">
-      </div>
+      </div> -->
       <div class="form-group row justify-content-center mt-4">
-        <button type="button" class="btn submit-form">送出</button>
+        <button type="submit" class="btn submit-form">送出</button>
       </div>
     </form>
 
     <!-- 手機 -->
-    <!-- <form class="d-sm-block d-md-none">
+    <form class="d-sm-block d-md-none">
       <div class="form-group row text-center">
         <label class="more-contents-label" for="more-contents">想要了解的內容</label>
-        <select class="form-control more-contents-select" id="more-contents">
+        <select class="form-control more-contents-select">
           <option value="活動企劃">活動企劃</option>
           <option value="KOL行銷">KOL行銷</option>
           <option value="社群行銷">社群行銷</option>
@@ -84,39 +84,39 @@
       </div>
       <div class="form-group row">
         <label for="contact-person">聯絡人<span class="text-danger">*<span></label>
-        <input type="text" class="form-control" id="contact-person" name="contact-person">
+        <input type="text" class="form-control" name="contact-person">
       </div>
       <div class="orm-group row">
         <label for="contact-tel">聯絡電話<span class="text-danger">*<span></label>
-        <input type="text" class="form-control" id="contact-tel">
+        <input type="text" class="form-control">
       </div>
       <div class="form-group row">
         <label for="corporation">公司全稱<span class="text-danger">*<span></label>
-        <input type="text" class="form-control" id="corporation">
+        <input type="text" class="form-control">
       </div>
       <div class="form-group row">
         <label for="eamil">E-mail<span class="text-danger">*<span></label>
-        <input type="email" class="form-control" id="eamil" placeholder="公司E-mail為佳">
+        <input type="email" class="form-control" placeholder="公司E-mail為佳">
       </div>
 
       <div class="form-group row">
         <div class="other">
-          <textarea class="other-required" id="exampleFormControlTextarea1" placeholder="簡短需求說明(幫助我們安排適合的專員與您聯繫)" rows="10"></textarea>
+          <textarea class="other-required" placeholder="簡短需求說明(幫助我們安排適合的專員與您聯繫)" rows="10"></textarea>
         </div>
       </div>
-      <div class="form-group row justify-content-center mt-4">
+      <!-- <div class="form-group row justify-content-center mt-4">
         <img src="https://fakeimg.pl/150x50/" alt="">
-      </div>
+      </div> -->
       <div class="form-group row justify-content-center mt-4">
         <button type="button" class="btn submit-form">送出</button>
       </div>
 
-    </form> -->
+    </form>
   </div>
 </div>
 
 <script>
-  $('.submit-form').on('click', function (e) {
+  $('.submit-form').on('submit', function (e) {
     e.preventDefault();
     alert('aa');
     $.ajax({

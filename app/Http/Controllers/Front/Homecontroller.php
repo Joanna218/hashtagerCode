@@ -44,10 +44,10 @@ class HomeController extends Controller
       // ];
 
       // 寄出信件
-      Mail::send([], $data, function($message) use ($from, $to) {
-      $message->from($from['email'], $from['name']);
-      $message->to($to['email'], $to['name'])->subject($from['subject']);
-      });
+      // Mail::send([], $data, function($message) use ($from, $to) {
+      // $message->from($from['email'], $from['name']);
+      // $message->to($to['email'], $to['name'])->subject($from['subject']);
+      // });
 
       //$data = $request->all();
       // Mail::send([], $data, function ($message) use ($data) {
