@@ -34,7 +34,7 @@
       <div class="form-group row">
         <div class="col">
           <label for="contact-person">聯絡人<span class="text-danger">*<span></label>
-          <input type="text" class="form-control" id="contact-person">
+          <input type="text" class="form-control" id="contact-person" name="contact-person">
         </div>
         <div class="col">
           <label for="contact-tel">聯絡電話<span class="text-danger">*<span></label>
@@ -63,12 +63,12 @@
         <img src="https://fakeimg.pl/150x50/" alt="">
       </div>
       <div class="form-group row justify-content-center mt-4">
-        <button type="submit" class="btn submit-form">送出</button>
+        <button type="button" class="btn submit-form">送出</button>
       </div>
     </form>
 
     <!-- 手機 -->
-    <form class="d-sm-block d-md-none">
+    <!-- <form class="d-sm-block d-md-none">
       <div class="form-group row text-center">
         <label class="more-contents-label" for="more-contents">想要了解的內容</label>
         <select class="form-control more-contents-select" id="more-contents">
@@ -84,7 +84,7 @@
       </div>
       <div class="form-group row">
         <label for="contact-person">聯絡人<span class="text-danger">*<span></label>
-        <input type="text" class="form-control" id="contact-person">
+        <input type="text" class="form-control" id="contact-person" name="contact-person">
       </div>
       <div class="orm-group row">
         <label for="contact-tel">聯絡電話<span class="text-danger">*<span></label>
@@ -108,11 +108,35 @@
         <img src="https://fakeimg.pl/150x50/" alt="">
       </div>
       <div class="form-group row justify-content-center mt-4">
-        <button type="submit" class="btn submit-form">送出</button>
+        <button type="button" class="btn submit-form">送出</button>
       </div>
 
-    </form>
+    </form> -->
   </div>
 </div>
+
+<script>
+  $('.submit-form').on('click', function (e) {
+    e.preventDefault();
+    alert('aa');
+    $.ajax({
+        type: "POST",
+        url: "/api/sendMail",
+        data: {
+          '_token': "{{ csrf_token() }}",
+          'contact-person': '123'
+        },
+        cache: false,
+        success: function (res) {
+          alert(res);
+        },
+        error: function (xhr, status, error) {
+          console.error(xhr);
+        }
+      });
+  });
+
+
+</script>
 
 @endsection
