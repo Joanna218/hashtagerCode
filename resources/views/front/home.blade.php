@@ -23,16 +23,38 @@
 
   <!-- 平板以上 -->
   <div class="d-none d-md-block uk-position-relative uk-visible-toggle uk-light"
-    tabindex="-1" uk-slideshow="animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
-    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 15">
+    tabindex="-1" uk-slideshow="max-height: 400;animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
+    <ul class="uk-slideshow-items">
       <li>
-        <img class="img-fluid" src="{{ asset('images/nav/banner01.png') }}" alt="輪播圖01" uk-cover uk-img>
+        <img src="{{ asset('images/nav/01_index_banner_1-3.jpg') }}" alt="輪播圖03" style="height:500px;width:100%;" uk-img>
+        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
+        flex-direction: column;justify-content: center;margin-left: 10%;">
+            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">今天策劃，明天上線！</h2>
+            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
+              簡單一站式辦活動，讓你加快行銷節奏
+            </p>
+        </div>
       </li>
       <li>
-        <img class="img-fluid" src="{{ asset('images/nav/banner02.png') }}" alt="輪播圖02" uk-cover uk-img>
+        <img src="{{ asset('images/nav/01_index_banner_1-2.jpg') }}" alt="輪播圖02" style="height:500px;width:100%;" uk-img>
+        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
+        flex-direction: column;justify-content: center;margin-left: 10%;">
+            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">⽉付3000，百位素⼈為你證⾔</h2>
+            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
+              新朋友嗎？首次上架免費，快去諮詢吧！
+            </p>
+        </div>
       </li>
       <li>
-        <img class="img-fluid" src="{{ asset('images/nav/banner03.png') }}" alt="輪播圖03" uk-cover uk-img>
+        <img src="{{ asset('images/nav/01_index_banner_1-1.jpg') }}" style="height:500px;width:100%;" alt="輪播圖01" uk-img>
+        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
+        flex-direction: column;justify-content: center;margin-left: 10%;">
+            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">超過8000位KOC任您挑選</h2>
+            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
+              真實⽣活化的素⼈⼤使，在朋友圈具有影響⼒， <br>
+              粉絲數⾼於1000+！
+            </p>
+        </div>
       </li>
     </ul>
   </div>
@@ -102,11 +124,11 @@
     </div>
     <div class="desc">
       <div>
-        <h2>
+        <h1>
           有了Hashtager貼嗑， <br>
           找到適合的KOC不再需要 <br>
           大海撈針
-        </h2>
+        </h1>
         <div class="desc-text">
           我們了解對於新的品牌、產品還有中小企業們來說，要找到合適的KOC既耗時又費力氣，但是社群行銷又非常講求時效。
         </div>
@@ -128,11 +150,11 @@
       Hashtager貼嗑已累積上萬名優質的KOC， <br>
       成功舉辦百檔活動
     </h1>
-    <img class="d-none d-md-block img-fluid" src="https://fakeimg.pl/1150x413?text=letro" alt="">
+    <!-- <img class="d-none d-md-block img-fluid" src="https://fakeimg.pl/1150x413?text=letro" alt=""> -->
   </div>
-  <div class="excellent-koc-img d-sm-block d-md-none">
+  <!-- <div class="excellent-koc-img d-sm-block d-md-none">
     <img class="img-fluid" src="https://fakeimg.pl/1150x413?text=letro" alt="">
-  </div>
+  </div> -->
 </div>
 
 <!-- koc 合作平台 -->
@@ -166,6 +188,9 @@
         <span class="text-black">更好的是，在貼嗑是以公開的方式舉辦活動，可以同時增加品牌、產品的曝光度，讓更多人認識你的產品！</span>
       </div>
     </div>
+  </div>
+  <div class="koc-platform-bg">
+    <img class="img-fluid" src="{{ asset('images/index/bg_01@2x.png') }}" alt="koc 合作平台背景圖">
   </div>
   <div class="koc-platform-bg">
     <img class="img-fluid" src="{{ asset('images/index/bg_01@2x.png') }}" alt="koc 合作平台背景圖">
@@ -317,9 +342,8 @@
             <h3 class="d-sm-block d-md-none">快速找到出彩的<br>KOC素人體驗大使</h3>
           </div>
           <p class="text-black">
-            不怕活動沒人參加！
-            Hashtager貼嗑有大量且有自我風格、優秀的社群
-            經營者，能夠分享你的活動、品牌與產品。
+            不怕活動沒人參加！ <br>
+            Hashtager貼嗑有大量且有自我風格、優秀的社群經營者，能夠分享你的活動、品牌與產品。
           </p>
         </div>
 
@@ -332,9 +356,7 @@
             </h3>
           </div>
           <p class="text-black">
-            事前報名就取得貼文的授權，活動體驗大使們所分
-            享的體驗心得，可以與品牌後續的行銷活動做結
-            合，讓活動效應可以擴大且延續效果。
+            事前報名就取得貼文的授權，活動體驗大使們所分享的體驗心得，可以與品牌後續的行銷活動做結合，讓活動效應可以擴大且延續效果。
           </p>
         </div>
 
@@ -351,9 +373,7 @@
             </h3>
           </div>
           <p class="text-black">
-            自動搜集活動體驗大使創作出的IG分享圖文，你可
-            以直接在專屬後台查看、打包，並進行之後的素材
-            再利用。
+            自動搜集活動體驗大使創作出的IG分享圖文，你可以直接在專屬後台查看、打包，並進行之後的素材再利用。
           </p>
         </div>
       </div>
@@ -446,5 +466,15 @@
   </div>
 </div>
 
-
+<script>
+    window.__letroUgcGadget = window.__letroUgcGadget || {};
+    __letroUgcGadget.advertiser_id = 154;
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://letro.jp/tags/js/letro.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'letro-jssdk'));
+</script>
 @endsection

@@ -1,14 +1,15 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@charset "UTF-8";
 html,
 body,
 * {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "noto sans tc", "microsoft jhenghei", sans-serif;
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
   background-color: #fff;
   color: #494949;
   background: transparent;
-  font-size: 18px;
+  font-size: 16px;
   box-sizing: border-box;
 }
 
@@ -21,21 +22,29 @@ a:hover {
 
 h1 {
   font-size: 40px;
+  line-height: 52px;
+  font-weight: bold;
   color: #000;
 }
 
 h2 {
   font-size: 36px;
+  line-height: 48px;
+  font-weight: bold;
   color: #000;
 }
 
 h3 {
   font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
   color: #000;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
   color: #000;
 }
 
@@ -55,12 +64,12 @@ h4 {
   color: #676767;
 }
 
-#navs > .container {
+#navs > .container-fluid {
   /* RWD MENU */
   /* closing animation */
   /* END RWD MENU */
 }
-#navs > .container .wrapper {
+#navs > .container-fluid .wrapper {
   position: fixed;
   top: 0;
   right: -100%;
@@ -69,19 +78,19 @@ h4 {
   background-color: #f2ae14;
   transition: all 0.6s ease-in-out;
 }
-#navs > .container .wrapper .navbar-nav {
+#navs > .container-fluid .wrapper .navbar-nav {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#navs > .container .wrapper .navbar-nav .nav-item {
+#navs > .container-fluid .wrapper .navbar-nav .nav-item {
   margin: 10px;
 }
-#navs > .container #active:checked ~ .wrapper {
+#navs > .container-fluid #active:checked ~ .wrapper {
   right: 0px;
 }
-#navs > .container .menu-btn {
+#navs > .container-fluid .menu-btn {
   position: absolute;
   z-index: 2;
   right: 0px;
@@ -94,9 +103,9 @@ h4 {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-#navs > .container .menu-btn span,
-#navs > .container .menu-btn:before,
-#navs > .container .menu-btn:after {
+#navs > .container-fluid .menu-btn span,
+#navs > .container-fluid .menu-btn:before,
+#navs > .container-fluid .menu-btn:after {
   content: "";
   position: absolute;
   top: calc(50% - 1px);
@@ -105,51 +114,51 @@ h4 {
   border-bottom: 2px solid #000;
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-#navs > .container .menu-btn:before {
+#navs > .container-fluid .menu-btn:before {
   transform: translateY(-8px);
 }
-#navs > .container .menu-btn:after {
+#navs > .container-fluid .menu-btn:after {
   transform: translateY(8px);
 }
-#navs > .container .close {
+#navs > .container-fluid .close {
   z-index: 1;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
-#navs > .container #active:checked + .menu-btn span {
+#navs > .container-fluid #active:checked + .menu-btn span {
   transform: scaleX(0);
 }
-#navs > .container #active:checked + .menu-btn:before {
+#navs > .container-fluid #active:checked + .menu-btn:before {
   transform: rotate(45deg);
   border-color: #fff;
 }
-#navs > .container #active:checked + .menu-btn:after {
+#navs > .container-fluid #active:checked + .menu-btn:after {
   transform: rotate(-45deg);
   border-color: #fff;
 }
-#navs > .container input[type=checkbox] {
+#navs > .container-fluid input[type=checkbox] {
   display: none;
 }
-#navs > .container .navbar {
+#navs > .container-fluid .navbar {
   padding-right: 0;
   padding-left: 0;
 }
-#navs > .container .logo-img {
+#navs > .container-fluid .logo-img {
   width: 150px;
 }
 @media (max-width: 991.98px) {
-  #navs > .container .logo-img {
+  #navs > .container-fluid .logo-img {
     width: 95px;
   }
 }
-#navs > .container .hold-campaign {
+#navs > .container-fluid .hold-campaign {
   font-size: 14px;
 }
-#navs > .container .navbar-toggler {
+#navs > .container-fluid .navbar-toggler {
   color: #000;
 }
-#navs > .container .nav-link {
+#navs > .container-fluid .nav-link {
   padding: 5px 0px;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -158,36 +167,36 @@ h4 {
   border-bottom: #fff 4px;
 }
 @media (max-width: 1199.98px) {
-  #navs > .container .nav-link {
+  #navs > .container-fluid .nav-link {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
   }
 }
 @media (max-width: 991.98px) {
-  #navs > .container .nav-link {
+  #navs > .container-fluid .nav-link {
     font-size: 14px;
     margin-right: 0.3rem;
     margin-left: 0.3rem;
   }
 }
 @media (max-width: 767.98px) {
-  #navs > .container .nav-link {
+  #navs > .container-fluid .nav-link {
     font-size: 26px;
     font-weight: 500;
   }
 }
-#navs > .container .nav-item.active > .nav-link,
-#navs > .container .nav-item:hover > .nav-link {
+#navs > .container-fluid .nav-item.active > .nav-link,
+#navs > .container-fluid .nav-item:hover > .nav-link {
   border-bottom: #FFD248 4px solid;
 }
-#navs > .container .nav-consultant-item {
+#navs > .container-fluid .nav-consultant-item {
   background-color: #FFD248;
   border-radius: 5px;
   font-weight: bold;
   padding: 5px 20px;
   margin-right: 0px;
 }
-#navs > .container .nav-consultant-item:hover {
+#navs > .container-fluid .nav-consultant-item:hover {
   background-color: #000;
   color: #fff;
 }
@@ -238,7 +247,7 @@ h4 {
     width: 50%;
   }
   #common-promote .promote-img img {
-    height: 600px;
+    height: 550px;
     width: 100%;
   }
 }
@@ -283,8 +292,8 @@ h4 {
 }
 #tager-feature h1 {
   color: #F58A07;
-  font-weight: 900;
-  padding: 25px;
+  padding: 0px;
+  margin-bottom: 60px;
 }
 #tager-feature .nav {
   width: 100%;
@@ -342,8 +351,7 @@ h4 {
   }
   #tager-feature h1 {
     color: #000;
-    padding: 20px 0;
-    font-size: 36px;
+    padding-top: 50px;
   }
 }
 @media (max-width: 767.98px) and (max-width: 320px) {
@@ -360,7 +368,16 @@ h4 {
   }
 }
 #tager-KOC {
-  padding: 230px 0px 60px 0;
+  padding-top: 182px;
+}
+#tager-KOC .container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+@media (min-width: 992px) and (max-width: 1439px) {
+  #tager-KOC .container {
+    padding: 0;
+  }
 }
 #tager-KOC .koc-img {
   width: 50%;
@@ -376,17 +393,17 @@ h4 {
   margin-top: 20px;
   margin-left: 30px;
 }
-#tager-KOC .desc h2 {
-  font-weight: 900;
+#tager-KOC .desc h1 {
   color: #000;
+  margin-bottom: 40px;
 }
 @media (max-width: 991.98px) {
-  #tager-KOC .desc h2 {
+  #tager-KOC .desc h1 {
     font-size: 28px;
   }
 }
 #tager-KOC .desc .desc-text {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767.98px) {
@@ -408,18 +425,18 @@ h4 {
   }
 }
 @media (max-width: 320px) {
-  #tager-KOC .desc h2 {
+  #tager-KOC .desc h1 {
     font-size: 25px;
   }
   #tager-KOC .desc .desc-text {
     font-size: 16px;
   }
 }
-#excellent-koc {
-  padding: 60px 0px;
+#excellent-koc .container {
+  margin-bottom: 120px;
 }
 #excellent-koc h1 {
-  font-weight: 900;
+  margin-bottom: 40px;
   text-align: center;
 }
 @media (max-width: 991.98px) {
@@ -445,12 +462,11 @@ h4 {
   position: relative;
 }
 #koc-platform h1 {
-  padding: 40px 0 20px 0;
   text-align: center;
-  font-weight: 900;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 #koc-platform .different-content {
-  font-size: 24px;
   height: 100px;
   background: #fff;
   border-radius: 50px;
@@ -481,6 +497,7 @@ h4 {
 }
 #koc-platform .different-content .different-item .text-black {
   color: #000;
+  font-size: 18px;
 }
 #koc-platform .koc-platform-bg {
   position: absolute;
@@ -527,9 +544,12 @@ h4 {
 }
 
 #hashtager-campaign {
-  padding: 140px 0 60px 0;
+  padding-top: 222px;
+  padding-bottom: 120px;
 }
 #hashtager-campaign h1 {
+  margin: 0;
+  margin-bottom: 40px;
   text-align: center;
   font-weight: 900;
 }
@@ -541,6 +561,8 @@ h4 {
 #hashtager-campaign h3 {
   color: #F58A07;
   text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
 }
 #hashtager-campaign .hashtager-campaign-img {
   width: 50%;
@@ -573,6 +595,7 @@ h4 {
   padding: 5px 20px;
   border-radius: 50px;
   font-weight: 500;
+  font-size: 24px;
 }
 #hashtager-campaign .desc .free-program a:hover {
   background-color: #FFDB6C;
@@ -615,11 +638,11 @@ h4 {
 }
 
 #tager-hot-event .container {
-  padding: 50px 0px 80px 0px;
+  margin-top: 120px;
+  padding: 0;
 }
 #tager-hot-event .container h1 {
-  font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
 }
 #tager-hot-event .container .tager-hot-event-content {
@@ -628,27 +651,27 @@ h4 {
 }
 #tager-hot-event .container .tager-hot-event-content .box-event {
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.16);
-  padding: 7px;
+  padding: 20px;
   margin: 0 10px;
   border-radius: 10px;
 }
 #tager-hot-event .container .tager-hot-event-content .box-event .toptitle {
   color: #F58A07;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-top: 25px;
 }
 #tager-hot-event .container .tager-hot-event-content .box-event .title {
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 #tager-hot-event .container .tager-hot-event-content .box-event .title a {
-  line-height: 30px;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 18px;
   color: #000;
 }
 #tager-hot-event .container .tager-hot-event-content .box-event .title p {
   margin: 0;
-  font-size: 16px;
+  margin-top: 10px;
   margin-bottom: 24px;
   text-align: left;
   color: #000;
@@ -663,7 +686,7 @@ h4 {
   font-weight: 700;
   z-index: 2;
   left: 10px;
-  font-size: 18px;
+  font-size: 24px;
   bottom: 0px;
 }
 @media (max-width: 767.98px) {
@@ -701,15 +724,17 @@ h4 {
 }
 
 #platform-advantage {
-  padding: 60px 0;
   position: relative;
+  margin-top: 120px;
 }
 #platform-advantage .container {
   padding-right: 0;
+  padding-bottom: 40px;
 }
 #platform-advantage .container h1 {
   text-align: center;
-  font-weight: 900;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 #platform-advantage .seven-days-bg {
   position: absolute;
@@ -719,7 +744,7 @@ h4 {
 }
 #platform-advantage .seven-days-bg img {
   width: 100%;
-  height: 720px;
+  height: 680px;
 }
 @media (max-width: 991.98px) {
   #platform-advantage .seven-days-bg img {
@@ -781,6 +806,7 @@ h4 {
   margin-bottom: 24px;
   text-align: left;
   padding-left: 60px;
+  padding-right: 88px;
 }
 @media (max-width: 767.98px) {
   #platform-advantage {
@@ -801,7 +827,10 @@ h4 {
 
 #increase-product-sales {
   background-color: #fff;
-  padding: 40px 0px;
+}
+#increase-product-sales .container {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 @media (max-width: 767.98px) {
   #increase-product-sales {
@@ -810,7 +839,7 @@ h4 {
 }
 #increase-product-sales h1 {
   text-align: center;
-  font-weight: 900;
+  margin-bottom: 40px;
 }
 @media (max-width: 991.98px) {
   #increase-product-sales h1 {
@@ -831,9 +860,13 @@ h4 {
 #tager-marketing {
   background-color: #F4F4F4;
 }
+#tager-marketing .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 #tager-marketing .container h1 {
   text-align: center;
-  font-weight: 900;
+  margin-bottom: 40px;
 }
 @media (max-width: 767.98px) {
   #tager-marketing .container h1 {
@@ -872,7 +905,7 @@ h4 {
   padding: 5px 20px;
   border-radius: 20px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   margin: 20px 0px;
 }
 #tager-marketing .container .more-btn:hover {
@@ -948,14 +981,14 @@ h4 {
 #start-campaign {
   background-color: #ffd248;
   color: #000;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 #start-campaign .container h1 {
   text-align: center;
-  font-weight: 900;
+  margin-bottom: 40px;
 }
 #start-campaign .container h3 {
-  font-weight: 700;
+  font-weight: bold;
   text-align: center;
 }
 @media (max-width: 767.98px) {
@@ -1063,6 +1096,21 @@ footer #copy-rights .container {
   }
 }
 
+#contact-banner {
+  background-image: url("../images/contact/07_contact_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-banner .contact-text {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+}
 #contact-banner img {
   width: 100%;
 }
@@ -1147,47 +1195,6 @@ footer #copy-rights .container {
     width: 100%;
     margin: 0;
   }
-}
-
-#tager-marketing {
-  background-color: #f5f5f5;
-  padding: 50px 0 80px 0;
-}
-#tager-marketing h2 {
-  margin-bottom: 60px;
-}
-#tager-marketing #tager-marketing-contents {
-  display: flex;
-  justify-content: space-around;
-}
-#tager-marketing #tager-marketing-contents .content-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#tager-marketing #tager-marketing-contents .content-box .title {
-  font-weight: 900;
-  font-size: 26px;
-  color: #000;
-  line-height: 60px;
-  margin-bottom: 10px;
-}
-#tager-marketing #tager-marketing-contents .content-box .more a {
-  height: 40px;
-  line-height: 40px;
-  padding: 10px 20px;
-  font-size: 20px;
-  background-color: #ffd248;
-  color: #000;
-  display: inline;
-  width: 130px;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-#tager-marketing #tager-marketing-contents .content-box .more a:hover {
-  background-color: #000;
-  color: #fff;
 }
 
 #tager-experience-share {

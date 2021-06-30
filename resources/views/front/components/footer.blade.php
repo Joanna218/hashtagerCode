@@ -24,15 +24,15 @@
           <h2>關注我們</h2>
            <!-- 電腦 -->
           <div class="d-none d-lg-flex">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FiBuzzResearch&tabs&width=300&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=367216920790347" width="300" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FhashtagerTW%2F&tabs=timeline&width=300&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="300" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
           <!-- 平板 -->
           <div class="d-none d-md-flex d-lg-none">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FiBuzzResearch&tabs&width=250&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=367216920790347" width="210" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FhashtagerTW%2F&tabs=timeline&width=210&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="210" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
            <!-- 手機 -->
           <div class="d-sm-flex d-md-none">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FiBuzzResearch&tabs&width=300&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=367216920790347" width="300" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FhashtagerTW%2F&tabs=timeline&width=300&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="300" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
 
         </div>

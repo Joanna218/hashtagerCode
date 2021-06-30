@@ -1,7 +1,7 @@
 
 <!-- 區塊一 -->
 <div id="gototop">
-  <div class="container d-none d-md-block">
+  <div class="container-fluid d-none d-md-block">
     <div class="d-flex justify-content-end align-items-center gotobg ">
       <a href="https://hashtager.com.tw/" target="_blank">
         前往hashtager貼嗑
@@ -13,7 +13,7 @@
 
 <!-- 區塊二 -->
 <div id="navs">
-  <div class="container">
+  <div class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="d-flex align-items-end">
         <a class="navbar-brand" href="{{ url('/') }}">
@@ -32,7 +32,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="{{ url('/') }}">優勢特色1 <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="{{ url('ugc') }}">UGC活動行銷</a>
           </li>
           <li class="nav-item">
@@ -43,33 +43,34 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">常見問題</a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link nav-consultant-item" href="#">上架諮詢</a>
+            <a class="nav-link nav-consultant-item" href="{{ url('/contact') }}" target="_blank">上架諮詢</a>
           </li>
         </ul>
       </div>
 
       <!-- 電腦版 -->
-      <div class="d-none d-md-flex collapse navbar-collapse justify-content-end align-items-center">
+      <!-- <div class="d-none d-md-flex collapse navbar-collapse justify-content-end align-items-center"> -->
+      <div class="d-none d-md-flex collapse navbar-collapse align-items-center" style="justify-content: flex-end;">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="{{ url('/') }}">優勢特色 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('ugc') }}">UGC活動行銷</a>
+            <!-- <a class="nav-link" href="{{ url('ugc') }}">UGC活動行銷</a> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">配套服務</a>
+            <!-- <a class="nav-link" href="#">配套服務</a> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">貼嗑運作模式</a>
+            <!-- <a class="nav-link" href="#">貼嗑運作模式</a> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">常見問題</a>
+            <!-- <a class="nav-link" href="#">常見問題</a> -->
           </li>
           <li class="">
-            <a class="nav-link nav-consultant-item" href="#">上架諮詢</a>
+            <a class="nav-link nav-consultant-item" href="{{ url('/contact') }}" target="_blank">上架諮詢</a>
           </li>
         </ul>
       </div>
