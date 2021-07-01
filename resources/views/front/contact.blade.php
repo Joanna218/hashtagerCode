@@ -2,12 +2,12 @@
 
 @section('content')
 
-<div class="contact-banner d-none d-md-block">
-  <h2 class="contact-text">聯絡我們！</h2>
+<div class="common-banner contact-banner d-none d-md-block">
+  <h2 class="common-banner-text justify-content-center">聯絡我們！</h2>
 </div>
 
-<div class="contact-banner mobil d-sm-block d-md-none">
-  <h2 class="contact-text">聯絡我們！</h2>
+<div class="common-banner contact-mobil-banner d-sm-block d-md-none">
+  <h2 class="common-banner-text justify-content-center">聯絡我們！</h2>
 </div>
 
 

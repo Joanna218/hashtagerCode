@@ -48,6 +48,17 @@
     <link rel="stylesheet" href="{{ asset('theme/vendor/libs/plyr/plyr.css') }}">
 
     <link rel="stylesheet" href="{{ asset(mix('css/front.css')) }}">
+    <script>
+        window.__letroUgcGadget = window.__letroUgcGadget || {};
+        __letroUgcGadget.advertiser_id = 154;
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://letro.jp/tags/js/letro.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'letro-jssdk'));
+    </script>
 
     <!-- @yield('styles') -->
 

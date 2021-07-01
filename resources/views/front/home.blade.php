@@ -169,7 +169,7 @@
       Hashtager貼嗑已累積上萬名優質的KOC， <br>
       成功舉辦百檔活動
     </h1>
-    <!-- <img class="d-none d-md-block img-fluid" src="https://fakeimg.pl/1150x413?text=letro" alt=""> -->
+    <div class="letroUgcsetGadget" data-contents="letro-gadget" data-gadget-id="3292"></div>
   </div>
   <!-- <div class="excellent-koc-img d-sm-block d-md-none">
     <img class="img-fluid" src="https://fakeimg.pl/1150x413?text=letro" alt="">
@@ -487,16 +487,4 @@
     <a href="{{ url('contact') }}" target="_blank" class="go-btn">GO</a>
   </div>
 </div>
-
-<!-- <script>
-    window.__letroUgcGadget = window.__letroUgcGadget || {};
-    __letroUgcGadget.advertiser_id = 154;
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://letro.jp/tags/js/letro.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'letro-jssdk'));
-</script> -->
 @endsection

@@ -1,8 +1,19 @@
 @extends('front.layouts.app')
 
 @section('content')
-<div id="ugc-banner">
-  <img src="https://fakeimg.pl/1920x520?text=banner1" alt="">
+<div class="common-banner ugc-banner d-none d-md-block">
+  <h2 class="common-banner-text">
+    UGC行銷時代 <br>
+    真實口碑  影響力更強
+  </h2>
+</div>
+
+<div class="common-banner ugc-mobil-banner d-sm-block d-md-none">
+  <h2 class="common-banner-text text-center">
+    UGC行銷時代 <br>
+    真實口碑 <br>
+    影響力更強
+  </h2>
 </div>
 
 <div id="what-ugc">

@@ -1182,8 +1182,7 @@ footer {
 }
 
 // contact
-.contact-banner {
-  background-image: url('../images/contact/07_contact_banner.jpg');
+.common-banner {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1191,21 +1190,24 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  .contact-text {
+  .common-banner-text {
     color: #fff;
-    font-size: 60px;
+    font-size: 46px;
     font-weight: bold;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100%;
+    line-height: 52px;
   }
   img {
     width: 100%;
   }
 }
+.contact-banner {
+  background-image: url('../images/contact/07_contact_banner.jpg');
+}
 
-.contact-banner.mobil {
+.contact-mobil-banner {
   background-image: url('../images/mobile/633@2x.png');
   background-size: cover;
 }
@@ -1316,26 +1318,16 @@ footer {
 
 /* ======= ugc ======== */
 
-#what-ugc {
-  padding-top: 110px;
-  .container {
-    h2 {
-      margin-bottom: 40px;
-      span {
-        color: #ffd248;
-      }
-    }
-
-    h3 {
-      font-size: 30px;
-      line-height: 32px;
-      font-weight: 700;
-      margin-bottom: 80px;
-      display: block;
-      text-align: center;
-      padding-top: 0;
-    }
+.ugc-banner {
+  background-image: url('../images/ugc/02_ugc_banner.jpg');
+  .common-banner-text {
+    margin-left: 10%;
   }
+}
+
+.ugc-mobil-banner {
+  background-image: url('../images/mobile/991@2x.png');
+  background-size: cover;;
 }
 
 /*
