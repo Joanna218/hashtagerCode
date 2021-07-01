@@ -64,8 +64,9 @@
 <div id="common-promote">
   <div class="container">
     <div class="desc">
-      <h2 class="d-sm-block d-md-none">與真正喜歡你產品的<br>消費者共同推廣</h2>
-      <h2 class="d-none d-md-block">與真正喜歡你產品的消費者 <br> 共同推廣</h2>
+      <h1 class="d-sm-block d-md-none">與真正喜歡你產品的<br>消費者共同推廣</h1>
+      <h1 class="d-none d-md-block" style=
+      "font-size: 37px;">與真正喜歡你產品的消費者 <br> 共同推廣</h1>
       <div class="desc-text">
         Hashtager貼嗑上聚集上萬位在朋友圈中具有影響力的KOC（Key Opinion Consumer，翻譯為關鍵意見消費者，廣義稱為素人網紅，是IG粉絲數介於500至5,000人）。他們熱愛嚐鮮、喜歡體驗新的事物，並且熱衷於分享生活中的大小事，他們各個是IG上的活躍人物，我們稱他們為貼嗑仔。
       </div>
@@ -204,9 +205,12 @@
     <div class="hashtager-campaign-img d-sm-block d-md-none">
         <img class="img-fluid" src="{{ asset('images/index/img_index-2@2x.png') }}" alt="Hashtag活動">
     </div>
-    <h1>
+    <h1 class="d-none d-md-block">
       每月3000元，持續舉辦#Hashtag活動， <br>
       建立自己的IG口碑牆
+    </h1>
+    <h1 class="d-sm-block d-md-none">
+      每月3000元，持續舉辦#Hashtag活動，建立自己的IG口碑牆
     </h1>
     <h3>
       如果你的消費者族群屬於年輕世代，你就更需要注重產品在IG上的口碑。
@@ -466,7 +470,7 @@
   </div>
 </div>
 
-<script>
+<!-- <script>
     window.__letroUgcGadget = window.__letroUgcGadget || {};
     __letroUgcGadget.advertiser_id = 154;
     (function(d, s, id) {
@@ -476,5 +480,5 @@
         js.src = "https://letro.jp/tags/js/letro.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'letro-jssdk'));
-</script>
+</script> -->
 @endsection

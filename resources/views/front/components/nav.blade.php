@@ -30,7 +30,7 @@
       <div class="wrapper justify-content-end align-items-center">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="{{ url('/') }}">優勢特色1 <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{ url('/') }}">優勢特色 <span class="sr-only">(current)</span></a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="{{ url('ugc') }}">UGC活動行銷</a>

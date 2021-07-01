@@ -26,6 +26,12 @@ h1 {
   font-weight: bold;
   color: #000;
 }
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 
 h2 {
   font-size: 36px;
@@ -208,6 +214,9 @@ h4 {
 #common-promote {
   position: relative;
 }
+#common-promote .container {
+  padding: 0;
+}
 #common-promote .desc {
   width: 50%;
   height: 750px;
@@ -215,13 +224,8 @@ h4 {
   flex-direction: column;
   justify-content: center;
 }
-#common-promote .desc h2 {
-  font-weight: 900;
-}
-@media (max-width: 991.98px) {
-  #common-promote .desc h2 {
-    font-size: 28px;
-  }
+#common-promote .desc h1 {
+  font-size: 36px;
 }
 #common-promote .desc .desc-text {
   margin-top: 10px;
@@ -252,12 +256,18 @@ h4 {
   }
 }
 @media (max-width: 767.98px) {
+  #common-promote .container {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
   #common-promote .desc {
     width: 100%;
     height: 500px;
+    display: unset;
   }
-  #common-promote .desc h2 {
-    font-size: 36px;
+  #common-promote .desc h1 {
+    font-size: 30px;
+    margin-top: 40px;
   }
   #common-promote .promote-img {
     position: unset;
@@ -276,7 +286,7 @@ h4 {
   #common-promote .desc .desc-text {
     font-size: 16px;
   }
-  #common-promote .desc h2 {
+  #common-promote .desc h1 {
     font-size: 30px;
     margin: 0;
   }
@@ -351,7 +361,7 @@ h4 {
   }
   #tager-feature h1 {
     color: #000;
-    padding-top: 50px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 767.98px) and (max-width: 320px) {
@@ -397,11 +407,6 @@ h4 {
   color: #000;
   margin-bottom: 40px;
 }
-@media (max-width: 991.98px) {
-  #tager-KOC .desc h1 {
-    font-size: 28px;
-  }
-}
 #tager-KOC .desc .desc-text {
   margin-bottom: 10px;
 }
@@ -409,6 +414,10 @@ h4 {
 @media (max-width: 767.98px) {
   #tager-KOC {
     padding: 0;
+  }
+  #tager-KOC .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   #tager-KOC .koc-img {
     padding: 30px 0px;
@@ -553,11 +562,6 @@ h4 {
   text-align: center;
   font-weight: 900;
 }
-@media (max-width: 991.98px) {
-  #hashtager-campaign h1 {
-    font-size: 36px;
-  }
-}
 #hashtager-campaign h3 {
   color: #F58A07;
   text-align: center;
@@ -603,12 +607,14 @@ h4 {
 @media (max-width: 767.98px) {
   #hashtager-campaign {
     padding-top: 100px;
+    padding-bottom: 40px;
   }
   #hashtager-campaign h1 {
-    font-size: 34px;
+    margin-top: 40px;
+    text-align: left;
   }
   #hashtager-campaign h3 {
-    font-size: 23px;
+    font-size: 21px;
   }
   #hashtager-campaign .hashtager-campaign-img {
     width: 100%;
@@ -691,11 +697,9 @@ h4 {
 }
 @media (max-width: 767.98px) {
   #tager-hot-event .container {
+    margin-top: 40px;
     padding-right: 1rem;
     padding-left: 1rem;
-  }
-  #tager-hot-event .container h1 {
-    font-size: 36px;
   }
   #tager-hot-event .container .tager-hot-event-content {
     flex-direction: column;
@@ -709,6 +713,9 @@ h4 {
   }
   #tager-hot-event .container .tager-hot-event-content .box-event .title {
     padding-right: 10px;
+  }
+  #tager-hot-event .container .tager-hot-event-content .box-event .title a {
+    font-size: 17px;
   }
 }
 @media (max-width: 320px) {
@@ -796,11 +803,6 @@ h4 {
   font-weight: 900;
   margin: 0;
 }
-@media (max-width: 991.98px) {
-  #platform-advantage .desc-list .box-list .title h3 {
-    font-size: 20px;
-  }
-}
 #platform-advantage .desc-list .box-list p {
   margin-top: 0;
   margin-bottom: 24px;
@@ -811,9 +813,10 @@ h4 {
 @media (max-width: 767.98px) {
   #platform-advantage {
     padding: 40px 0;
+    margin-top: 40px;
   }
   #platform-advantage .container h1 {
-    font-size: 36px;
+    padding-top: 0;
   }
   #platform-advantage .desc-list .box-list {
     width: 100%;
@@ -822,6 +825,7 @@ h4 {
   }
   #platform-advantage .desc-list .box-list p {
     font-size: 16px;
+    padding-right: 0;
   }
 }
 
@@ -836,6 +840,10 @@ h4 {
   #increase-product-sales {
     padding: 0px;
   }
+  #increase-product-sales .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 #increase-product-sales h1 {
   text-align: center;
@@ -848,7 +856,7 @@ h4 {
 }
 @media (max-width: 767.98px) {
   #increase-product-sales h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 @media (max-width: 320px) {
@@ -870,7 +878,8 @@ h4 {
 }
 @media (max-width: 767.98px) {
   #tager-marketing .container h1 {
-    font-size: 36px;
+    font-size: 30px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 320px) {
@@ -913,7 +922,8 @@ h4 {
 }
 @media (max-width: 767.98px) {
   #tager-marketing .container {
-    font-size: 36px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   #tager-marketing .container .marketing-contents {
     flex-direction: column;
@@ -1096,23 +1106,32 @@ footer #copy-rights .container {
   }
 }
 
-#contact-banner {
+.contact-banner {
   background-image: url("../images/contact/07_contact_banner.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   height: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#contact-banner .contact-text {
+.contact-banner .contact-text {
   color: #fff;
   font-size: 60px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-#contact-banner img {
+.contact-banner img {
   width: 100%;
+}
+
+.contact-banner.mobil {
+  background-image: url("../images/mobile/633@2x.png");
+  background-size: cover;
 }
 
 #contact {
@@ -1194,6 +1213,11 @@ footer #copy-rights .container {
   #contact form .other {
     width: 100%;
     margin: 0;
+  }
+  #contact form .other-required2 {
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
   }
 }
 
