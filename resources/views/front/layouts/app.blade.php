@@ -34,6 +34,10 @@
     <link rel="stylesheet" href="{{ asset('theme/vendor/css/rtl/colors.css') }}" class="theme-settings-colors-css">
     <!-- <link rel="stylesheet" href="{{ asset('theme/vendor/css/rtl/uikit.css') }}"> -->
     <link rel="stylesheet" href="{{ asset('theme/vendor/css/uikit.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </link>
 
     <script src="{{ asset('theme/vendor/js/material-ripple.js') }}"></script>
     <script src="{{ asset('theme/vendor/js/layout-helpers.js') }}"></script>
@@ -105,11 +109,31 @@
 <!-- Libs -->
 <script src="{{ asset('theme/vendor/libs/swiper/swiper.js') }}"></script>
 <script src="{{ asset('theme/vendor/libs/plyr/plyr.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <!-- Page -->
 <script src="{{ asset(mix('js/front.js')) }}"></script>
 
 @yield('scripts')
-
+<script>
+$(".owl-carousel").owlCarousel({
+  loop: true, // 循環播放
+  margin: 10, // 外距 10px
+  autoplay:true,
+  autoplayTimeout:1500,
+  autoplayHoverPause:true,
+  responsive: {
+    0: {
+      items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+    },
+    600: {
+      items: 1 // 螢幕大小為 600~1000 顯示 3 個項目
+    },
+    1000: {
+      items: 1 // 螢幕大小為 1000 以上 顯示 5 個項目
+    }
+  }
+});
+</script>
 </body>
 </html>

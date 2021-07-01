@@ -6,7 +6,36 @@
 <div id="slider">
 
   <!-- 手機 -->
-  <div class="d-sm-block d-md-none uk-position-relative uk-visible-toggle uk-light"
+  <div class="owl-carousel owl-theme d-sm-block d-md-none">
+    <div class="item">
+      <img src="{{ asset('images/mobile/630@2x.png') }}" alt="手機輪播圖01" style="height:370px;width:100%;">
+      <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;flex-direction: column;justify-content: center;align-items:center;width:100%;">
+          <h2 class="uk-margin-remove" style="font-size: 30px;padding-bottom:10px;line-height: 36px;text-align:center;">今天策劃，<br>明天上線！</h2>
+          <p class="uk-margin-remove" style="font-size: 18px;color:#FFD248;">
+            簡單一站式辦活動，<br>讓你加快行銷節奏
+          </p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{ asset('images/mobile/631@2x.png') }}" style="height:370px;width:100%;" alt="手機輪播圖02">
+      <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;flex-direction: column;justify-content: center;align-items:center;width:100%;">
+          <h2 class="uk-margin-remove" style="font-size: 30px;padding-bottom:10px;line-height: 36px;text-align:center;">⽉付3000，百位<br>素⼈為你證⾔</h2>
+          <p class="uk-margin-remove" style="font-size: 18px;color:#FFD248;text-align:center;">
+          新朋友嗎？首次上架免費，<br>快去諮詢吧！
+          </p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{ asset('images/mobile/632@2x.png') }}" style="height:370px;width:100%;" alt="手機輪播圖03">
+      <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;flex-direction: column;justify-content: center;align-items:center;width:100%;">
+          <h2 class="uk-margin-remove" style="font-size: 30px;padding-bottom:10px;line-height: 36px;text-align:center;">超過8000位 <br> KOC任您挑選</h2>
+          <p class="uk-margin-remove" style="font-size: 18px;color:#FFD248;text-align:center;">
+          真實⽣活化的素⼈⼤使，在朋友圈<br>具有影響⼒，粉絲數⾼於1000+！
+          </p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="d-sm-block d-md-none uk-position-relative uk-visible-toggle uk-light"
     tabindex="-1" uk-slideshow="animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
     <ul class="uk-slideshow-items">
       <li>
@@ -37,10 +66,43 @@
         </div>
       </li>
     </ul>
-  </div>
+  </div> -->
 
   <!-- 平板以上 -->
-  <div class="d-none d-md-block uk-position-relative uk-visible-toggle uk-light"
+  <div class="owl-carousel owl-theme d-none d-md-block">
+    <div class="item">
+      <img src="{{ asset('images/nav/01_index_banner_1-3.jpg') }}" alt="輪播圖03" style="height:400px;width:100%;">
+      <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
+        flex-direction: column;justify-content: center;margin-left: 10%;">
+            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">今天策劃，明天上線！</h2>
+            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
+              簡單一站式辦活動，讓你加快行銷節奏
+            </p>
+        </div>
+    </div>
+    <div class="item">
+      <img src="{{ asset('images/nav/01_index_banner_1-2.jpg') }}" alt="輪播圖02" style="height:400px;width:100%;">
+      <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
+        flex-direction: column;justify-content: center;margin-left: 10%;">
+            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">⽉付3000，百位素⼈為你證⾔</h2>
+            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
+              新朋友嗎？首次上架免費，快去諮詢吧！
+            </p>
+        </div>
+    </div>
+    <div class="item">
+      <img src="{{ asset('images/nav/01_index_banner_1-1.jpg') }}" style="height:400px;width:100%;" alt="輪播圖01">
+      <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
+        flex-direction: column;justify-content: center;margin-left: 10%;">
+            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">超過8000位KOC任您挑選</h2>
+            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
+              真實⽣活化的素⼈⼤使，在朋友圈具有影響⼒， <br>
+              粉絲數⾼於1000+！
+            </p>
+        </div>
+    </div>
+  </div>
+  <!-- <div class="d-none d-md-block uk-position-relative uk-visible-toggle uk-light"
     tabindex="-1" uk-slideshow="max-height: 400;animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
     <ul class="uk-slideshow-items">
       <li>
@@ -76,29 +138,36 @@
       </li>
     </ul>
   </div>
-</div>
+  <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+</div> -->
 
 <!-- 區塊四 共同推廣-->
 <div id="common-promote">
-  <div class="container">
-    <div class="desc">
-      <h1 class="d-sm-block d-md-none">與真正喜歡你產品的<br>消費者共同推廣</h1>
-      <h1 class="d-none d-md-block" style=
-      "font-size: 37px;">與真正喜歡你產品的消費者 <br> 共同推廣</h1>
-      <div class="desc-text">
-        Hashtager貼嗑上聚集上萬位在朋友圈中具有影響力的KOC（Key Opinion Consumer，翻譯為關鍵意見消費者，廣義稱為素人網紅，是IG粉絲數介於500至5,000人）。他們熱愛嚐鮮、喜歡體驗新的事物，並且熱衷於分享生活中的大小事，他們各個是IG上的活躍人物，我們稱他們為貼嗑仔。
-      </div>
-      <div class="desc-text">
-        透過在Hashtager貼嗑上舉辦活動，你可以快速從中找到對你的產品、品牌感興趣並且符合品牌、產品理念的KOC，讓他們來為你的產品發表體驗後的真實感受，在對產品、品牌高度興趣之下分享出來的口碑心得，口碑影響力更勝於一般KOC。
+  <div class="d-flex justify-content-center">
+    <div class="container d-flex justify-content-end">
+      <div class="desc">
+        <h1 class="d-sm-block d-md-none">與真正喜歡你產品的<br>消費者共同推廣</h1>
+        <h1 class="d-none d-md-block" style=
+        "font-size: 37px;">與真正喜歡你產品的消費者 <br> 共同推廣</h1>
+        <div class="desc-text">
+          Hashtager貼嗑上聚集上萬位在朋友圈中具有影響力的KOC（Key Opinion Consumer，翻譯為關鍵意見消費者，廣義稱為素人網紅，是IG粉絲數介於500至5,000人）。他們熱愛嚐鮮、喜歡體驗新的事物，並且熱衷於分享生活中的大小事，他們各個是IG上的活躍人物，我們稱他們為貼嗑仔。
+        </div>
+        <div class="desc-text">
+          透過在Hashtager貼嗑上舉辦活動，你可以快速從中找到對你的產品、品牌感興趣並且符合品牌、產品理念的KOC，讓他們來為你的產品發表體驗後的真實感受，在對產品、品牌高度興趣之下分享出來的口碑心得，口碑影響力更勝於一般KOC。
+        </div>
       </div>
     </div>
+    <img class="promote-img" src="{{ asset('images/index/top_img.png') }}" alt="共同推廣背景圖">
   </div>
-  <div class="promote-img">
-    <img class="img-fluid" src="{{ asset('images/index/top_img.png') }}" alt="共同推廣背景圖">
-  </div>
+  <!-- <div class="promote-img"> -->
+
+  <!-- </div> -->
 </div>
 
 <!-- 嗑仔們的特質 -->
+<div>
+
+
 <div id="tager-feature">
   <div class="container">
     <h1 class="text-center">這些貼嗑仔們的特質...</h1>
@@ -134,7 +203,7 @@
   </div>
   <div class="bottom-bg d-none d-md-block"></div>
 </div>
-
+</div>
 <!-- tager-KOC -->
 <div id="tager-KOC">
   <div class="container d-flex justify-content-between">
@@ -247,11 +316,8 @@
             因此對於品牌而言，長期在IG上耕耘，創造聲量，並且在重要的#Hashtag牆中露出自家的產品內容，建立屬於自己的#Hashtag牆，是提升與其他品牌競爭力的關鍵。
           </div>
           <div class="free-program">
-            <a href="{{ url('contact') }}" target="_blank">諮詢免費方案</a>
+            <a href="{{ url('contact') }}">諮詢免費方案</a>
           </div>
-          <!-- <div class="free-program d-sm-block d-md-none">
-            <a href="#">申請活動上架</a>
-          </div> -->
         </div>
       </div>
     </div>
@@ -484,7 +550,7 @@
     <h1>開始辦活動</h1>
     <h3 class="d-none d-md-block">貼嗑一站式辦活動，讓你不費吹灰之力，輕鬆舉辦體驗活動</h3>
     <h3 class="d-sm-block d-md-none">貼嗑一站式辦活動，讓你不費吹灰之力，<br>輕鬆舉辦體驗活動</h3>
-    <a href="{{ url('contact') }}" target="_blank" class="go-btn">GO</a>
+    <a href="{{ url('contact') }}" class="go-btn">GO</a>
   </div>
 </div>
 @endsection

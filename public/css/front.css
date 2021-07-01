@@ -211,59 +211,75 @@ h4 {
   max-width: 100%;
 }
 
+.owl-theme .owl-nav.disabled + .owl-dots {
+  position: absolute;
+  z-index: 999;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.owl-dot:focus {
+  outline: none;
+}
+
 #common-promote {
   position: relative;
+  margin-bottom: 100px;
 }
 #common-promote .container {
   padding: 0;
 }
 #common-promote .desc {
-  width: 50%;
-  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 90%;
+}
+@media (min-width: 1200px) {
+  #common-promote .desc {
+    width: 75%;
+  }
 }
 #common-promote .desc h1 {
   font-size: 36px;
 }
 #common-promote .desc .desc-text {
   margin-top: 10px;
+  width: 87%;
 }
 #common-promote .promote-img {
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-right: 0;
   width: 50%;
+  height: auto;
 }
 #common-promote .promote-img img {
-  height: 750px;
   width: 100%;
 }
-@media (min-width: 768px) and (max-width: 1439px) {
-  #common-promote .desc {
-    height: 600px;
-  }
-  #common-promote .promote-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-  }
-  #common-promote .promote-img img {
-    height: 550px;
+@media (min-width: 768px) and (max-width: 1024px) {
+  #common-promote .desc .desc-text {
     width: 100%;
   }
 }
 @media (max-width: 767.98px) {
+  #common-promote {
+    margin-bottom: 0px;
+  }
+  #common-promote div {
+    flex-direction: column;
+  }
   #common-promote .container {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
   #common-promote .desc {
     width: 100%;
-    height: 500px;
+    margin-bottom: 40px;
     display: unset;
+  }
+  #common-promote .desc .desc-text {
+    width: 100%;
   }
   #common-promote .desc h1 {
     font-size: 30px;
@@ -442,7 +458,7 @@ h4 {
   }
 }
 #excellent-koc .container {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 #excellent-koc h1 {
   margin-bottom: 40px;
@@ -782,15 +798,14 @@ h4 {
   line-height: 44px;
   margin-bottom: 5px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 #platform-advantage .desc-list .box-list .title .white_num {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #FF6B39;
   text-align: center;
-  font-size: 40px;
-  padding: 5px 14px;
+  font-size: 26px;
   color: #fff;
   font-weight: 900;
   margin-right: 10px;
