@@ -16,13 +16,43 @@
   </h2>
 </div>
 
-<div id="what-ugc">
+<!-- 用戶心得 -->
+<div id="client-thouhts">
   <div class="container">
-    <h2>
-      什麼是<span>UGC(User Generated Content)？</span>
-    </h2>
-    <h3>UGC就是用戶原創內容，自產自出的圖文創作。</h3>
+    <h1>比起單純廣告代言，消費者更相信真實體驗用戶的心得</h1>
+    <div class="thoughts-contents">
+      <div class="thoughts-box">
+        <div class="data-img">
+          <img class="img-fluid" src="{{ asset('images/ugc/customer90@2x.png') }}"  alt="">
+        </div>
+        <div class="thoughts-desc">
+          <div class="thoughts-icon">
+            <img class="img-fluid" src="{{ asset('images/ugc/862@2x.png') }}" alt="">
+          </div>
+          <p>
+          90%的消費者相信UGC貼文能加強影響他們的購買決定，並認為它會是品牌可信度及真實性的關鍵指標。
+          </p>
+        </div>
+        <img class="gray-triangle" src="{{ asset('images/ugc/1165@2x.png') }}" alt="">
+      </div>
+
+      <div class="thoughts-box">
+        <div class="data-img">
+          <img class="img-fluid" src="{{ asset('images/ugc/client78@2x.png') }}"  alt="">
+        </div>
+        <div class="thoughts-desc">
+          <div class="thoughts-icon">
+            <img class="img-fluid" src="{{ asset('images/ugc/865@2x.png') }}" alt="">
+          </div>
+          <p>
+          近8成的網友會選擇相信朋友的推薦更勝過於一般的廣告。
+          </p>
+        </div>
+        <img class="gray-triangle" src="{{ asset('images/ugc/1165@2x.png') }}" alt="">
+      </div>
+    </div>
   </div>
+
 </div>
 
 @endsection

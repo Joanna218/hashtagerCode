@@ -613,7 +613,7 @@ h4 {
 
 // Hashtag活動
 #hashtager-campaign {
-  padding-top: 222px;
+  padding-top: 180px;
   padding-bottom: 120px;
   h1 {
     margin: 0;
@@ -1328,6 +1328,62 @@ footer {
 .ugc-mobil-banner {
   background-image: url('../images/mobile/991@2x.png');
   background-size: cover;;
+}
+
+// 用戶心得，平板以下為手機排版
+#client-thouhts {
+  max-width: 1024px;
+  margin: 0 auto;
+  .container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 0;
+    h1 {
+      font-size: 39px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .thoughts-contents {
+      display: flex;
+      justify-content: space-between;
+      .thoughts-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 15px;
+        box-shadow: 0 0 20px 0 rgb(0 0 0 / 16%);
+        border-radius: 10px;
+        position: relative;
+        background-color: #fff;
+        .data-img {
+          width: 220px;
+          max-height: 250px;
+          display: flex;
+          align-items: center;
+        }
+        .thoughts-desc {
+          display: flex;
+          flex-direction: column;
+          width: 214px;
+          .thoughts-icon {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
+        .gray-triangle {
+          width: 125px;
+          height: 105px;
+          position: absolute;
+          right: -10px;
+          bottom: -10px;
+          z-index: -999;
+        }
+      }
+    }
+  }
 }
 
 /*
