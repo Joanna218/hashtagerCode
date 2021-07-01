@@ -198,7 +198,7 @@
     e.preventDefault();
     if ($('.contact-person2').val() == "" || $('.contact-tel2').val()=="" ||
     $('.corporation2').val() == "" || $('.email2').val() == "") {
-      alert("請輸入必填資訊！");
+      // alert("請輸入必填資訊！");
       return false;
     }
     if ($('.other-required').val() == "") {
