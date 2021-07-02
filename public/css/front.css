@@ -1535,6 +1535,67 @@ footer #copy-rights .container {
   }
 }
 
+#resolve {
+  background-color: #F4F4F4;
+}
+#resolve .container {
+  padding: 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+#resolve .container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#resolve .container h3 {
+  text-align: center;
+  color: #F58A07;
+  margin-bottom: 40px;
+}
+#resolve .container .resolve-contents {
+  display: flex;
+  justify-content: space-between;
+}
+#resolve .container .resolve-contents .resolve-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#resolve .container .resolve-contents .resolve-box .tradition {
+  text-align: center;
+  color: #000;
+}
+#resolve .container .resolve-contents .resolve-box .arrow-down {
+  width: 65px;
+  height: 50px;
+  margin: 20px;
+}
+#resolve .container .resolve-contents .resolve-box h3 {
+  color: #000;
+  font-size: 20px;
+  margin: 10px 0;
+}
+#resolve .container .resolve-contents .resolve-box .img-icon {
+  width: 156px;
+  height: 156px;
+}
+#resolve .container .more {
+  text-align: center;
+  padding-top: 60px;
+}
+#resolve .container .more a {
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 8px 30px;
+  background-color: #FFD248;
+  border-radius: 40px;
+}
+#resolve .container .more a:hover {
+  background-color: #FFDB6C;
+}
+
 /*
 // global style setting
 html,

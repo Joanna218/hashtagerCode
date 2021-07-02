@@ -207,4 +207,95 @@
   </div>
 </div>
 
+<!-- 解決方案 -->
+<div id="resolve">
+  <div class="container">
+    <h1>每個問題都有解決方案</h1>
+    <h3>打造最有效果的活動</h3>
+    <div class="resolve-contents">
+      <div class="resolve-box">
+        <div class="tradition">
+          無法確立活動目標 <br>
+          流失目標受眾的注意
+        </div>
+        <div class="arrow-down">
+          <img class="img-fluid" src="{{ asset('images/ugc/arrow-down@2x.png') }}"  alt="">
+        </div>
+        <h3>完整的前期策畫</h3>
+        <div class="img-icon">
+          <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_01@2x.png') }}"  alt="">
+        </div>
+      </div>
+
+      <div class="resolve-box">
+        <div class="tradition">
+          活動宣傳設計困難 <br>
+          一點也不引人注目
+        </div>
+        <div class="arrow-down">
+          <img class="img-fluid" src="{{ asset('images/ugc/arrow-down@2x.png') }}"  alt="">
+        </div>
+        <h3>設計良好的活動素材</h3>
+        <div class="img-icon">
+          <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_02@2x.png') }}"  alt="">
+        </div>
+      </div>
+
+      <div class="resolve-box">
+        <div class="tradition">
+          知名度不夠大 <br>
+          找不到優質消費者分享
+        </div>
+        <div class="arrow-down">
+          <img class="img-fluid" src="{{ asset('images/ugc/arrow-down@2x.png') }}"  alt="">
+        </div>
+        <h3>有效的行銷宣傳</h3>
+        <div class="img-icon">
+          <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_03@2x.png') }}"  alt="">
+        </div>
+      </div>
+
+      <div class="resolve-box">
+        <div class="tradition">
+          活動流程太複雜 <br>
+          消費者參加門檻高
+        </div>
+        <div class="arrow-down">
+          <img class="img-fluid" src="{{ asset('images/ugc/arrow-down@2x.png') }}"  alt="">
+        </div>
+        <h3>優質的活動參與流程</h3>
+        <div class="img-icon">
+          <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_04@2x.png') }}"  alt="">
+        </div>
+      </div>
+
+      <div class="resolve-box">
+        <div class="tradition">
+          活動結束後 <br>
+          聲量就失效
+        </div>
+        <div class="arrow-down">
+          <img class="img-fluid" src="{{ asset('images/ugc/arrow-down@2x.png') }}"  alt="">
+        </div>
+        <h3>UGC整合再利用</h3>
+        <div class="img-icon">
+          <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_05@2x.png') }}"  alt="">
+        </div>
+      </div>
+    </div>
+    <div class="more">
+      <a href="#">查看更多方案</a>
+    </div>
+  </div>
+</div>
+
+<!-- 開始辦活動 -->
+<div id="start-campaign">
+  <div class="container">
+    <h1>開始辦活動</h1>
+    <h3 class="d-none d-md-block">貼嗑一站式辦活動，讓你不費吹灰之力，輕鬆舉辦體驗活動</h3>
+    <h3 class="d-sm-block d-md-none">貼嗑一站式辦活動，讓你不費吹灰之力，<br>輕鬆舉辦體驗活動</h3>
+    <a href="{{ url('contact') }}" class="go-btn">GO</a>
+  </div>
+</div>
 @endsection

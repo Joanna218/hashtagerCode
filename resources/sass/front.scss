@@ -1642,6 +1642,69 @@ footer {
   }
 }
 
+// 解決方案
+#resolve {
+  background-color: #F4F4F4;
+  .container {
+    padding: 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h3 {
+      text-align: center;
+      color: #F58A07;
+      margin-bottom: 40px;
+    }
+    .resolve-contents {
+      display: flex;
+      justify-content: space-between;
+      .resolve-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .tradition {
+          text-align: center;
+          color: #000;
+        }
+        .arrow-down {
+          width: 65px;
+          height: 50px;
+          margin: 20px;
+        }
+        h3 {
+          color: #000;
+          font-size: 20px;
+          margin: 10px 0;
+        }
+        .img-icon {
+          width: 156px;
+          height: 156px;
+        }
+      }
+    }
+
+    .more {
+      text-align: center;
+      padding-top: 60px;
+      a {
+        color: #000;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 8px 30px;
+        background-color: #FFD248;
+        border-radius: 40px;
+        &:hover {
+          background-color: #FFDB6C;
+        }
+      }
+    }
+  }
+}
+
 /*
 // global style setting
 html,
