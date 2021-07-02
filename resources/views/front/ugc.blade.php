@@ -69,8 +69,6 @@
 
     </div>
   </div>
-
-
 </div>
 
 <!-- 運用UGC內容 -->
@@ -89,6 +87,23 @@
     <div class="social-way-bg">
     </div>
 
+  </div>
+</div>
+
+<!-- UGC產生 -->
+<div id="ugc-produce">
+<div class="bg-wrapper">
+    <div class="triangle-bgc">
+      <div class="desc">
+        <h1>持續舉辦活動 主動刺激UGC產生</h1>
+        <p>
+          透過長期性、經常的舉辦活動，刺激與消費者的互動，產出大量且有內容的UGC圖文。再透過與其他整合行銷活動的結合，一步步創造品牌聲譽並提高產品的銷量！
+        </p>
+      </div>
+    </div>
+    <div class="gray-bgc">
+      <img src="{{ asset('images/ugc/ugc_img_05@2x.png') }}" alt="">
+    </div>
   </div>
 </div>
 
