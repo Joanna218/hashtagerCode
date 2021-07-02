@@ -55,4 +55,22 @@
 
 </div>
 
+<!-- 什麼是UGC -->
+<div id="ugc-contents">
+  <div class="bg-wrapper">
+    <div class="triangle-bgc">
+      <img src="{{ asset('images/ugc/ugc_img_03@2x.png') }}" alt="">
+    </div>
+    <div class="gray-bgc">
+      <div class="ugc-desc">
+        <h1>什麼是UGC（User <br> Generated Content)？</h1>
+        <p>UGC直接翻譯稱作用戶原創內容，是消費者自行拍攝照片、寫出文章，由自己發想的原創內容。簡單來說UGC是一種消費者分享生活的同時幫品牌也做了宣傳，打卡牆就是一種例子。</p>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
 @endsection

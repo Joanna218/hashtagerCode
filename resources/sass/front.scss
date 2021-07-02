@@ -1399,6 +1399,40 @@ footer {
   }
 }
 
+#ugc-contents {
+  .bg-wrapper {
+    display: flex;
+    .triangle-bgc {
+      width: 50%;
+      height: auto;
+      background: linear-gradient(to bottom left, #FFD248 0%, #FFD248 50%, #FFDB6C 50%, #FFDB6C 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60%;
+        margin: 100px;
+      }
+    }
+    .gray-bgc {
+      width: 50%;
+      height: auto;
+      background-color: #F4F4F4;
+      display: flex;
+      align-items: center;
+      .ugc-desc {
+        margin: 100px 0px 100px 10%;
+        h1 {
+          width: 95%;
+        }
+        p {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+
 /*
 // global style setting
 html,

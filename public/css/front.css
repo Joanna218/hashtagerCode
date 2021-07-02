@@ -1312,6 +1312,38 @@ footer #copy-rights .container {
   z-index: -999;
 }
 
+#ugc-contents .bg-wrapper {
+  display: flex;
+}
+#ugc-contents .bg-wrapper .triangle-bgc {
+  width: 50%;
+  height: auto;
+  background: linear-gradient(to bottom left, #FFD248 0%, #FFD248 50%, #FFDB6C 50%, #FFDB6C 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ugc-contents .bg-wrapper .triangle-bgc img {
+  width: 60%;
+  margin: 100px;
+}
+#ugc-contents .bg-wrapper .gray-bgc {
+  width: 50%;
+  height: auto;
+  background-color: #F4F4F4;
+  display: flex;
+  align-items: center;
+}
+#ugc-contents .bg-wrapper .gray-bgc .ugc-desc {
+  margin: 100px 0px 100px 10%;
+}
+#ugc-contents .bg-wrapper .gray-bgc .ugc-desc h1 {
+  width: 95%;
+}
+#ugc-contents .bg-wrapper .gray-bgc .ugc-desc p {
+  width: 85%;
+}
+
 /*
 // global style setting
 html,
