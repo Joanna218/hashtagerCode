@@ -1344,6 +1344,31 @@ footer #copy-rights .container {
   width: 85%;
 }
 
+#ugc-advertisement .container {
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ugc-advertisement .container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#ugc-advertisement .container .desc {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+#ugc-advertisement .container .social-way-bg {
+  background-image: url(../images/ugc/ugc_img_04@2x.png);
+  width: 100%;
+  background-size: contain;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*
 // global style setting
 html,
