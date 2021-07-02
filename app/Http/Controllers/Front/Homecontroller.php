@@ -35,6 +35,9 @@ class HomeController extends Controller
       $to1 = ['email'=>'jcli@indexasia.com.tw',
       'name'=>'Hashtager舉辦活動'];
 
+      $to2 = ['email'=>'hsinhuei.li@indexasia.com.tw',
+      'name'=>'Hashtager舉辦活動'];
+
       // 信件的內容(即表單填寫的資料)
       $data = [
         'moreContents'=> $request['more-contents'],
@@ -55,6 +58,11 @@ class HomeController extends Controller
       Mail::send('front.post', $data, function($message) use ($from, $to1, $subject) {
         $message->from($from['email'], $from['name']);
         $message->to($to1['email'], $to1['name'])->subject($subject);
+        });
+
+      Mail::send('front.post', $data, function($message) use ($from, $to2, $subject) {
+        $message->from($from['email'], $from['name']);
+        $message->to($to2['email'], $to2['name'])->subject($subject);
         });
 
       // $data = $request->all();
