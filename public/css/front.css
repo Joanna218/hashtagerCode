@@ -1398,6 +1398,143 @@ footer #copy-rights .container {
   padding: 60px;
 }
 
+#campaign-indicator .campaign-indicator-wrapper {
+  margin: 120px auto;
+  width: 90%;
+  max-width: 1440px;
+}
+#campaign-indicator .campaign-indicator-wrapper h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+#campaign-indicator .campaign-indicator-wrapper h3 {
+  color: #F58A07;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents {
+  margin-top: 80px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc {
+  width: 60%;
+  border-radius: 10px;
+  padding: 30px 20px 30px 20px;
+  position: relative;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title {
+  border-radius: 50px;
+  background-color: #FFD248;
+  position: absolute;
+  top: -10%;
+  width: 100%;
+  left: -3%;
+  display: flex;
+  padding: 7px 25px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title .white_num {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 26px;
+  color: #FF6B39;
+  font-weight: 900;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title h2 {
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .p {
+  width: 72%;
+  margin-left: 33px;
+  color: #000;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .p2 {
+  width: 63%;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .p3 {
+  width: 63%;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check {
+  margin-left: 33px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check h4 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check h4 img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .tag-contents {
+  display: flex;
+  margin-left: 33px;
+  margin-top: 30px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .tag-contents .tag-item {
+  background-color: #DBDBDB;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-img {
+  width: 30%;
+  padding: 30px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-img p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 12px;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-img3 {
+  padding-top: 40px;
+}
+@media (max-width: 1390px) and (min-width: 1024px) {
+  #campaign-indicator .campaign-indicator-wrapper {
+    width: 95%;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents {
+    margin-top: 80px;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc {
+    width: 65%;
+    padding: 20px 20px 20px 20px;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1390px) and (min-width: 1024px) and (max-width: 1200px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1390px) and (min-width: 1024px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .tag-contents .tag-item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1390px) and (min-width: 1024px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-img {
+    padding: 0;
+  }
+}
+
 /*
 // global style setting
 html,
