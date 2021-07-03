@@ -19,14 +19,16 @@
 <!-- 用戶心得 -->
 <div id="client-thouhts">
   <div class="container">
-    <h1>比起單純廣告代言，消費者更相信真實體驗用戶的心得</h1>
+    <h1 class="d-none d-lg-block">比起單純廣告代言，消費者更相信真實體驗用戶的心得</h1>
+    <h1 class="d-md-block d-lg-none">比起單純廣告代言，<br>消費者更相信真實體驗用戶的心得</h1>
     <div class="thoughts-contents">
       <div class="thoughts-box">
         <div class="data-img">
-          <img class="img-fluid" src="{{ asset('images/ugc/customer90@2x.png') }}"  alt="">
+          <img class="img-fluid d-none d-lg-block" src="{{ asset('images/ugc/customer90@2x.png') }}"  alt="">
+          <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt="">
         </div>
         <div class="thoughts-desc">
-          <div class="thoughts-icon">
+          <div class="thoughts-icon d-none d-lg-block">
             <img class="img-fluid" src="{{ asset('images/ugc/862@2x.png') }}" alt="">
           </div>
           <p>
@@ -38,10 +40,11 @@
 
       <div class="thoughts-box">
         <div class="data-img">
-          <img class="img-fluid" src="{{ asset('images/ugc/client78@2x.png') }}"  alt="">
+          <img class="img-fluid d-none d-lg-block" src="{{ asset('images/ugc/client78@2x.png') }}"  alt="">
+          <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt="">
         </div>
         <div class="thoughts-desc">
-          <div class="thoughts-icon">
+          <div class="thoughts-icon d-none d-lg-block">
             <img class="img-fluid" src="{{ asset('images/ugc/865@2x.png') }}" alt="">
           </div>
           <p>

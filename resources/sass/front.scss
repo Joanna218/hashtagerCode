@@ -1384,6 +1384,7 @@ footer {
           }
           p {
             margin-bottom: 0;
+            color: #000;
           }
         }
         .gray-triangle {
@@ -1393,6 +1394,28 @@ footer {
           right: -10px;
           bottom: -10px;
           z-index: -999;
+        }
+      }
+    }
+
+    // 平板以下 手機版顯示
+    @include media-breakpoint-down(md) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      padding: 0 .75rem;
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .thoughts-contents {
+        flex-direction: column;
+        padding: 0 .75rem;
+        .thoughts-box {
+          flex-direction: column;
+          padding: 50px;
+          justify-content: center;
+          align-items: center;
+          margin: 40px 0px;
         }
       }
     }

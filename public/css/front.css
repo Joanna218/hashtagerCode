@@ -1302,6 +1302,7 @@ footer #copy-rights .container {
 }
 #client-thouhts .container .thoughts-contents .thoughts-box .thoughts-desc p {
   margin-bottom: 0;
+  color: #000;
 }
 #client-thouhts .container .thoughts-contents .thoughts-box .gray-triangle {
   width: 125px;
@@ -1310,6 +1311,28 @@ footer #copy-rights .container {
   right: -10px;
   bottom: -10px;
   z-index: -999;
+}
+@media (max-width: 991.98px) {
+  #client-thouhts .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 0.75rem;
+  }
+  #client-thouhts .container h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  #client-thouhts .container .thoughts-contents {
+    flex-direction: column;
+    padding: 0 0.75rem;
+  }
+  #client-thouhts .container .thoughts-contents .thoughts-box {
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+  }
 }
 
 #ugc-contents .bg-wrapper {
