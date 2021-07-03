@@ -1366,6 +1366,21 @@ footer #copy-rights .container {
 #ugc-contents .bg-wrapper .gray-bgc .ugc-desc p {
   width: 85%;
 }
+@media (max-width: 767.98px) {
+  #ugc-contents .bg-wrapper .triangle-bgc {
+    width: 100%;
+    flex-direction: column;
+    padding: 40px 0.75rem;
+  }
+  #ugc-contents .bg-wrapper .triangle-bgc h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #ugc-contents .bg-wrapper .triangle-bgc img {
+    margin: unset;
+    width: 80%;
+  }
+}
 
 #ugc-advertisement .container {
   margin: 120px auto;
