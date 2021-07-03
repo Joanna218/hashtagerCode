@@ -18,6 +18,11 @@ class HomeController extends Controller
         return view('front.ugc');
     }
 
+    public function service()
+    {
+        return view('front.service');
+    }
+
     public function contact()
     {
         return view('front.contact');
