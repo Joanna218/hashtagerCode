@@ -246,6 +246,7 @@
         <div class="img-icon">
           <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_01@2x.png') }}"  alt="">
         </div>
+        <div class="mobile-hr d-sm-block d-lg-none"></div>
       </div>
 
       <div class="resolve-box">
@@ -260,6 +261,7 @@
         <div class="img-icon">
           <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_02@2x.png') }}"  alt="">
         </div>
+        <div class="mobile-hr d-sm-block d-lg-none"></div>
       </div>
 
       <div class="resolve-box">
@@ -274,6 +276,7 @@
         <div class="img-icon">
           <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_03@2x.png') }}"  alt="">
         </div>
+        <div class="mobile-hr d-sm-block d-lg-none"></div>
       </div>
 
       <div class="resolve-box">
@@ -288,6 +291,7 @@
         <div class="img-icon">
           <img class="img-fluid" src="{{ asset('images/ugc/ugc_icon_04@2x.png') }}"  alt="">
         </div>
+        <div class="mobile-hr d-sm-block d-lg-none"></div>
       </div>
 
       <div class="resolve-box">
