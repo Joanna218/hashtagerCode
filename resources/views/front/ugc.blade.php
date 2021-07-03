@@ -19,8 +19,8 @@
 <!-- 用戶心得 -->
 <div id="client-thouhts">
   <div class="container">
-    <h1 class="d-none d-lg-block">比起單純廣告代言，消費者更相信真實體驗用戶的心得</h1>
-    <h1 class="d-md-block d-lg-none">比起單純廣告代言，<br>消費者更相信真實體驗用戶的心得</h1>
+    <h1 class="d-none d-md-block">比起單純廣告代言，消費者更相信真實體驗用戶的心得</h1>
+    <h1 class="d-sm-block d-md-none">比起單純廣告代言，<br>消費者更相信真實體驗用戶的心得</h1>
     <div class="thoughts-contents">
       <div class="thoughts-box">
         <div class="data-img">
@@ -41,7 +41,7 @@
       <div class="thoughts-box">
         <div class="data-img">
           <img class="img-fluid d-none d-lg-block" src="{{ asset('images/ugc/client78@2x.png') }}"  alt="">
-          <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt="">
+          <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/78@2x.png') }}"  alt="">
         </div>
         <div class="thoughts-desc">
           <div class="thoughts-icon d-none d-lg-block">
@@ -106,7 +106,7 @@
 <!-- UGC產生 -->
 <div id="ugc-produce">
   <div class="bg-wrapper">
-    <div class="triangle-bgc">
+    <div class="triangle-bgc d-none d-md-flex">
       <div class="desc">
         <h1>持續舉辦活動 主動刺激UGC產生</h1>
         <p>
@@ -115,7 +115,14 @@
       </div>
     </div>
     <div class="gray-bgc">
-      <img src="{{ asset('images/ugc/ugc_img_05@2x.png') }}" alt="">
+      <div class="desc d-sm-block d-md-none">
+        <h1>持續舉辦活動<br>主動刺激UGC產生</h1>
+        <p>
+          透過長期性、經常的舉辦活動，刺激與消費者的互動，產出大量且有內容的UGC圖文。再透過與其他整合行銷活動的結合，一步步創造品牌聲譽並提高產品的銷量！
+        </p>
+      </div>
+      <img class="d-none d-md-block" src="{{ asset('images/ugc/ugc_img_05@2x.png') }}" alt="">
+      <img class="d-sm-block d-md-none" src="{{ asset('images/mobile/ugc_img_05@2x.png') }}" alt="">
     </div>
   </div>
 </div>

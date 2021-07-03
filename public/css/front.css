@@ -1319,7 +1319,7 @@ footer #copy-rights .container {
     padding: 0 0.75rem;
   }
   #client-thouhts .container h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   #client-thouhts .container .thoughts-contents {
@@ -1370,7 +1370,7 @@ footer #copy-rights .container {
   #ugc-contents .bg-wrapper .triangle-bgc {
     width: 100%;
     flex-direction: column;
-    padding: 40px 0.75rem;
+    padding: 40px 1rem;
   }
   #ugc-contents .bg-wrapper .triangle-bgc h1 {
     text-align: center;
@@ -1408,11 +1408,14 @@ footer #copy-rights .container {
 }
 @media (max-width: 767.98px) {
   #ugc-advertisement .container {
-    margin: 60px auto;
+    margin: 40px auto;
     margin-bottom: 20px;
   }
   #ugc-advertisement .container h1 {
     margin-top: 0px;
+  }
+  #ugc-advertisement .container .desc {
+    width: 100%;
   }
   #ugc-advertisement .container .mobile-social-way {
     display: flex;
@@ -1458,6 +1461,27 @@ footer #copy-rights .container {
 }
 #ugc-produce .bg-wrapper .gray-bgc img {
   padding: 60px;
+}
+@media (max-width: 767.98px) {
+  #ugc-produce .bg-wrapper .gray-bgc {
+    width: 100%;
+    flex-direction: column;
+    padding: 40px 1rem;
+  }
+  #ugc-produce .bg-wrapper .gray-bgc .desc {
+    text-align: center;
+  }
+  #ugc-produce .bg-wrapper .gray-bgc .desc h1 {
+    margin-bottom: 40px;
+  }
+  #ugc-produce .bg-wrapper .gray-bgc .desc p {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  #ugc-produce .bg-wrapper .gray-bgc img {
+    padding: 0px;
+    padding: 0px 20px;
+  }
 }
 
 #campaign-indicator .campaign-indicator-wrapper {

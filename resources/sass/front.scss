@@ -1404,7 +1404,7 @@ footer {
       margin-bottom: 60px;
       padding: 0 .75rem;
       h1 {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 40px;
       }
       .thoughts-contents {
@@ -1459,7 +1459,7 @@ footer {
       .triangle-bgc {
         width: 100%;
         flex-direction: column;
-        padding: 40px .75rem;
+        padding: 40px 1rem;
         h1 {
           text-align: center;
           margin-bottom: 40px;
@@ -1501,10 +1501,13 @@ footer {
     }
 
     @include media-breakpoint-down(sm) {
-      margin: 60px auto;
+      margin: 40px auto;
       margin-bottom: 20px;
       h1 {
         margin-top: 0px;
+      }
+      .desc {
+        width: 100%;
       }
       .mobile-social-way {
         display: flex;
@@ -1552,6 +1555,28 @@ footer {
       align-items: center;
       img {
         padding: 60px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .gray-bgc {
+        width: 100%;
+        flex-direction: column;
+        padding: 40px 1rem;
+        .desc {
+          text-align: center;
+          h1 {
+            margin-bottom: 40px;
+          }
+          p {
+            margin-bottom: 40px;
+            text-align: left;
+          }
+        }
+        img {
+          padding: 0px;
+          padding: 0px 20px;
+        }
       }
     }
   }
