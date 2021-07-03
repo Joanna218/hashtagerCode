@@ -79,7 +79,8 @@
 <!-- 運用UGC內容 -->
 <div id="ugc-advertisement">
   <div class="container">
-    <h1>運用UGC內容  讓廣告效果倍增</h1>
+    <h1 class="d-none d-md-block">運用UGC內容  讓廣告效果倍增</h1>
+    <h1 class="d-sm-block d-md-none">運用UGC內容 <br> 讓廣告效果倍增</h1>
     <div class="desc">
       <p>
         數位行銷的渠道多元，品牌需因應各渠道的屬性，需要發想並製作大量不同的行銷素材。為減少素材產出的成本，並且提高成效，國內外眾多品牌已經開始採用經由消費者授權的社群貼文，作為經營品牌的素材內容。除了可以減去自產大量素材的繁雜性，最重要的是行銷效果能夠更卓越！
@@ -87,9 +88,16 @@
       <p>
       與此同時，當品牌良好地運用經過授權所分享的UGC內容，其實也增加了與消費者的互動，加深對於品牌及產品的認同感。
     </p>
+
+    <div class="d-sm-block d-md-none mobile-social-way">
+      <h1>貼嗑推薦的社群貼文<br>3大再利用方式</h1>
+      <img src="{{ asset('images/mobile/social-way-991@2x.png') }}" alt="">
+      <img src="{{ asset('images/mobile/social-way-992@2x.png') }}" alt="">
+      <img src="{{ asset('images/mobile/social-way-993@2x.png') }}" alt="">
+    </div>
     </div>
 
-    <div class="social-way-bg">
+    <div class="social-way-bg d-none d-md-block">
     </div>
 
   </div>

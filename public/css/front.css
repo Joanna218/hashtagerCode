@@ -1406,6 +1406,30 @@ footer #copy-rights .container {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 767.98px) {
+  #ugc-advertisement .container {
+    margin: 60px auto;
+    margin-bottom: 20px;
+  }
+  #ugc-advertisement .container h1 {
+    margin-top: 0px;
+  }
+  #ugc-advertisement .container .mobile-social-way {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #ugc-advertisement .container .mobile-social-way h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  #ugc-advertisement .container .mobile-social-way img {
+    width: 232px;
+    height: 218px;
+    margin: 20px 0;
+  }
+}
 
 #ugc-produce .bg-wrapper {
   display: flex;
