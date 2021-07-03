@@ -130,13 +130,14 @@
 <!-- UGC活動指標 -->
 <div id="campaign-indicator">
   <div class="campaign-indicator-wrapper">
-    <h1>衡量UGC活動行銷的三大指標</h1>
+    <h1 class="d-none d-md-block">衡量UGC活動行銷的三大指標</h1>
+    <h1 class="d-sm-block d-md-none">衡量UGC活動行銷<br>的三大指標</h1>
     <h3>優秀的體驗大使、高品質的分享、UGC再行銷利用，三大體驗活動成功要素，缺一不可</h3>
     <div class="indicator-contents">
       <div class="indicator-box">
         <div class="indicator-desc">
           <div class="title">
-            <div class="white_num">1</div>
+            <img src="{{ asset('images/mobile/num1@2x.png') }}" alt="">
             <h2>要如何找到足夠多且優質的體驗大使？</h2>
           </div>
           <p class="p p1">
@@ -145,17 +146,17 @@
           將品牌或產品訊息再次擴散到新的族群，或者加深原本族群品牌的體驗深度。
           </p>
           <div class="check">
-            <h4>
+            <div class="check-item">
               <img src="{{ asset('images/ugc/502@2x.png') }}" alt="">
-              參加者是否符合這次的活動受眾族群？
-            </h4>
-            <h4>
+              <h4>參加者是否符合這次的活動受眾族群？</h4>
+            </div>
+            <div class="check-item">
               <img src="{{ asset('images/ugc/502@2x.png') }}" alt="">
-              參加者是否符合這次的活動受眾族群？
-            </h4>
+              <h4>參加者是否符合這次的活動受眾族群？</h4>
+            </div>
           </div>
         </div>
-        <div class="indicator-img">
+        <div class="indicator-img d-none d-lg-block">
           <img src="{{ asset('images/ugc/ugc_img_06@2x.png') }}" alt="">
         </div>
       </div>
@@ -163,7 +164,7 @@
       <div class="indicator-box">
         <div class="indicator-desc">
           <div class="title">
-            <div class="white_num">2</div>
+            <img src="{{ asset('images/mobile/num2@2x.png') }}" alt="">
             <h2>怎麼確認體驗大使願意互動或分享？</h2>
           </div>
           <p class="p p2">
@@ -172,17 +173,17 @@
             觸及到更多潛在消費者。
           </p>
           <div class="check">
-            <h4>
+            <div class="check-item">
               <img src="{{ asset('images/ugc/502@2x.png') }}" alt="">
-              參加者是否踴躍在社群互動/分享？
-            </h4>
-            <h4>
+              <h4>參加者是否踴躍在社群互動/分享？</h4>
+            </div>
+            <div class="check-item">
               <img src="{{ asset('images/ugc/502@2x.png') }}" alt="">
-              分享的內容是否豐富並且能與活動想傳達訊息一致？
-            </h4>
+              <h4>分享的內容是否豐富並且能與活動想傳達訊息一致？</h4>
+            </div>
           </div>
         </div>
-        <div class="indicator-img">
+        <div class="indicator-img d-none d-lg-block">
           <img src="{{ asset('images/ugc/ugc_img_07@2x.png') }}" alt="">
         </div>
       </div>
@@ -190,7 +191,7 @@
       <div class="indicator-box">
         <div class="indicator-desc">
           <div class="title">
-            <div class="white_num">3</div>
+            <img src="{{ asset('images/mobile/num3@2x.png') }}" alt="">
             <h2>要如何利用UGC再行銷將無形聲量轉換為實際銷量？</h2>
           </div>
           <p class="p p3">
@@ -199,14 +200,14 @@
             不僅成效會比單一的品牌廣告大，成本也遠低於單純的投放廣告。
           </p>
           <div class="check">
-            <h4>
+            <div class="check-item">
               <img src="{{ asset('images/ugc/502@2x.png') }}" alt="">
-              在彙整相關UGC時怎麼檢視成效？
-            </h4>
-            <h4>
+              <h4>在彙整相關UGC時怎麼檢視成效？</h4>
+            </div>
+            <div class="check-item">
               <img src="{{ asset('images/ugc/502@2x.png') }}" alt="">
-              你知道UGC能夠作為素材及靈感進行再次、二次行銷嗎？
-            </h4>
+              <h4>你知道UGC能夠作為素材及靈感進行再次、二次行銷嗎？</h4>
+            </div>
           </div>
           <div class="tag-contents">
             <div class="tag-item">UGC vs 網站 </div>
@@ -215,7 +216,7 @@
             <div class="tag-item">UGC vs 小編PO文</div>
           </div>
         </div>
-        <div class="indicator-img indicator-img3">
+        <div class="indicator-img indicator-img3 d-none d-lg-block">
           <img src="{{ asset('images/ugc/ugc_img_08@2x.png') }}" alt="">
           <p>
           案例： <br>

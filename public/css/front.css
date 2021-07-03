@@ -1523,20 +1523,17 @@ footer #copy-rights .container {
   left: -3%;
   display: flex;
   padding: 7px 25px;
+  align-items: center;
 }
-#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title .white_num {
+@media (max-width: 767.98px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title {
+    top: -40px;
+  }
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title img {
   width: 40px;
   height: 40px;
-  background-color: #fff;
-  text-align: center;
-  font-size: 26px;
-  color: #FF6B39;
-  font-weight: 900;
-  margin-right: 10px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-right: 7px;
 }
 #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title h2 {
   font-size: 28px;
@@ -1545,7 +1542,7 @@ footer #copy-rights .container {
 }
 #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .p {
   width: 72%;
-  margin-left: 33px;
+  margin-left: 30px;
   color: #000;
 }
 #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .p2 {
@@ -1555,21 +1552,32 @@ footer #copy-rights .container {
   width: 63%;
 }
 #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check {
-  margin-left: 33px;
+  margin-left: 30px;
 }
-#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check h4 {
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check .check-item {
+  display: flex;
+}
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check .check-item h4 {
   margin: 0;
   margin-bottom: 20px;
 }
-#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check h4 img {
+#campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check .check-item img {
   width: 32px;
   height: 32px;
   margin-right: 5px;
 }
 #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .tag-contents {
   display: flex;
-  margin-left: 33px;
+  margin-left: 30px;
   margin-top: 30px;
+}
+@media (max-width: 767.98px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .tag-contents {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 0px;
+    text-align: center;
+  }
 }
 #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .tag-contents .tag-item {
   background-color: #DBDBDB;
@@ -1577,6 +1585,12 @@ footer #copy-rights .container {
   padding: 5px 10px;
   border-radius: 6px;
   margin-right: 20px;
+}
+@media (max-width: 767.98px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .tag-contents .tag-item {
+    padding: 10px;
+    margin: 10px 0px;
+  }
 }
 #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-img {
   width: 30%;
@@ -1601,6 +1615,11 @@ footer #copy-rights .container {
     width: 65%;
     padding: 20px 20px 20px 20px;
   }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
   #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title h2 {
     font-size: 26px;
   }
@@ -1618,6 +1637,65 @@ footer #copy-rights .container {
 @media (max-width: 1390px) and (min-width: 1024px) {
   #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-img {
     padding: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  #campaign-indicator .campaign-indicator-wrapper {
+    margin: 60px auto;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box {
+    margin-bottom: 70px;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box:last-child {
+    padding-top: 15px;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc {
+    width: 100%;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title {
+    align-items: center;
+    left: 0%;
+    padding: 5px 15px;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title img {
+    width: 30px;
+    height: 31px;
+    margin-right: 6px;
+  }
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 320px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .title h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991.98px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .p {
+    width: unset;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .p2 {
+    width: unset;
+  }
+}
+@media (max-width: 991.98px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .p3 {
+    width: unset;
+  }
+}
+@media (max-width: 991.98px) {
+  #campaign-indicator .campaign-indicator-wrapper .indicator-contents .indicator-box .indicator-desc .check {
+    margin-left: 10px;
   }
 }
 
