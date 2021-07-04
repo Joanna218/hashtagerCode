@@ -1855,7 +1855,6 @@ footer #copy-rights .container {
 #campaign-program .container .campaign-contents {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 #campaign-program .container .campaign-contents .campaign-box {
   padding: 30px 20px;
@@ -1870,12 +1869,7 @@ footer #copy-rights .container {
 #campaign-program .container .campaign-contents .campaign-box p {
   color: #000;
   font-size: 14px;
-  height: 60px;
-}
-@media (max-width: 991.98px) {
-  #campaign-program .container .campaign-contents .campaign-box p {
-    height: 100px;
-  }
+  margin-bottom: 0px;
 }
 @media (max-width: 767.98px) {
   #campaign-program .container {
@@ -1901,9 +1895,61 @@ footer #copy-rights .container {
     font-weight: bold;
   }
   #campaign-program .container .campaign-contents .campaign-box p {
-    height: unset;
     font-size: 18px;
     margin: 0;
+  }
+}
+
+#other-services {
+  background-color: #F4F4F4;
+}
+#other-services .container {
+  padding: 120px 0;
+}
+#other-services .container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#other-services .container .service-contents {
+  display: flex;
+  justify-content: space-around;
+}
+#other-services .container .service-contents .service-box {
+  display: flex;
+  flex-direction: column;
+}
+#other-services .container .service-contents .service-box h3 {
+  font-weight: bold;
+  text-align: center;
+}
+#other-services .container .service-contents .service-box .other-service-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#other-services .container .service-contents .service-box .item-desc {
+  margin: 2px 0px;
+}
+#other-services .container .service-contents .service-box .item-desc img {
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 767.98px) {
+  #other-services .container {
+    padding: 60px 0;
+  }
+  #other-services .container .service-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #other-services .container .service-contents .service-box {
+    margin-bottom: 40px;
+  }
+  #other-services .container .service-contents .service-box .desc {
+    margin-left: 25%;
+    width: 100%;
   }
 }
 

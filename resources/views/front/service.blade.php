@@ -64,6 +64,85 @@
   </div>
 </div>
 
+<!-- 其他應用服務 -->
+<div id="other-services">
+  <div class="container">
+    <h1>其他應用服務</h1>
+    <div class="service-contents">
+      <div class="service-box">
+        <h3>KOL <br> 深度整合行銷</h3>
+        <img class="other-service-img" src="{{ asset('images/service/service_icon_01@2x.png') }}" alt="">
+        <div class="desc">
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>專案式顧問服務</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>AsiaKOL跨境網紅合作</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>AKTour跨境旅遊體驗行銷</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>AKBOX網紅開箱行銷</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>D2C網紅電商行銷</span>
+          </div>
+      </div>
+        </div>
+      <div class="service-box">
+        <h3>社群/社團<br>深度整合行銷</h3>
+        <img class="other-service-img" src="{{ asset('images/service/service_icon_02@2x.png') }}" alt="">
+        <div class="desc">
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>FB粉絲團健檢服務</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>FB/IG社群經營服務</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>FB/IG廣告投放服務</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>粉絲團聯盟擴散服務</span>
+          </div>
+          <div class="item-desc">
+            <img class="other-service-img" src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>素人大隊朋友圈行銷</span>
+          </div>
+        </div>
+      </div>
+      <div class="service-box">
+        <h3>口碑監測<br>議題擴散</h3>
+        <img class="other-service-img" src="{{ asset('images/service/service_icon_03@2x.png') }}" alt="">
+        <div class="desc">
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>企業、品牌口碑健檢服務</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>企業、品牌口碑優化服務</span>
+          </div>
+          <div class="item-desc">
+            <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
+            <span>負面口碑平衡服務</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- 開始辦活動 -->
 <div id="start-campaign">
   <div class="container">
