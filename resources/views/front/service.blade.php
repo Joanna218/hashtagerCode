@@ -143,6 +143,68 @@
   </div>
 </div>
 
+<!-- UGC再行銷工具 -->
+<div id="ugc-tool">
+  <div class="container">
+    <h1>UGC再行銷工具</h1>
+    <div class="letro-img">
+      <img class="img-fluid" src="{{ asset('images/service/letro@2x.png') }}" alt="">
+    </div>
+    <h3>將IG社群口碑與活動網頁/電商EC快速整合</h3>
+    <div class="tool-contents">
+      <div class="tool-box">
+        <div class="tool-desc">
+          <div class="item">
+            <div class="title">
+              <div class="d-flex">
+                <img class="tool-desc-img" src="{{ asset('images/service/big-arrow-circle-right@2x.png') }}" alt="">
+                <h3 class="d-none d-md-block"><span class="color-font">UGC x 品牌網站</span>，大幅增進品牌形象</h3>
+                <h3 class="d-sm-block d-md-none"><span class="color-font">UGC x 品牌網站</span>，<br>大幅增進品牌形象</h3>
+              </div>
+              <p>
+              真實的體驗回饋，更具說服力。將豐富的UGC結合至官網內，強化品牌形象，提升對產品的信任感！
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tool-desc">
+          <div class="item">
+            <div class="title">
+              <div class="d-flex">
+                <img class="tool-desc-img" src="{{ asset('images/service/big-arrow-circle-right@2x.png') }}" alt="">
+                <h3 class="d-none d-md-block"><span class="color-font">UGC x 電商導購</span>，產品銷售量大提升</h3>
+                <h3 class="d-sm-block d-md-none"><span class="color-font">UGC x 電商導購</span>，<br>產品銷售量大提升</h3>
+              </div>
+              <p>
+              將活動所搜集的真實體驗文放在電商網站上展示，減少網站跳出率，加速下單的流程，銷售量步步提升！
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tool-desc">
+          <div class="item">
+            <div class="title">
+              <div class="d-flex">
+                <img class="tool-desc-img" src="{{ asset('images/service/big-arrow-circle-right@2x.png') }}" alt="">
+                <h3 class="d-none d-md-block"><span class="color-font">UGC x 餐飲O2O</span>，有效增加來客數</h3>
+                <h3 class="d-sm-block d-md-none"><span class="color-font">UGC x 餐飲O2O</span>，<br>有效增加來客數</h3>
+              </div>
+              <p>
+                餐飲店家網站整合UGC再利用，可有效地將線上流量轉回實際來客數，行銷效果肉眼可見！
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="letro-img d-none d-lg-block">
+        <img src="{{ asset('images/service/service_img_04@2x.png') }}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- 開始辦活動 -->
 <div id="start-campaign">
   <div class="container">

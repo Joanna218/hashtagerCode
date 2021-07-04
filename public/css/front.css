@@ -1875,9 +1875,6 @@ footer #copy-rights .container {
   #campaign-program .container {
     margin: 60px auto;
   }
-  #campaign-program .container h1 {
-    font-size: 32px;
-  }
   #campaign-program .container .campaign-contents {
     flex-direction: column;
   }
@@ -1950,6 +1947,141 @@ footer #copy-rights .container {
   #other-services .container .service-contents .service-box .desc {
     margin-left: 25%;
     width: 100%;
+  }
+}
+
+#ugc-tool .container {
+  margin: 120px auto;
+  padding: 0;
+}
+#ugc-tool .container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#ugc-tool .container .letro-img {
+  width: 156px;
+  height: 46px;
+  margin: 0 auto;
+}
+#ugc-tool .container h3 {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 15px;
+}
+#ugc-tool .container .tool-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ugc-tool .container .tool-contents .tool-box {
+  width: 45%;
+}
+#ugc-tool .container .tool-contents .tool-box .tool-desc .item {
+  display: flex;
+}
+#ugc-tool .container .tool-contents .tool-box .tool-desc .item .tool-desc-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+#ugc-tool .container .tool-contents .tool-box .tool-desc .item .title h3 {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 22px;
+  margin-top: 0;
+}
+#ugc-tool .container .tool-contents .tool-box .tool-desc .item .title p {
+  margin-top: 5px;
+  margin-left: 42px;
+}
+#ugc-tool .container .tool-contents .tool-box .tool-desc .item .title .color-font {
+  color: #FF6B39;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+#ugc-tool .container .tool-contents .letro-img {
+  width: 50%;
+  height: 100%;
+  margin-top: -60px;
+}
+@media (max-width: 991.98px) {
+  #ugc-tool .container {
+    padding: 0px 1rem;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  #ugc-tool .container {
+    margin: 60px auto;
+  }
+}
+@media (max-width: 991.98px) {
+  #ugc-tool .container h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  #ugc-tool .container .tool-contents .tool-box {
+    width: 100%;
+  }
+  #ugc-tool .container .tool-contents .tool-box .tool-desc {
+    display: flex;
+    justify-content: center;
+  }
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 375px) {
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item {
+    width: 95%;
+  }
+}
+@media (max-width: 991.98px) {
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .tool-desc-img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+}
+@media (max-width: 991.98px) {
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title {
+    width: 80%;
+  }
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title h3 {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 22px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 320px) {
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title p {
+    margin-top: 5px;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 991.98px) {
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title .color-font {
+    color: #FF6B39;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 320px) {
+  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title .color-font {
+    font-size: 20px;
   }
 }
 
