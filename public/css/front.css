@@ -1946,7 +1946,6 @@ footer #copy-rights .container {
   }
   #other-services .container .service-contents .service-box .desc {
     margin-left: 25%;
-    width: 100%;
   }
 }
 
@@ -1967,6 +1966,11 @@ footer #copy-rights .container {
   text-align: center;
   margin-bottom: 100px;
   margin-top: 15px;
+}
+@media (max-width: 767.98px) {
+  #ugc-tool .container h3 {
+    margin-bottom: 40px;
+  }
 }
 #ugc-tool .container .tool-contents {
   display: flex;
@@ -2017,12 +2021,6 @@ footer #copy-rights .container {
   }
 }
 @media (max-width: 991.98px) {
-  #ugc-tool .container h3 {
-    font-size: 22px;
-    margin-bottom: 40px;
-  }
-}
-@media (max-width: 991.98px) {
   #ugc-tool .container .tool-contents .tool-box {
     width: 100%;
   }
@@ -2042,22 +2040,8 @@ footer #copy-rights .container {
   }
 }
 @media (max-width: 991.98px) {
-  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .tool-desc-img {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    margin-top: 3px;
-  }
-}
-@media (max-width: 991.98px) {
   #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title {
     width: 80%;
-  }
-  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title h3 {
-    margin-bottom: 0;
-    text-align: left;
-    font-size: 22px;
-    margin-top: 0;
   }
 }
 @media (max-width: 991.98px) and (max-width: 320px) {
@@ -2067,22 +2051,41 @@ footer #copy-rights .container {
 }
 @media (max-width: 991.98px) {
   #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title p {
-    margin-top: 5px;
     margin-right: 25px;
-  }
-}
-@media (max-width: 991.98px) {
-  #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title .color-font {
-    color: #FF6B39;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: bold;
   }
 }
 @media (max-width: 991.98px) and (max-width: 320px) {
   #ugc-tool .container .tool-contents .tool-box .tool-desc .item .title .color-font {
     font-size: 20px;
   }
+}
+
+#easy-step .container {
+  margin: 120px auto;
+}
+@media (max-width: 767.98px) {
+  #easy-step .container {
+    margin: 60px auto;
+  }
+}
+#easy-step .container h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+#easy-step .container .more {
+  text-align: center;
+  padding-top: 60px;
+}
+#easy-step .container .more a {
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 8px 30px;
+  background-color: #FFD248;
+  border-radius: 40px;
+}
+#easy-step .container .more a:hover {
+  background-color: #FFDB6C;
 }
 
 /*

@@ -20,13 +20,13 @@
   <div class="container">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">活動企劃</a>
+        <a class="nav-link" href="#campaign-program">活動企劃</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">其他應用服務</a>
+        <a class="nav-link" href="#other-services">其他應用服務</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">UGC再行銷工具</a>
+        <a class="nav-link" href="#ugc-tool">UGC再行銷工具</a>
       </li>
     </ul>
   </div>
@@ -205,6 +205,19 @@
   </div>
 </div>
 
+<!-- Letro簡單上手三步驟 -->
+<div id="easy-step">
+  <div class="container">
+    <h1 class="d-none d-md-block">Letro簡單上手三步驟</h1>
+    <h1 class="d-sm-block d-md-none">Letro<br>簡單上手三步驟</h1>
+    <img class="d-none d-md-block" src="{{ asset('images/service/service_img_05@2x.png') }}" alt="">
+    <img class="d-sm-block d-md-none" src="{{ asset('images/mobile/mobile_service_img_05@2x.png') }}" alt="">
+    <div class="more">
+      <a href="{{ url('contact') }}">瞭解Letro詳情</a>
+    </div>
+  </div>
+</div>
+
 <!-- 開始辦活動 -->
 <div id="start-campaign">
   <div class="container">
@@ -214,4 +227,15 @@
     <a href="{{ url('contact') }}" class="go-btn">GO</a>
   </div>
 </div>
+
+<script>
+  // for smooth scrolling when click an anchor link
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+</script>
 @endsection
