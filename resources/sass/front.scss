@@ -1902,6 +1902,7 @@ footer {
   background-size: cover;;
 }
 
+// nav
 #nav-bar-bg {
   width: 100%;
   height: 64px;
@@ -1937,6 +1938,68 @@ footer {
           background-color: #242424;
           width: 100%;
           height: 50px;
+        }
+      }
+    }
+  }
+}
+
+// 活動企劃
+#campaign-program {
+  .container {
+    margin: 120px auto;
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .campaign-contents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .campaign-box {
+        padding: 30px 20px;
+        width: 33%;
+        margin: 0px 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        h2 {
+          font-weight: normal;
+        }
+        p {
+          color: #000;
+          font-size: 14px;
+          height: 60px;
+          @include media-breakpoint-down(md) {
+            height: 100px;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin: 60px auto;
+      h1 {
+        font-size: 32px;
+      }
+      .campaign-contents {
+        flex-direction: column;
+        .campaign-box {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          margin: 15px 0px;
+          border-radius: 30px;
+          h2 {
+            font-size: 28px;
+            font-weight: bold;
+          }
+          p {
+            height: unset;
+            font-size: 18px;
+            margin: 0;
+          }
         }
       }
     }

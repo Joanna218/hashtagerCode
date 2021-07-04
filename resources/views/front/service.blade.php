@@ -33,6 +33,36 @@
 
 </div>
 
+<!-- 活動企劃 -->
+<div id="campaign-program">
+  <div class="container">
+    <h1>活動企劃</h1>
+    <div class="campaign-contents">
+      <div class="campaign-box">
+        <h2>市場分析</h2>
+        <img class="promote-img d-none d-md-block" src="{{ asset('images/service/service_img_01@2x.png') }}" alt="">
+        <p>
+          為產品或品牌進行完整市場分析，找出行銷方向，建議你最適合的活動規劃，讓你辦活動能夠穩紮穩打的完成目標。
+          <br>
+        </p>
+      </div>
+      <div class="campaign-box">
+        <h2>內容企劃</h2>
+        <img class="promote-img d-none d-md-block" src="{{ asset('images/service/service_img_02@2x.png') }}" alt="">
+        <p>
+        辦活動最怕沒有人參加，Hashtager貼嗑提供你各種創意活動企劃的建議，幫你吸引參加者，引爆話題熱潮，提高產品銷售量與品牌形象打造！
+        </p>
+      </div>
+      <div class="campaign-box">
+        <h2>素材製作</h2>
+        <img class="promote-img d-none d-md-block" src="{{ asset('images/service/service_img_03@2x.png') }}" alt="">
+        <p>
+        Hashtager貼嗑提供撰寫創意文案服務，搭配引人注目的頭版banner設計，讓活動可以一眼抓住目光，吸引更多報名者參加，廣告效益事半功倍。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- 開始辦活動 -->
 <div id="start-campaign">
