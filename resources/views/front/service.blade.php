@@ -70,8 +70,9 @@
     <h1>其他應用服務</h1>
     <div class="service-contents">
       <div class="service-box">
-        <h3>KOL <br> 深度整合行銷</h3>
+        <h3 class="d-none d-md-block">KOL <br> 深度整合行銷</h3>
         <img class="other-service-img" src="{{ asset('images/service/service_icon_01@2x.png') }}" alt="">
+        <h3 class="d-sm-block d-md-none">KOL <br> 深度整合行銷</h3>
         <div class="desc">
           <div class="item-desc">
             <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
@@ -96,8 +97,9 @@
       </div>
         </div>
       <div class="service-box">
-        <h3>社群/社團<br>深度整合行銷</h3>
+        <h3 class="d-none d-md-block">社群/社團<br>深度整合行銷</h3>
         <img class="other-service-img" src="{{ asset('images/service/service_icon_02@2x.png') }}" alt="">
+        <h3 class="d-sm-block d-md-none">社群/社團<br>深度整合行銷</h3>
         <div class="desc">
           <div class="item-desc">
             <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
@@ -122,8 +124,9 @@
         </div>
       </div>
       <div class="service-box">
-        <h3>口碑監測<br>議題擴散</h3>
+        <h3 class="d-none d-md-block">口碑監測<br>議題擴散</h3>
         <img class="other-service-img" src="{{ asset('images/service/service_icon_03@2x.png') }}" alt="">
+        <h3 class="d-sm-block d-md-none">口碑監測<br>議題擴散</h3>
         <div class="desc">
           <div class="item-desc">
             <img src="{{ asset('images/service/arrow-circle-right@2x.png') }}" alt="">
@@ -140,6 +143,10 @@
         </div>
       </div>
     </div>
+
+    <div class="more">
+      <a href="#">瞭解更多</a>
+    </div>
   </div>
 </div>
 
@@ -150,7 +157,8 @@
     <div class="letro-img">
       <img class="img-fluid" src="{{ asset('images/service/letro@2x.png') }}" alt="">
     </div>
-    <h3>將IG社群口碑與活動網頁/電商EC快速整合</h3>
+    <h3 class="d-none d-md-block">將IG社群口碑與活動網頁/電商EC快速整合</h3>
+    <h3 class="d-sm-block d-md-none" style="font-size:23px">將IG社群口碑與活動網頁/電商EC快速整合</h3>
     <div class="tool-contents">
       <div class="tool-box">
         <div class="tool-desc">

@@ -122,7 +122,7 @@
         </p>
       </div>
       <img class="d-none d-md-block" src="{{ asset('images/ugc/ugc_img_05@2x.png') }}" alt="">
-      <img class="d-sm-block d-md-none" src="{{ asset('images/mobile/ugc_img_05@2x.png') }}" alt="">
+      <img class="d-sm-block d-md-none" src="{{ asset('images/mobile/ugc_img_05@3x.png') }}" alt="">
     </div>
   </div>
 </div>
@@ -140,9 +140,9 @@
             <img src="{{ asset('images/mobile/num1@2x.png') }}" alt="">
             <h2>要如何找到足夠多且優質的體驗大使？</h2>
           </div>
-          <p class="p p1">
+          <p class="p">
           活動參加者重「量」也重「質」。 <br>
-          除了需要招募到足夠多的參加者，也必須檢視每次活動是否都有新的消費者加入、
+          除了需要招募到足夠多的參加者，也必須檢視每次活動是否都有新的消費者加入、<br>
           將品牌或產品訊息再次擴散到新的族群，或者加深原本族群品牌的體驗深度。
           </p>
           <div class="check">
@@ -152,7 +152,7 @@
             </div>
             <div class="check-item">
               <img src="{{ asset('images/ugc/502@2x.png') }}" alt="">
-              <h4>參加者是否符合這次的活動受眾族群？</h4>
+              <h4>有沒有新的受眾參加活動呢？</h4>
             </div>
           </div>
         </div>
@@ -167,9 +167,9 @@
             <img src="{{ asset('images/mobile/num2@2x.png') }}" alt="">
             <h2>怎麼確認體驗大使願意互動或分享？</h2>
           </div>
-          <p class="p p2">
-            參加者享受活動體驗的同時，品牌也需要確保有完善的設計，
-            引導這些體驗大使在社群中分享，讓活動效果以倍數的方式擴散，
+          <p class="p">
+            參加者享受活動體驗的同時，品牌也需要確保有完善的設計，<br>
+            引導這些體驗大使在社群中分享，讓活動效果以倍數的方式擴散，<br>
             觸及到更多潛在消費者。
           </p>
           <div class="check">
@@ -194,9 +194,9 @@
             <img src="{{ asset('images/mobile/num3@2x.png') }}" alt="">
             <h2>要如何利用UGC再行銷將無形聲量轉換為實際銷量？</h2>
           </div>
-          <p class="p p3">
-            利用這些與活動相關的社群貼文，也就是UGC素材，
-            再進行後續行銷（例如推廣品牌，建立口碑、分享產品好的評價），
+          <p class="p">
+            利用這些與活動相關的社群貼文，也就是UGC素材，<br>
+            再進行後續行銷（例如推廣品牌，建立口碑、分享產品好的評價），<br>
             不僅成效會比單一的品牌廣告大，成本也遠低於單純的投放廣告。
           </p>
           <div class="check">
@@ -216,7 +216,7 @@
             <div class="tag-item">UGC vs 小編PO文</div>
           </div>
         </div>
-        <div class="indicator-img indicator-img3 d-none d-lg-block">
+        <div class="indicator-img d-none d-lg-block">
           <img src="{{ asset('images/ugc/ugc_img_08@2x.png') }}" alt="">
           <p>
           案例： <br>
