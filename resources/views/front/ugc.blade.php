@@ -167,10 +167,13 @@
             <img src="{{ asset('images/mobile/num2@2x.png') }}" alt="">
             <h2>怎麼確認體驗大使願意互動或分享？</h2>
           </div>
-          <p class="p">
+          <p class="p d-none d-md-block">
             參加者享受活動體驗的同時，品牌也需要確保有完善的設計，<br>
             引導這些體驗大使在社群中分享，讓活動效果以倍數的方式擴散，<br>
             觸及到更多潛在消費者。
+          </p>
+          <p class="p d-sm-block d-md-none">
+            參加者享受活動體驗的同時，品牌也需要確保有完善的設計，引導這些體驗大使在社群中分享，讓活動效果以倍數的方式擴散，觸及到更多潛在消費者。
           </p>
           <div class="check">
             <div class="check-item">
@@ -194,10 +197,13 @@
             <img src="{{ asset('images/mobile/num3@2x.png') }}" alt="">
             <h2>要如何利用UGC再行銷將無形聲量轉換為實際銷量？</h2>
           </div>
-          <p class="p">
+          <p class="p d-none d-md-block">
             利用這些與活動相關的社群貼文，也就是UGC素材，<br>
             再進行後續行銷（例如推廣品牌，建立口碑、分享產品好的評價），<br>
             不僅成效會比單一的品牌廣告大，成本也遠低於單純的投放廣告。
+          </p>
+          <p class="p d-sm-block d-md-none">
+            利用這些與活動相關的社群貼文，也就是UGC素材，再進行後續行銷（例如推廣品牌，建立口碑、分享產品好的評價），不僅成效會比單一的品牌廣告大，成本也遠低於單純的投放廣告。
           </p>
           <div class="check">
             <div class="check-item">

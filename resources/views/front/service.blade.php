@@ -158,7 +158,11 @@
       <img class="img-fluid" src="{{ asset('images/service/letro@2x.png') }}" alt="">
     </div>
     <h3 class="d-none d-md-block">將IG社群口碑與活動網頁/電商EC快速整合</h3>
-    <h3 class="d-sm-block d-md-none" style="font-size:23px">將IG社群口碑與活動網頁/電商EC快速整合</h3>
+    <h3 class="d-sm-block d-md-none">
+      將IG社群口碑<br>
+      與活動網頁/電商EC<br>
+      快速整合
+    </h3>
     <div class="tool-contents">
       <div class="tool-box">
         <div class="tool-desc">

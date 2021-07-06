@@ -2013,6 +2013,11 @@ footer #copy-rights .container {
   height: 46px;
   margin: 0 auto;
 }
+@media (max-width: 767.98px) {
+  #ugc-tool .container .letro-img {
+    width: 138px;
+  }
+}
 #ugc-tool .container h3 {
   text-align: center;
   margin-bottom: 100px;
@@ -2021,6 +2026,7 @@ footer #copy-rights .container {
 @media (max-width: 767.98px) {
   #ugc-tool .container h3 {
     margin-bottom: 40px;
+    margin-top: 0;
   }
 }
 #ugc-tool .container .tool-contents {
