@@ -1154,6 +1154,7 @@ footer #copy-rights .container {
 .contact-mobil-banner {
   background-image: url("../images/mobile/633@2x.png");
   background-size: cover;
+  background-position: center;
 }
 
 #contact {
@@ -1256,6 +1257,7 @@ footer #copy-rights .container {
 .ugc-mobil-banner {
   background-image: url("../images/mobile/991@2x.png");
   background-size: cover;
+  background-position: center;
 }
 
 #client-thouhts {
@@ -1833,6 +1835,7 @@ footer #copy-rights .container {
 .service-mobil-banner {
   background-image: url("../images/mobile/service_top_banner@2x.png");
   background-size: cover;
+  background-position: center;
 }
 
 #nav-bar-bg {
@@ -2158,6 +2161,7 @@ footer #copy-rights .container {
 .apply-mobil-banner {
   background-image: url("../images/mobile/apply_top_banner@2x.png");
   background-size: cover;
+  background-position: center;
 }
 
 #apply {
@@ -2205,6 +2209,14 @@ footer #copy-rights .container {
   margin: 0px 1%;
 }
 #apply form .office-item .offical-icon i {
+  color: #B6B6B6;
+  width: 16px;
+  height: 16px;
+}
+#apply form .office-item .offical-icon2 {
+  margin-right: 10px;
+}
+#apply form .office-item .offical-icon2 i {
   color: #B6B6B6;
   width: 16px;
   height: 16px;

@@ -1229,6 +1229,7 @@ footer {
 .contact-mobil-banner {
   background-image: url('../images/mobile/633@2x.png');
   background-size: cover;
+  background-position: center;
 }
 #contact {
   padding: 80px 0px;
@@ -1337,7 +1338,8 @@ footer {
 
 .ugc-mobil-banner {
   background-image: url('../images/mobile/991@2x.png');
-  background-size: cover;;
+  background-size: cover;
+  background-position: center;
 }
 
 // 用戶心得，平板以下為手機排版
@@ -1914,7 +1916,8 @@ footer {
 
 .service-mobil-banner {
   background-image: url('../images/mobile/service_top_banner@2x.png');
-  background-size: cover;;
+  background-size: cover;
+  background-position: center;
 }
 
 // nav
@@ -2239,7 +2242,8 @@ footer {
 
 .apply-mobil-banner {
   background-image: url('../images/mobile/apply_top_banner@2x.png');
-  background-size: cover;;
+  background-size: cover;
+  background-position: center;
 }
 
 #apply {
@@ -2289,7 +2293,17 @@ footer {
           height: 16px;
         }
       }
+
+      .offical-icon2{
+        margin-right: 10px;
+        i {
+          color: #B6B6B6;
+          width: 16px;
+          height: 16px;
+        }
+      }
     }
+
 
     .other {
       width: 97%;
