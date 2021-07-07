@@ -58,6 +58,10 @@ h4 {
   color: #000;
 }
 
+.was-validated .form-control:valid, .form-control.is-valid, .was-validated .custom-select:valid, .custom-select.is-valid {
+  border-color: unset;
+}
+
 #gototop {
   border-bottom: #e2e2e2 1px solid;
 }
@@ -1180,9 +1184,6 @@ footer #copy-rights .container {
 #contact form .more-contents-label {
   width: 140px;
 }
-#contact form .more-contents-select {
-  width: 40%;
-}
 #contact form .other {
   width: 97%;
   margin: auto 0.75rem;
@@ -2143,6 +2144,128 @@ footer #copy-rights .container {
 }
 #easy-step .container .more a:hover {
   background-color: #FFDB6C;
+}
+
+/* ======= apply ======== */
+.apply-banner {
+  background-image: url("../images/apply/06_apply_banner.jpg");
+}
+.apply-banner .common-banner-text {
+  display: flex;
+  justify-content: center;
+}
+
+.apply-mobil-banner {
+  background-image: url("../images/mobile/apply_top_banner@2x.png");
+  background-size: cover;
+}
+
+#apply {
+  padding: 80px 0px;
+}
+#apply h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 37px;
+}
+@media (max-width: 767.98px) {
+  #apply h1 {
+    font-size: 38px;
+  }
+}
+#apply h4 {
+  text-align: center;
+  color: #494949;
+}
+#apply form {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#apply form label {
+  color: #000;
+}
+#apply form label abbr {
+  text-decoration: none;
+  font-weight: normal;
+}
+#apply form .office-notic {
+  color: #929292;
+  margin-left: 10px;
+}
+#apply form .office-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#apply form .office-item:last-child {
+  margin-bottom: 0px;
+}
+#apply form .office-item .offical-icon {
+  margin: 0px 1%;
+}
+#apply form .office-item .offical-icon i {
+  color: #B6B6B6;
+  width: 16px;
+  height: 16px;
+}
+#apply form .more-activity {
+  width: 49%;
+}
+#apply form .other {
+  width: 97%;
+  margin: auto 0.75rem;
+}
+#apply form .other-required {
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px;
+}
+#apply form .submit-form {
+  background-color: #FFD248;
+  color: #000;
+  font-size: 24px;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 55px;
+}
+#apply form .submit-form:hover {
+  background-color: #FFDB6C;
+}
+@media (max-width: 767.98px) {
+  #apply {
+    padding: 20px 0px;
+  }
+  #apply h1 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 767.98px) and (max-width: 320px) {
+  #apply h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767.98px) {
+  #apply h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767.98px) {
+  #apply form .more-contents-label {
+    width: 100%;
+  }
+  #apply form .more-contents-select {
+    width: 100%;
+  }
+  #apply form .other {
+    width: 100%;
+    margin: 0;
+  }
+  #apply form .other-required2 {
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+  }
 }
 
 /*

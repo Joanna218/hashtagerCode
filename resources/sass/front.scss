@@ -71,6 +71,11 @@ h4 {
   color: #000;
 }
 
+// 複寫bs表單驗證通過
+.was-validated .form-control:valid, .form-control.is-valid, .was-validated .custom-select:valid, .custom-select.is-valid {
+  border-color: unset;
+}
+
 // 區塊一
 #gototop {
   border-bottom: #e2e2e2 1px solid;
@@ -1252,10 +1257,6 @@ footer {
       width: 140px;
     }
 
-    .more-contents-select {
-      width: 40%;
-    }
-
     .other {
       width: 97%;
       margin: auto .75rem;
@@ -1323,11 +1324,6 @@ footer {
     background-color: #fff;
     padding: 30px 0 80px 0;
 }
-
-
-
-
-
 
 
 /* ======= ugc ======== */
@@ -2201,6 +2197,7 @@ footer {
   }
 }
 
+// Letro簡單上手三步驟
 #easy-step {
   .container {
     margin: 120px auto;
@@ -2230,6 +2227,136 @@ footer {
   }
 }
 
+/* ======= apply ======== */
+
+.apply-banner {
+  background-image: url('../images/apply/06_apply_banner.jpg');
+  .common-banner-text {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.apply-mobil-banner {
+  background-image: url('../images/mobile/apply_top_banner@2x.png');
+  background-size: cover;;
+}
+
+#apply {
+  padding: 80px 0px;
+  h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 37px;
+    @include media-breakpoint-down(sm) {
+      font-size: 38px;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    color: #494949;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    label {
+      color: #000;
+      abbr {
+        text-decoration: none;
+        font-weight: normal;
+      }
+    }
+
+    .office-notic {
+      color:#929292;
+      margin-left: 10px;
+    }
+    .office-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      .offical-icon {
+        margin: 0px 1%;
+        i {
+          color: #B6B6B6;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    .more-activity {
+      width: 49%;
+    }
+
+    .other {
+      width: 97%;
+      margin: auto .75rem;
+    }
+    .other-required {
+      width: 100%;
+      border-radius: 3px;
+      padding: 10px;
+    }
+
+    .submit-form {
+      background-color: #FFD248;
+      color: #000;
+      font-size: 24px;
+      border-radius: 50px;
+      font-weight: 500;
+      padding: 10px 55px;
+
+      &:hover {
+        background-color: #FFDB6C;
+      }
+    }
+
+  }
+
+
+  // 手機
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0px;
+
+    h1 {
+      font-size: 33px;
+      @media (max-width:320px) {
+        font-size: 28px;
+      }
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    form {
+      .more-contents-label {
+        width: 100%;
+      }
+
+      .more-contents-select {
+        width: 100%;
+      }
+      .other {
+        width: 100%;
+        margin: 0;
+      }
+
+      .other-required2 {
+        width: 100%;
+        border-radius: 3px;
+        padding: 10px;
+      }
+    }
+  }
+}
 /*
 // global style setting
 html,

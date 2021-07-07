@@ -28,6 +28,11 @@ class HomeController extends Controller
         return view('front.contact');
     }
 
+    public function apply()
+    {
+        return view('front.apply');
+    }
+
     public function sendMail(Request $request)
     {
       $from = ['email'=>'service@hashtager.com.tw',
