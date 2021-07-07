@@ -726,6 +726,10 @@
       if ($('.manage-item-1-2').val() != null) {
         manageItem = manageItem + '/' + $('.manage-item-1-2').val() + '/' + $('.manage-item-1-2-3').val();
       }
+
+      if ($('.other-required').val() == "") {
+        $('.other-required').val("無");
+      }
       // 寄信
       var deskData = {
         'apply-name': $('.apply-name').val(),
@@ -779,6 +783,10 @@
       var manageItem = $('.mobile-manage-item-1').val();
       if ($('.mobile-manage-item-1-2').val() != null) {
         manageItem = manageItem + '/' + $('.mobile-manage-item-1-2').val() + '/' + $('.mobile-manage-item-1-2-3').val();
+      }
+
+      if ($('.other-required2').val() == "") {
+        $('.other-required2').val("無");
       }
       // 寄信
       var deskData = {

@@ -45,7 +45,7 @@
             <a class="nav-link" href="#">常見問題</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link nav-consultant-item" href="{{ url('/contact') }}">上架諮詢</a>
+            <a class="nav-link nav-consultant-item" href="{{ url('/apply') }}">上架諮詢</a>
           </li>
         </ul>
       </div>
@@ -70,7 +70,7 @@
             <!-- <a class="nav-link" href="#">常見問題</a> -->
           </li>
           <li class="">
-            <a class="nav-link nav-consultant-item" href="{{ url('/contact') }}">上架諮詢</a>
+            <a class="nav-link nav-consultant-item" href="{{ url('/apply') }}">上架諮詢</a>
           </li>
         </ul>
       </div>

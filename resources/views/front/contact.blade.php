@@ -19,7 +19,7 @@
     <h4 class="d-sm-block d-md-none">如要在Hashtager貼嗑上舉辦活動，<br>可於上架諮詢直接填寫申請。</h4>
 
     <!-- 電腦 -->
-    <form id="submit-form" class="d-none d-md-block">
+    <form id="submit-form" class="d-none d-md-block" novalidate="">
       <!-- 想要了解的內容 -->
       <div class="d-sm-none d-md-flex form-group d-flex">
         <label class="more-contents-label" for="more-contents">想要了解的內容</label>
@@ -41,10 +41,16 @@
         <div class="col">
           <label for="contact-person">聯絡人<span class="text-danger">*<span></label>
           <input type="text" class="form-control contact-person" name="contact-person" required>
+          <div class="invalid-feedback">
+            請輸入聯絡人
+          </div>
         </div>
         <div class="col">
           <label for="contact-tel">聯絡電話<span class="text-danger">*<span></label>
           <input type="text" class="form-control contact-tel" name="contact-tel" required>
+          <div class="invalid-feedback">
+            請輸入聯絡電話
+          </div>
         </div>
       </div>
 
@@ -53,10 +59,16 @@
         <div class="col">
           <label for="corporation">公司全稱<span class="text-danger">*<span></label>
           <input type="text" class="form-control corporation" name="corporation" required>
+          <div class="invalid-feedback">
+            請輸入公司全稱
+          </div>
         </div>
         <div class="col">
           <label for="email">E-mail<span class="text-danger">*<span></label>
           <input type="email" class="form-control email" name="email" placeholder="公司E-mail為佳" required>
+          <div class="invalid-feedback">
+            請輸入E-mail
+          </div>
         </div>
       </div>
 
@@ -65,16 +77,13 @@
           <textarea class="other-required" placeholder="簡短需求說明(幫助我們安排適合的專員與您聯繫)" rows="10"></textarea>
         </div>
       </div>
-      <!-- <div class="form-group row justify-content-center mt-4">
-        <img src="https://fakeimg.pl/150x50/" alt="">
-      </div> -->
       <div class="form-group row justify-content-center mt-4">
-        <button type="button" class="btn submit-form submit-form1">送出</button>
+        <button type="submit" class="btn submit-form submit-form1">送出</button>
       </div>
     </form>
 
     <!-- 手機 -->
-    <form id="submit-form2" class="d-sm-block d-md-none">
+    <form id="submit-form2" class="d-sm-block d-md-none" novalidate="">
       <div class="form-group row text-center">
         <label class="more-contents-label" for="more-contents">想要了解的內容</label>
         <select class="form-control more-contents" name="more-contents2">
@@ -91,19 +100,31 @@
       </div>
       <div class="form-group row">
         <label for="contact-person">聯絡人<span class="text-danger">*<span></label>
-        <input type="text" class="form-control contact-person2" name="contact-person">
+        <input type="text" class="form-control contact-person2" name="contact-person" required>
+        <div class="invalid-feedback">
+            請輸入聯絡人
+        </div>
       </div>
       <div class="orm-group row">
         <label for="contact-tel">聯絡電話<span class="text-danger">*<span></label>
-        <input type="text" class="form-control contact-tel2" name="contact-tel">
+        <input type="text" class="form-control contact-tel2" name="contact-tel" required>
+        <div class="invalid-feedback">
+            請輸入聯絡電話
+        </div>
       </div>
       <div class="form-group row">
         <label for="corporation">公司全稱<span class="text-danger">*<span></label>
-        <input type="text" class="form-control corporation2" name="corporation">
+        <input type="text" class="form-control corporation2" name="corporation" required>
+        <div class="invalid-feedback">
+          請輸入公司全稱
+        </div>
       </div>
       <div class="form-group row">
         <label for="email">E-mail<span class="text-danger">*<span></label>
-        <input type="email" class="form-control email2" name="email" placeholder="公司E-mail為佳">
+        <input type="email" class="form-control email2" name="email" placeholder="公司E-mail為佳" required>
+        <div class="invalid-feedback">
+          請輸入公司全稱
+        </div>
       </div>
 
       <div class="form-group row">
@@ -112,7 +133,7 @@
         </div>
       </div>
       <div class="form-group row justify-content-center mt-4">
-        <button type="button" class="btn submit-form submit-form2">送出</button>
+        <button type="submit" class="btn submit-form submit-form2">送出</button>
       </div>
 
     </form>
@@ -120,60 +141,34 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="Modal" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div> -->
       <div class="modal-body">
-        傳送中....請稍候...
-      </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
-    </div>
-  </div>
-</div>
-
-<!-- 手機版 -->
-<div class="modal fade" id="ModalMobile" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div> -->
-      <div class="modal-body">
-        寄信成功，將會有專人與您聯繫！
+        <span class="sending">傳送中....請稍候...</span>
+        <span class="sendSucess">寄信成功，將會有專人與您聯繫！</span>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary mb-check" data-dismiss="modal">確定</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button type="button" class="btn btn-secondary modal-check" data-dismiss="modal">確定</button>
       </div>
     </div>
   </div>
 </div>
 
+
 <script>
-  $('.submit-form1').on('click', function (e) {
+  $('#submit-form').submit(function(e) {
     e.preventDefault();
-    if ($('.contact-person').val() == "" || $('.contact-tel').val()=="" ||
-    $('.corporation').val() == "" || $('.email').val() == "") {
-      alert("請輸入必填資訊！");
-      return false;
-    }
-    if ($('.other-required').val() == "") {
-      $('.other-required').val("無");
-    }
-    $('#Modal').modal('show');
-    $.ajax({
+     var vForm = $(this);
+    if (vForm[0].checkValidity() === false) {
+      e.stopPropagation();
+      vForm.addClass('was-validated');
+    } else {
+      if ($('.other-required').val() == "") {
+        $('.other-required').val("無");
+      }
+      $('#modal').modal('show');
+      $.ajax({
         type: "POST",
         url: "/api/sendMail",
         data: {
@@ -186,28 +181,33 @@
           '_token': "{{ csrf_token() }}"
         },
         success: function (res) {
-          alert(res);
-          $('#Modal').modal('hide');
-          location.href = "./";
+          $('.sending').css('display','none');
+          $('.sendSucess').css('display','block');
+          $('.modal-footer').css('display','block');
+          $('.modal-check').on('click', function() {
+            location.href = "./";
+          });
         },
         error: function (xhr, status, error) {
           console.error(xhr);
         }
       });
+    }
+
   });
 
-  $('.submit-form2').on('click', function (e) {
+  $('#submit-form2').submit(function(e)  {
     e.preventDefault();
-    if ($('.contact-person2').val() == "" || $('.contact-tel2').val()=="" ||
-    $('.corporation2').val() == "" || $('.email2').val() == "") {
-      // alert("請輸入必填資訊！");
-      return false;
-    }
-    if ($('.other-required').val() == "") {
-      $('.other-required').val("無");
-    }
-    $('#Modal').modal('show');
-    $.ajax({
+    var vForm = $(this);
+    if (vForm[0].checkValidity() === false) {
+      e.stopPropagation();
+      vForm.addClass('was-validated');
+    } else {
+      if ($('.other-required2').val() == "") {
+        $('.other-required2').val("無");
+      }
+      $('#modal').modal('show');
+      $.ajax({
         type: "POST",
         url: "/api/sendMail",
         data: {
@@ -220,48 +220,20 @@
           '_token': "{{ csrf_token() }}"
         },
         success: function (res) {
-          // alert(res);
-          $('#ModalMobile').modal('show');
-          $('#Modal').modal('hide');
-          $('.mb-check').on('click', function() {
-            location.href = "./";
+          $('.sending').css('display','none');
+          $('.sendSucess').css('display','block');
+          $('.modal-footer').css('display','block');
+          $('.modal-check').on('click', function() {
+              location.href = "./";
           });
         },
         error: function (xhr, status, error) {
           console.error(xhr);
         }
       });
+    }
+
   });
-
-  // $('#submit-form2').on('submit', function (e) {
-  //   e.preventDefault();
-  //   if ($('.other-required').val() == "") {
-  //     $('.other-required').val("無");
-  //   }
-  //   $.ajax({
-  //       type: "POST",
-  //       url: "/api/sendMail",
-  //       data: {
-  //         'more-contents': $('.more-contents2').val(),
-  //         'contact-person': $('.contact-person2').val(),
-  //         'contact-tel': $('.contact-tel2').val(),
-  //         'corporation': $('.corporation2').val(),
-  //         'email': $('.email2').val(),
-  //         'other-required': $('.other-required2').val(),
-  //         '_token': "{{ csrf_token() }}"
-  //       },
-  //       success: function (res) {
-  //         debugger;
-  //         $('#Modal').modal('hide');
-  //         alert(res);
-  //       },
-  //       error: function (xhr, status, error) {
-  //         console.error(xhr);
-  //       }
-  //     });
-  // });
-
-
 </script>
 
 @endsection

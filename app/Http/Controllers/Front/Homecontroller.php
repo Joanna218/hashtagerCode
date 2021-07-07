@@ -48,6 +48,9 @@ class HomeController extends Controller
       $to2 = ['email'=>'hsinhuei.li@indexasia.com.tw',
       'name'=>'Hashtager舉辦活動'];
 
+      // $test = ['email'=>'okokis101@gmail.com',
+      // 'name'=>'Hashtager申請上架'];
+
       // 信件的內容(即表單填寫的資料)
       $data = [
         'moreContents'=> $request['more-contents'],
