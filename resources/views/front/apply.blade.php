@@ -76,21 +76,14 @@
             </select>
 
             <!-- 第二層選單 -->
-            <select style="width:30%;margin-right:5%;display:none;" class="form-control manage-item-1-2" name="manage-item-1-2">
+            <select style="width:28%;margin-right:5%;display:none;" class="form-control manage-item-1-2" name="manage-item-1-2">
             </select>
 
             <!-- 第三層選單 -->
-            <select style="width:30%;display:none;" class="form-control manage-item-1-2-3" name="manage-item-1-2-3">
+            <select style="width:32%;display:none;" class="form-control manage-item-1-2-3" name="manage-item-1-2-3">
             </select>
           </div>
         </div>
-        <!-- <div class="col">
-          <label for="email">E-mail<abbr class="text-danger">*</abbr></label>
-          <input type="email" class="form-control email" name="email" placeholder="公司E-mail為佳" required>
-          <div class="invalid-feedback">
-            請輸入E-mail
-          </div>
-        </div> -->
       </div>
 
       <!-- 品牌名稱、品牌種類 -->
@@ -121,6 +114,13 @@
             <option value="產品試用、試吃體驗活動">產品試用、試吃體驗活動</option>
             <option value="線下體驗活動">線下體驗活動</option>
           </select>
+        </div>
+        <div class="col">
+          <label for="email">E-mail<abbr class="text-danger">*</abbr></label>
+          <input type="email" class="form-control email" name="email" placeholder="公司E-mail為佳" required>
+          <div class="invalid-feedback">
+            請輸入E-mail
+          </div>
         </div>
       </div>
 
@@ -382,248 +382,259 @@
     $('.' + selector).css('display','none');
   }
 
+  // 觸發顯示第二、三的下拉選單
+  function triggerSelect(select2, select3, e) {
+    if (e.val() == '批發、零售及餐飲業') {
+      $(select2).css('display','block');
+      for (var i = 0; i < retailSecondData.length; i++) {
+        $(select2).append('<option value="' + retailSecondData[i] + '">' + retailSecondData[i] + '</option>');
+      }
+      $(select3).css('display','block');
+      for (var i = 0; i < wholsaleThridData.length; i++) {
+        $(select3).append('<option value="' + wholsaleThridData[i] + '">' + wholsaleThridData[i] + '</option>');
+      }
+    } else if(e.val() == '運輸、倉儲及通信業') {
+      $(select2).css('display','block');
+      for (var i = 0; i < shipSecondData.length; i++) {
+        $(select2).append('<option value="' + shipSecondData[i] + '">' + shipSecondData[i] + '</option>');
+      }
+      $(select3).css('display','block');
+      for (var i = 0; i < shipSecondData.length; i++) {
+        $(select3).append('<option value="' + shipSecondData[i] + '">' + shipSecondData[i] + '</option>');
+      }
+    } else if(e.val() == '金融、保險及不動產業') {
+      $(select2).css('display','block');
+      for (var i = 0; i < financialSecondData.length; i++) {
+        $(select2).append('<option value="' + financialSecondData[i] + '">' + financialSecondData[i] + '</option>');
+      }
+      $(select3).css('display','block');
+      for (var i = 0; i < financialSecondData.length; i++) {
+        $(select3).append('<option value="' + financialSecondData[i] + '">' + financialSecondData[i] + '</option>');
+      }
+    } else if(e.val() == '專業、科學及技術服務業') {
+      $(select2).css('display','block');
+      for (var i = 0; i < professionSecondData.length; i++) {
+        $(select2).append('<option value="' + professionSecondData[i] + '">' + professionSecondData[i] + '</option>');
+      }
+      $(select3).css('display','block');
+      for (var i = 0; i < professionSecondData.length; i++) {
+        $(select3).append('<option value="' + professionSecondData[i] + '">' + professionSecondData[i] + '</option>');
+      }
+    } else if(e.val() == '文化、運動、休閒及其他服務業') {
+      $(select2).css('display','block');
+      for (var i = 0; i < sportSecondData.length; i++) {
+        $(select2).append('<option value="' + sportSecondData[i] + '">' + sportSecondData[i] + '</option>');
+      }
+      $(select3).css('display','block');
+      for (var i = 0; i < sportSecondData.length; i++) {
+        $(select3).append('<option value="' + sportSecondData[i] + '">' + sportSecondData[i] + '</option>');
+      }
+    }
+  }
+
+  // 第二個下拉選當改變時，觸發改變第三的下拉選單內容
+  function triggerThridSelect(select3, e) {
+    if (e.val() == '批發業') {
+      for (var i = 0; i < wholsaleThridData.length; i++) {
+        $(select3).append('<option value="' + wholsaleThridData[i] + '">' + wholsaleThridData[i] + '</option>');
+      }
+    } else if (e.val() == '零售業') {
+      for (var i = 0; i < retailThridData.length; i++) {
+        $(select3).append('<option value="' + retailThridData[i] + '">' + retailThridData[i] + '</option>');
+      }
+    } else if (e.val() == '綜合零售業') {
+      for (var i = 0; i < complexRetailThridData.length; i++) {
+        $(select3).append('<option value="' + complexRetailThridData[i] + '">' + complexRetailThridData[i] + '</option>');
+      }
+    } else if (e.val() == '國際貿易業') {
+      for (var i = 0; i < InternationalTradeThridData.length; i++) {
+        $(select3).append('<option value="' + InternationalTradeThridData[i] + '">' + InternationalTradeThridData[i] + '</option>');
+      }
+    } else if (e.val() == '餐飲業') {
+      for (var i = 0; i < eatThridData.length; i++) {
+        $(select3).append('<option value="' + eatThridData[i] + '">' + eatThridData[i] + '</option>');
+      }
+    } else if (e.val() == '智慧財產權業') {
+      for (var i = 0; i < authorThridData.length; i++) {
+        $(select3).append('<option value="' + authorThridData[i] + '">' + authorThridData[i] + '</option>');
+      }
+    } else if (e.val() == '陸上運輸業') {
+      for (var i = 0; i < roadThridDatad.length; i++) {
+        $(select3).append('<option value="' + roadThridDatad[i] + '">' + roadThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '陸上運輸輔助業') {
+      for (var i = 0; i < roadThridDatad2.length; i++) {
+        $(select3).append('<option value="' + roadThridDatad2[i] + '">' + roadThridDatad2[i] + '</option>');
+      }
+    } else if (e.val() == '水上運輸業') {
+      for (var i = 0; i < waterThridDatad.length; i++) {
+        $(select3).append('<option value="' + waterThridDatad[i] + '">' + waterThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '水上運輸輔助業') {
+      for (var i = 0; i < waterThridDatad2.length; i++) {
+        $(select3).append('<option value="' + waterThridDatad2[i] + '">' + waterThridDatad2[i] + '</option>');
+      }
+    } else if (e.val() == '航空運輸業') {
+      for (var i = 0; i < airThridDatad.length; i++) {
+        $(select3).append('<option value="' + airThridDatad[i] + '">' + airThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '航空運輸輔助業') {
+      for (var i = 0; i < airThridDatad2.length; i++) {
+        $(select3).append('<option value="' + airThridDatad2[i] + '">' + airThridDatad2[i] + '</option>');
+      }
+    } else if (e.val() == '其他運輸輔助業') {
+      for (var i = 0; i < otherThridDatad.length; i++) {
+        $(select3).append('<option value="' + otherThridDatad[i] + '">' + otherThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '倉儲業') {
+      for (var i = 0; i < warehouseThridDatad.length; i++) {
+        $(select3).append('<option value="' + warehouseThridDatad[i] + '">' + warehouseThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '電信業') {
+      for (var i = 0; i < electronicThridDatad.length; i++) {
+        $(select3).append('<option value="' + electronicThridDatad[i] + '">' + electronicThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '郵政業') {
+      for (var i = 0; i < postThridDatad.length; i++) {
+        $(select3).append('<option value="' + postThridDatad[i] + '">' + postThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '金融業') {
+      for (var i = 0; i < financialThridDatad.length; i++) {
+        $(select3).append('<option value="' + financialThridDatad[i] + '">' + financialThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '投資典當業') {
+      for (var i = 0; i < investThridDatad.length; i++) {
+        $(select3).append('<option value="' + investThridDatad[i] + '">' + investThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '證券業') {
+      for (var i = 0; i < securitiesThridDatad.length; i++) {
+        $(select3).append('<option value="' + securitiesThridDatad[i] + '">' + securitiesThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '期貨業') {
+      for (var i = 0; i < futuresThridDatad.length; i++) {
+        $(select3).append('<option value="' + futuresThridDatad[i] + '">' + futuresThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '保險業') {
+      for (var i = 0; i < insuranceThridDatad.length; i++) {
+        $(select3).append('<option value="' + insuranceThridDatad[i] + '">' + insuranceThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '保險輔助人') {
+      for (var i = 0; i < insuranceThridDatad2.length; i++) {
+        $(select3).append('<option value="' + insuranceThridDatad2[i] + '">' + insuranceThridDatad2[i] + '</option>');
+      }
+    } else if (e.val() == '不動產業') {
+      for (var i = 0; i < realEstateThridDatad.length; i++) {
+        $(select3).append('<option value="' + realEstateThridDatad[i] + '">' + realEstateThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '金融控股公司業') {
+      for (var i = 0; i < financialHoldingThridDatad.length; i++) {
+        $(select3).append('<option value="' + financialHoldingThridDatad[i] + '">' + financialHoldingThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '證券期貨控股業') {
+      for (var i = 0; i < securitiesFuturesThridDatad.length; i++) {
+        $(select3).append('<option value="' + securitiesFuturesThridDatad[i] + '">' + securitiesFuturesThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '其他金融、保險及不動產業') {
+      for (var i = 0; i < ohterThridDatad.length; i++) {
+        $(select3).append('<option value="' + ohterThridDatad[i] + '">' + ohterThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '顧問服務業') {
+      for (var i = 0; i < consultantThridDatad.length; i++) {
+        $(select3).append('<option value="' + consultantThridDatad[i] + '">' + consultantThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '資訊服務業') {
+      for (var i = 0; i < informationThridDatad.length; i++) {
+        $(select3).append('<option value="' + informationThridDatad[i] + '">' + informationThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '廣告業') {
+      for (var i = 0; i < advertisementThridDatad.length; i++) {
+        $(select3).append('<option value="' + advertisementThridDatad[i] + '">' + advertisementThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '設計業') {
+      for (var i = 0; i < designThridDatad.length; i++) {
+        $(select3).append('<option value="' + designThridDatad[i] + '">' + designThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '就業服務業') {
+      for (var i = 0; i < jobThridDatad.length; i++) {
+        $(select3).append('<option value="' + jobThridDatad[i] + '">' + jobThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '公寓大廈管理服務業') {
+      for (var i = 0; i < apartmentThridDatad.length; i++) {
+        $(select3).append('<option value="' + apartmentThridDatad[i] + '">' + apartmentThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '保全業') {
+      for (var i = 0; i < securityThridDatad.length; i++) {
+        $(select3).append('<option value="' + securityThridDatad[i] + '">' + securityThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '工業檢驗業') {
+      for (var i = 0; i < industrialThridDatad.length; i++) {
+        $(select3).append('<option value="' + industrialThridDatad[i] + '">' + industrialThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '建築物公共安全檢查業') {
+      for (var i = 0; i < buildThridDatad.length; i++) {
+        $(select3).append('<option value="' + buildThridDatad[i] + '">' + buildThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '藥品檢驗業') {
+      for (var i = 0; i < dragThridDatad.length; i++) {
+        $(select3).append('<option value="' + dragThridDatad[i] + '">' + dragThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '環保服務業') {
+      for (var i = 0; i < envirThridDatad.length; i++) {
+        $(select3).append('<option value="' + envirThridDatad[i] + '">' + envirThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '訓練服務業') {
+      for (var i = 0; i < traningThridDatad.length; i++) {
+        $(select3).append('<option value="' + traningThridDatad[i] + '">' + traningThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '出版事業') {
+      for (var i = 0; i < releaseThridDatad.length; i++) {
+        $(select3).append('<option value="' + releaseThridDatad[i] + '">' + releaseThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '電影事業') {
+      for (var i = 0; i < movieThridDatad.length; i++) {
+        $(select3).append('<option value="' + movieThridDatad[i] + '">' + movieThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '廣播電視業') {
+      for (var i = 0; i < tvThridDatad.length; i++) {
+        $(select3).append('<option value="' + tvThridDatad[i] + '">' + tvThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '藝文業') {
+      for (var i = 0; i < actThridDatad.length; i++) {
+        $(select3).append('<option value="' + actThridDatad[i] + '">' + actThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '休閒、娛樂服務業') {
+      for (var i = 0; i < entertainThridDatad.length; i++) {
+        $(select3).append('<option value="' + entertainThridDatad[i] + '">' + entertainThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '運動服務業') {
+      for (var i = 0; i < sportThridDatad.length; i++) {
+        $(select3).append('<option value="' + sportThridDatad[i] + '">' + sportThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '觀光及旅遊服務業') {
+      for (var i = 0; i < tourThridDatad.length; i++) {
+        $(select3).append('<option value="' + tourThridDatad[i] + '">' + tourThridDatad[i] + '</option>');
+      }
+    } else if (e.val() == '個人服務業') {
+      for (var i = 0; i < personnelThridDatad.length; i++) {
+        $(select3).append('<option value="' + personnelThridDatad[i] + '">' + personnelThridDatad[i] + '</option>');
+      }
+    }
+  }
+
+  // 電腦版
   // 第一層選單改變
   $('.manage-item-1').change(function() {
     // 隱藏與清除二三層的下拉選單
     clearAndNoneSelect('manage-item-1-2');
     clearAndNoneSelect('manage-item-1-2-3');
-    // 顯示第二層
-    if ($(this).val() == '批發、零售及餐飲業') {
-      $('.manage-item-1-2').css('display','block');
-      for (var i = 0; i < retailSecondData.length; i++) {
-        $(".manage-item-1-2").append('<option value="' + retailSecondData[i] + '">' + retailSecondData[i] + '</option>');
-      }
-      $('.manage-item-1-2-3').css('display','block');
-      for (var i = 0; i < wholsaleThridData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + wholsaleThridData[i] + '">' + wholsaleThridData[i] + '</option>');
-      }
-    } else if($(this).val() == '運輸、倉儲及通信業') {
-      $('.manage-item-1-2').css('display','block');
-      for (var i = 0; i < shipSecondData.length; i++) {
-        $(".manage-item-1-2").append('<option value="' + shipSecondData[i] + '">' + shipSecondData[i] + '</option>');
-      }
-      $('.manage-item-1-2-3').css('display','block');
-      for (var i = 0; i < shipSecondData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + shipSecondData[i] + '">' + shipSecondData[i] + '</option>');
-      }
-    } else if($(this).val() == '金融、保險及不動產業') {
-      $('.manage-item-1-2').css('display','block');
-      for (var i = 0; i < financialSecondData.length; i++) {
-        $(".manage-item-1-2").append('<option value="' + financialSecondData[i] + '">' + financialSecondData[i] + '</option>');
-      }
-      $('.manage-item-1-2-3').css('display','block');
-      for (var i = 0; i < financialSecondData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + financialSecondData[i] + '">' + financialSecondData[i] + '</option>');
-      }
-    } else if($(this).val() == '專業、科學及技術服務業') {
-      $('.manage-item-1-2').css('display','block');
-      for (var i = 0; i < professionSecondData.length; i++) {
-        $(".manage-item-1-2").append('<option value="' + professionSecondData[i] + '">' + professionSecondData[i] + '</option>');
-      }
-      $('.manage-item-1-2-3').css('display','block');
-      for (var i = 0; i < professionSecondData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + professionSecondData[i] + '">' + professionSecondData[i] + '</option>');
-      }
-    } else if($(this).val() == '文化、運動、休閒及其他服務業') {
-      $('.manage-item-1-2').css('display','block');
-      for (var i = 0; i < sportSecondData.length; i++) {
-        $(".manage-item-1-2").append('<option value="' + sportSecondData[i] + '">' + sportSecondData[i] + '</option>');
-      }
-      $('.manage-item-1-2-3').css('display','block');
-      for (var i = 0; i < sportSecondData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + sportSecondData[i] + '">' + sportSecondData[i] + '</option>');
-      }
-    }
+    // 顯示第二層與第三層
+    triggerSelect('.manage-item-1-2', '.manage-item-1-2-3', $(this));
   });
   // 第二層選單改變
   $('.manage-item-1-2').change(function() {
     clearSelect('manage-item-1-2-3');
     // 顯示第三層
-    if ($(this).val() == '批發業') {
-      for (var i = 0; i < wholsaleThridData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + wholsaleThridData[i] + '">' + wholsaleThridData[i] + '</option>');
-      }
-    } else if ($(this).val() == '零售業') {
-      for (var i = 0; i < retailThridData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + retailThridData[i] + '">' + retailThridData[i] + '</option>');
-      }
-    } else if ($(this).val() == '綜合零售業') {
-      for (var i = 0; i < complexRetailThridData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + complexRetailThridData[i] + '">' + complexRetailThridData[i] + '</option>');
-      }
-    } else if ($(this).val() == '國際貿易業') {
-      for (var i = 0; i < InternationalTradeThridData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + InternationalTradeThridData[i] + '">' + InternationalTradeThridData[i] + '</option>');
-      }
-    } else if ($(this).val() == '餐飲業') {
-      for (var i = 0; i < eatThridData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + eatThridData[i] + '">' + eatThridData[i] + '</option>');
-      }
-    } else if ($(this).val() == '智慧財產權業') {
-      for (var i = 0; i < authorThridData.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + authorThridData[i] + '">' + authorThridData[i] + '</option>');
-      }
-    } else if ($(this).val() == '陸上運輸業') {
-      for (var i = 0; i < roadThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + roadThridDatad[i] + '">' + roadThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '陸上運輸輔助業') {
-      for (var i = 0; i < roadThridDatad2.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + roadThridDatad2[i] + '">' + roadThridDatad2[i] + '</option>');
-      }
-    } else if ($(this).val() == '水上運輸業') {
-      for (var i = 0; i < waterThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + waterThridDatad[i] + '">' + waterThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '水上運輸輔助業') {
-      for (var i = 0; i < waterThridDatad2.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + waterThridDatad2[i] + '">' + waterThridDatad2[i] + '</option>');
-      }
-    } else if ($(this).val() == '航空運輸業') {
-      for (var i = 0; i < airThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + airThridDatad[i] + '">' + airThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '航空運輸輔助業') {
-      for (var i = 0; i < airThridDatad2.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + airThridDatad2[i] + '">' + airThridDatad2[i] + '</option>');
-      }
-    } else if ($(this).val() == '其他運輸輔助業') {
-      for (var i = 0; i < otherThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + otherThridDatad[i] + '">' + otherThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '倉儲業') {
-      for (var i = 0; i < warehouseThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + warehouseThridDatad[i] + '">' + warehouseThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '電信業') {
-      for (var i = 0; i < electronicThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + electronicThridDatad[i] + '">' + electronicThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '郵政業') {
-      for (var i = 0; i < postThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + postThridDatad[i] + '">' + postThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '金融業') {
-      for (var i = 0; i < financialThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + financialThridDatad[i] + '">' + financialThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '投資典當業') {
-      for (var i = 0; i < investThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + investThridDatad[i] + '">' + investThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '證券業') {
-      for (var i = 0; i < securitiesThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + securitiesThridDatad[i] + '">' + securitiesThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '期貨業') {
-      for (var i = 0; i < futuresThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + futuresThridDatad[i] + '">' + futuresThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '保險業') {
-      for (var i = 0; i < insuranceThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + insuranceThridDatad[i] + '">' + insuranceThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '保險輔助人') {
-      for (var i = 0; i < insuranceThridDatad2.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + insuranceThridDatad2[i] + '">' + insuranceThridDatad2[i] + '</option>');
-      }
-    } else if ($(this).val() == '不動產業') {
-      for (var i = 0; i < realEstateThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + realEstateThridDatad[i] + '">' + realEstateThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '金融控股公司業') {
-      for (var i = 0; i < financialHoldingThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + financialHoldingThridDatad[i] + '">' + financialHoldingThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '證券期貨控股業') {
-      for (var i = 0; i < securitiesFuturesThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + securitiesFuturesThridDatad[i] + '">' + securitiesFuturesThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '其他金融、保險及不動產業') {
-      for (var i = 0; i < ohterThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + ohterThridDatad[i] + '">' + ohterThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '顧問服務業') {
-      for (var i = 0; i < consultantThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + consultantThridDatad[i] + '">' + consultantThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '資訊服務業') {
-      for (var i = 0; i < informationThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + informationThridDatad[i] + '">' + informationThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '廣告業') {
-      for (var i = 0; i < advertisementThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + advertisementThridDatad[i] + '">' + advertisementThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '設計業') {
-      for (var i = 0; i < designThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + designThridDatad[i] + '">' + designThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '就業服務業') {
-      for (var i = 0; i < jobThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + jobThridDatad[i] + '">' + jobThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '公寓大廈管理服務業') {
-      for (var i = 0; i < apartmentThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + apartmentThridDatad[i] + '">' + apartmentThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '保全業') {
-      for (var i = 0; i < securityThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + securityThridDatad[i] + '">' + securityThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '工業檢驗業') {
-      for (var i = 0; i < industrialThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + industrialThridDatad[i] + '">' + industrialThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '建築物公共安全檢查業') {
-      for (var i = 0; i < buildThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + buildThridDatad[i] + '">' + buildThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '藥品檢驗業') {
-      for (var i = 0; i < dragThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + dragThridDatad[i] + '">' + dragThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '環保服務業') {
-      for (var i = 0; i < envirThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + envirThridDatad[i] + '">' + envirThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '訓練服務業') {
-      for (var i = 0; i < traningThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + traningThridDatad[i] + '">' + traningThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '出版事業') {
-      for (var i = 0; i < releaseThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + releaseThridDatad[i] + '">' + releaseThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '電影事業') {
-      for (var i = 0; i < movieThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + movieThridDatad[i] + '">' + movieThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '廣播電視業') {
-      for (var i = 0; i < tvThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + tvThridDatad[i] + '">' + tvThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '藝文業') {
-      for (var i = 0; i < actThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + actThridDatad[i] + '">' + actThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '休閒、娛樂服務業') {
-      for (var i = 0; i < entertainThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + entertainThridDatad[i] + '">' + entertainThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '運動服務業') {
-      for (var i = 0; i < sportThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + sportThridDatad[i] + '">' + sportThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '觀光及旅遊服務業') {
-      for (var i = 0; i < tourThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + tourThridDatad[i] + '">' + tourThridDatad[i] + '</option>');
-      }
-    } else if ($(this).val() == '個人服務業') {
-      for (var i = 0; i < personnelThridDatad.length; i++) {
-        $(".manage-item-1-2-3").append('<option value="' + personnelThridDatad[i] + '">' + personnelThridDatad[i] + '</option>');
-      }
-    }
+    triggerThridSelect('.manage-item-1-2-3', $(this));
   });
 
   $('#submit-form').submit(function(e) {
