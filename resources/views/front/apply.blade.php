@@ -60,27 +60,29 @@
       <div class="form-group row">
         <div class="col">
           <label for="manage-item">公司經營項目<abbr class="text-danger">*</abbr></label>
-          <select style="width:20%" class="form-control manage-item-1" name="manage-item-1">
-            <option value="農、林、漁、牧業">農、林、漁、牧業</option>
-            <option value="礦業及土石採取業">礦業及土石採取業</option>
-            <option value="製造業">製造業</option>
-            <option value="水電燃氣業">水電燃氣業</option>
-            <option value="營造及工程業">營造及工程業</option>
-            <option value="其他未分類業">其他未分類業</option>
-            <option value="批發、零售及餐飲業">批發、零售及餐飲業</option>
-            <option value="運輸、倉儲及通信業">運輸、倉儲及通信業</option>
-            <option value="金融、保險及不動產業">金融、保險及不動產業</option>
-            <option value="專業、科學及技術服務業">專業、科學及技術服務業</option>
-            <option value="文化、運動、休閒及其他服務業">文化、運動、休閒及其他服務業</option>
-          </select>
+          <div class="d-flex">
+            <select style="width:30%;margin-right:5%;" class="form-control manage-item-1" name="manage-item-1">
+              <option value="農、林、漁、牧業">農、林、漁、牧業</option>
+              <option value="礦業及土石採取業">礦業及土石採取業</option>
+              <option value="製造業">製造業</option>
+              <option value="水電燃氣業">水電燃氣業</option>
+              <option value="營造及工程業">營造及工程業</option>
+              <option value="其他未分類業">其他未分類業</option>
+              <option value="批發、零售及餐飲業">批發、零售及餐飲業</option>
+              <option value="運輸、倉儲及通信業">運輸、倉儲及通信業</option>
+              <option value="金融、保險及不動產業">金融、保險及不動產業</option>
+              <option value="專業、科學及技術服務業">專業、科學及技術服務業</option>
+              <option value="文化、運動、休閒及其他服務業">文化、運動、休閒及其他服務業</option>
+            </select>
 
-          <!-- 第二層選單 -->
-          <select style="width:20%;" class="form-control manage-item-1-2" name="manage-item-1-2">
-          </select>
+            <!-- 第二層選單 -->
+            <select style="width:30%;margin-right:5%;display:none;" class="form-control manage-item-1-2" name="manage-item-1-2">
+            </select>
 
-          <!-- 第三層選單 -->
-          <select style="width:20%;" class="form-control manage-item-1-2-3" name="manage-item-1-2-3">
-          </select>
+            <!-- 第三層選單 -->
+            <select style="width:30%;display:none;" class="form-control manage-item-1-2-3" name="manage-item-1-2-3">
+            </select>
+          </div>
         </div>
         <!-- <div class="col">
           <label for="email">E-mail<abbr class="text-danger">*</abbr></label>
@@ -366,41 +368,75 @@
   // 個人服務業
   var personnelThridDatad = ['汽車服務業','維修服務業','洗衣業','移民服務業','留學服務業'];
 
+  // 請除與隱欌
+  function clearAndNoneSelect(selector) {
+    $('.' + selector).find('option').remove().end();
+    $('.' + selector).css('display','none');
+  }
+  // 清除 option
   function clearSelect(selector) {
     $('.' + selector).find('option').remove().end();
+  }
+  // 隱藏 select
+  function diplayNoneSelect(selector) {
+    $('.' + selector).css('display','none');
   }
 
   // 第一層選單改變
   $('.manage-item-1').change(function() {
     // 隱藏與清除二三層的下拉選單
-    clearSelect('manage-item-1-2');
-    clearSelect('manage-item-1-2-3');
+    clearAndNoneSelect('manage-item-1-2');
+    clearAndNoneSelect('manage-item-1-2-3');
     // 顯示第二層
     if ($(this).val() == '批發、零售及餐飲業') {
+      $('.manage-item-1-2').css('display','block');
       for (var i = 0; i < retailSecondData.length; i++) {
         $(".manage-item-1-2").append('<option value="' + retailSecondData[i] + '">' + retailSecondData[i] + '</option>');
       }
+      $('.manage-item-1-2-3').css('display','block');
+      for (var i = 0; i < wholsaleThridData.length; i++) {
+        $(".manage-item-1-2-3").append('<option value="' + wholsaleThridData[i] + '">' + wholsaleThridData[i] + '</option>');
+      }
     } else if($(this).val() == '運輸、倉儲及通信業') {
+      $('.manage-item-1-2').css('display','block');
       for (var i = 0; i < shipSecondData.length; i++) {
         $(".manage-item-1-2").append('<option value="' + shipSecondData[i] + '">' + shipSecondData[i] + '</option>');
       }
+      $('.manage-item-1-2-3').css('display','block');
+      for (var i = 0; i < shipSecondData.length; i++) {
+        $(".manage-item-1-2-3").append('<option value="' + shipSecondData[i] + '">' + shipSecondData[i] + '</option>');
+      }
     } else if($(this).val() == '金融、保險及不動產業') {
+      $('.manage-item-1-2').css('display','block');
       for (var i = 0; i < financialSecondData.length; i++) {
         $(".manage-item-1-2").append('<option value="' + financialSecondData[i] + '">' + financialSecondData[i] + '</option>');
       }
+      $('.manage-item-1-2-3').css('display','block');
+      for (var i = 0; i < financialSecondData.length; i++) {
+        $(".manage-item-1-2-3").append('<option value="' + financialSecondData[i] + '">' + financialSecondData[i] + '</option>');
+      }
     } else if($(this).val() == '專業、科學及技術服務業') {
+      $('.manage-item-1-2').css('display','block');
       for (var i = 0; i < professionSecondData.length; i++) {
         $(".manage-item-1-2").append('<option value="' + professionSecondData[i] + '">' + professionSecondData[i] + '</option>');
       }
+      $('.manage-item-1-2-3').css('display','block');
+      for (var i = 0; i < professionSecondData.length; i++) {
+        $(".manage-item-1-2-3").append('<option value="' + professionSecondData[i] + '">' + professionSecondData[i] + '</option>');
+      }
     } else if($(this).val() == '文化、運動、休閒及其他服務業') {
+      $('.manage-item-1-2').css('display','block');
       for (var i = 0; i < sportSecondData.length; i++) {
         $(".manage-item-1-2").append('<option value="' + sportSecondData[i] + '">' + sportSecondData[i] + '</option>');
+      }
+      $('.manage-item-1-2-3').css('display','block');
+      for (var i = 0; i < sportSecondData.length; i++) {
+        $(".manage-item-1-2-3").append('<option value="' + sportSecondData[i] + '">' + sportSecondData[i] + '</option>');
       }
     }
   });
   // 第二層選單改變
   $('.manage-item-1-2').change(function() {
-    // 隱藏與清除三層的下拉選單
     clearSelect('manage-item-1-2-3');
     // 顯示第三層
     if ($(this).val() == '批發業') {
