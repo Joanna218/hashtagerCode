@@ -2265,6 +2265,14 @@ footer #copy-rights .container {
   }
 }
 
+.sendSucess {
+  display: none;
+}
+
+.modal-footer {
+  display: none;
+}
+
 /*
 // global style setting
 html,

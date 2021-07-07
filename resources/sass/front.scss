@@ -2316,7 +2316,6 @@ footer {
 
   }
 
-
   // 手機
   @include media-breakpoint-down(sm) {
     padding: 20px 0px;
@@ -2352,6 +2351,14 @@ footer {
       }
     }
   }
+}
+
+.sendSucess {
+  display: none;
+}
+
+.modal-footer {
+  display: none
 }
 /*
 // global style setting

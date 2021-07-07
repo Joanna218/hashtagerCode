@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['as' => 'front.'], function() {
   Route::post('/sendMail', [HomeController::class, 'sendMail'])->name('sendMail');
+  Route::post('/sendApplyMail', [HomeController::class, 'sendApplyMail'])->name('sendApplyMail');
 });

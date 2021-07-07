@@ -208,22 +208,16 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="Modal" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div> -->
       <div class="modal-body">
-        傳送中....請稍候...
+        <span class="sending">傳送中....請稍候...</span>
+        <span class="sendSucess">寄信成功，將會有專人與您聯繫！</span>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-check" data-dismiss="modal">確定</button>
+      </div>
     </div>
   </div>
 </div>
@@ -644,9 +638,51 @@
       e.stopPropagation();
       vForm.addClass('was-validated');
     } else {
-      alert('驗證通過！');
+      // 公司經營項目
+      var manageItem = $('.manage-item-1').val();
+      if ($('.manage-item-1-2').val() != null) {
+        manageItem = manageItem + '/' + $('.manage-item-1-2').val() + '/' + $('.manage-item-1-2-3').val();
+      }
+      // 寄信
+      var deskData = {
+        'apply-name': $('.apply-name').val(),
+        'contact-tel': $('.contact-tel').val(),
+        'corporation': $('.corporation').val(),
+        'corporation-tel': $('.corporation-tel').val(),
+        'manage-Item': manageItem,
+        'brand-name': $('.brand-name').val(),
+        'brand-category': $('.brand-category').val(),
+        'more-activity': $('.more-activity').val(),
+        'home': $('.offical-icon-home').val(),
+        'facebook': $('.offical-icon-facebook').val(),
+        'instagram': $('.offical-icon-instagram').val(),
+        'email': $('.email').val(),
+        'other-required': $('.other-required').val(),
+        '_token': "{{ csrf_token() }}"
+      };
+      sendApplyMail(deskData);
     }
   });
+
+  function sendApplyMail(sendData) {
+    $('#modal').modal('show');
+    $.ajax({
+      type: "POST",
+      url: "/api/sendApplyMail",
+      data: sendData,
+      success: function (res) {
+        $('.sending').css('display','none');
+        $('.sendSucess').css('display','block');
+        $('.modal-footer').css('display','block');
+        $('.modal-check').on('click', function() {
+            location.href = "./";
+        });
+      },
+      error: function (xhr, status, error) {
+        console.error(xhr);
+      }
+    });
+  }
   // $('.submit-form1').on('click', function (e) {
   //   e.preventDefault();
   //   debugger;
@@ -695,7 +731,7 @@
     $('#Modal').modal('show');
     $.ajax({
         type: "POST",
-        url: "/api/sendMail",
+        url: "/api/sendApplyMail",
         data: {
           'more-contents': $('.more-contents2').val(),
           'contact-person': $('.contact-person2').val(),
@@ -718,35 +754,6 @@
         }
       });
   });
-
-  // $('#submit-form2').on('submit', function (e) {
-  //   e.preventDefault();
-  //   if ($('.other-required').val() == "") {
-  //     $('.other-required').val("無");
-  //   }
-  //   $.ajax({
-  //       type: "POST",
-  //       url: "/api/sendMail",
-  //       data: {
-  //         'more-contents': $('.more-contents2').val(),
-  //         'contact-person': $('.contact-person2').val(),
-  //         'contact-tel': $('.contact-tel2').val(),
-  //         'corporation': $('.corporation2').val(),
-  //         'email': $('.email2').val(),
-  //         'other-required': $('.other-required2').val(),
-  //         '_token': "{{ csrf_token() }}"
-  //       },
-  //       success: function (res) {
-  //         debugger;
-  //         $('#Modal').modal('hide');
-  //         alert(res);
-  //       },
-  //       error: function (xhr, status, error) {
-  //         console.error(xhr);
-  //       }
-  //     });
-  // });
-
 
 </script>
 
