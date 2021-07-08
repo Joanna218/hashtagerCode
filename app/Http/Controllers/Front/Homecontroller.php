@@ -48,6 +48,9 @@ class HomeController extends Controller
       $to2 = ['email'=>'hsinhuei.li@indexasia.com.tw',
       'name'=>'Hashtager舉辦活動'];
 
+      $test2 = ['email'=>'blueplustsai@gmail.com',
+      'name'=>'Hashtager舉辦活動'];
+
       // $test = ['email'=>'okokis101@gmail.com',
       // 'name'=>'Hashtager申請上架'];
 
@@ -78,6 +81,11 @@ class HomeController extends Controller
         $message->to($to2['email'], $to2['name'])->subject($subject);
         });
 
+      Mail::send('front.post', $data, function($message) use ($from, $test2, $subject) {
+        $message->from($from['email'], $from['name']);
+        $message->to($test2['email'], $test2['name'])->subject($subject);
+        });
+
       // $data = $request->all();
       // Mail::send([], $data, function ($message) use ($data) {
       //   $message->from(ENV('MAIL_USERNAME', 'mailsend@google.com'), $data['contact-person']);
@@ -99,6 +107,9 @@ class HomeController extends Controller
       'name'=>'Hashtager申請上架'];
 
       $to2 = ['email'=>'hsinhuei.li@indexasia.com.tw',
+      'name'=>'Hashtager申請上架'];
+
+      $test2 = ['email'=>'blueplustsai@gmail.com',
       'name'=>'Hashtager申請上架'];
 
       // $test = ['email'=>'okokis101@gmail.com',
@@ -136,6 +147,11 @@ class HomeController extends Controller
       Mail::send('front.applyMail', $data, function($message) use ($from, $to2, $subject) {
         $message->from($from['email'], $from['name']);
         $message->to($to2['email'], $to2['name'])->subject($subject);
+        });
+
+      Mail::send('front.applyMail', $data, function($message) use ($from, $test2, $subject) {
+        $message->from($from['email'], $from['name']);
+        $message->to($test2['email'], $test2['name'])->subject($subject);
         });
 
       return "寄信成功，將會有專人與您聯繫！";
