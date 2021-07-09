@@ -2374,6 +2374,103 @@ footer {
 .modal-footer {
   display: none
 }
+
+/* ======= back ======== */
+
+.back-banner {
+  background-image: url('../images/back/04_function_banner.jpg');
+  .common-banner-text {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.back-mobil-banner {
+  background-image: url('../images/mobile/function_top_banner@2x.png');
+  background-size: cover;
+  background-position: center;
+}
+
+// 用戶心得，平板以下為手機排版
+#back {
+  max-width: 1024px;
+  margin: 0 auto;
+  .container2 {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 0;
+    .thoughts-contents {
+      display: flex;
+      justify-content: space-between;
+      @media (min-width: 1200px) {
+        justify-content: space-evenly;
+      }
+      .thoughts-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 15px;
+        box-shadow: 0 0 20px 0 rgb(0 0 0 / 16%);
+        border-radius: 10px;
+        position: relative;
+        background-color: #fff;
+        .data-img {
+          width: 120px;
+          max-height: 120px;
+          display: flex;
+          align-items: center;
+        }
+        .thoughts-desc {
+          display: flex;
+          flex-direction: column;
+          width: 400px;
+          .thoughts-icon {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto;
+          }
+          p {
+            margin-bottom: 0;
+            color: #000;
+          }
+        }
+        .gray-triangle {
+          width: 125px;
+          height: 105px;
+          position: absolute;
+          right: -10px;
+          bottom: -10px;
+          z-index: -999;
+        }
+      }
+    }
+
+    // 平板以下 手機版顯示
+    @include media-breakpoint-down(md) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      padding: 0 .75rem;
+      h1 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .thoughts-contents {
+        flex-direction: column;
+        padding: 0 .75rem;
+        .thoughts-box {
+          flex-direction: column;
+          // padding: 50px;
+          justify-content: center;
+          align-items: center;
+          margin: 40px 0px;
+          padding: 60px 20px;
+          .thoughts-desc {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 /*
 // global style setting
 html,

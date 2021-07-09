@@ -35,38 +35,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="d-sm-block d-md-none uk-position-relative uk-visible-toggle uk-light"
-    tabindex="-1" uk-slideshow="animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
-    <ul class="uk-slideshow-items">
-      <li>
-        <img src="{{ asset('images/mobile/630@2x.png') }}" alt="手機輪播圖01" style="height:370px;width:100%;" uk-img>
-        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;flex-direction: column;justify-content: center;align-items:center;width:100%;">
-            <h2 class="uk-margin-remove" style="font-size: 30px;padding-bottom:10px;line-height: 36px;text-align:center;">今天策劃，<br>明天上線！</h2>
-            <p class="uk-margin-remove" style="font-size: 18px;color:#FFD248;">
-              簡單一站式辦活動，<br>讓你加快行銷節奏
-            </p>
-        </div>
-      </li>
-      <li>
-        <img src="{{ asset('images/mobile/631@2x.png') }}" style="height:370px;width:100%;" alt="手機輪播圖02" uk-img>
-        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;flex-direction: column;justify-content: center;align-items:center;width:100%;">
-            <h2 class="uk-margin-remove" style="font-size: 30px;padding-bottom:10px;line-height: 36px;text-align:center;">⽉付3000，百位<br>素⼈為你證⾔</h2>
-            <p class="uk-margin-remove" style="font-size: 18px;color:#FFD248;text-align:center;">
-            新朋友嗎？首次上架免費，<br>快去諮詢吧！
-            </p>
-        </div>
-      </li>
-      <li>
-        <img src="{{ asset('images/mobile/632@2x.png') }}" style="height:370px;width:100%;" alt="手機輪播圖03" uk-img>
-        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;flex-direction: column;justify-content: center;align-items:center;width:100%;">
-            <h2 class="uk-margin-remove" style="font-size: 30px;padding-bottom:10px;line-height: 36px;text-align:center;">超過8000位 <br> KOC任您挑選</h2>
-            <p class="uk-margin-remove" style="font-size: 18px;color:#FFD248;text-align:center;">
-            真實⽣活化的素⼈⼤使，在朋友圈<br>具有影響⼒，粉絲數⾼於1000+！
-            </p>
-        </div>
-      </li>
-    </ul>
-  </div> -->
 
   <!-- 平板以上 -->
   <div class="owl-carousel owl-theme d-none d-md-block">
@@ -102,44 +70,6 @@
         </div>
     </div>
   </div>
-  <!-- <div class="d-none d-md-block uk-position-relative uk-visible-toggle uk-light"
-    tabindex="-1" uk-slideshow="max-height: 400;animation: fade;autoplay:true;autoplay-interval: 2500;pause-on-hover: true;">
-    <ul class="uk-slideshow-items">
-      <li>
-        <img src="{{ asset('images/nav/01_index_banner_1-3.jpg') }}" alt="輪播圖03" style="height:500px;width:100%;" uk-img>
-        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
-        flex-direction: column;justify-content: center;margin-left: 10%;">
-            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">今天策劃，明天上線！</h2>
-            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
-              簡單一站式辦活動，讓你加快行銷節奏
-            </p>
-        </div>
-      </li>
-      <li>
-        <img src="{{ asset('images/nav/01_index_banner_1-2.jpg') }}" alt="輪播圖02" style="height:500px;width:100%;" uk-img>
-        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
-        flex-direction: column;justify-content: center;margin-left: 10%;">
-            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">⽉付3000，百位素⼈為你證⾔</h2>
-            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
-              新朋友嗎？首次上架免費，快去諮詢吧！
-            </p>
-        </div>
-      </li>
-      <li>
-        <img src="{{ asset('images/nav/01_index_banner_1-1.jpg') }}" style="height:500px;width:100%;" alt="輪播圖01" uk-img>
-        <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
-        flex-direction: column;justify-content: center;margin-left: 10%;">
-            <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">超過8000位KOC任您挑選</h2>
-            <p class="uk-margin-remove" style="font-size: 28px;color:#FFD248;">
-              真實⽣活化的素⼈⼤使，在朋友圈具有影響⼒， <br>
-              粉絲數⾼於1000+！
-            </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
-</div> -->
 
 <!-- 區塊四 共同推廣-->
 <div id="common-promote">
@@ -316,7 +246,7 @@
             因此對於品牌而言，長期在IG上耕耘，創造聲量，並且在重要的#Hashtag牆中露出自家的產品內容，建立屬於自己的#Hashtag牆，是提升與其他品牌競爭力的關鍵。
           </div>
           <div class="free-program">
-            <a href="{{ url('contact') }}">諮詢免費方案</a>
+            <a href="{{ url('apply') }}">諮詢免費方案</a>
           </div>
         </div>
       </div>
@@ -507,21 +437,21 @@
         <div class="marketing-icon">
           <img class="img-fluid" src="{{ asset('images/index/icon_index-4.png') }}" alt="">
         </div>
-        <a class="more-btn" href="#">暸解更多</a>
+        <a class="more-btn" href="{{ url('/contact') }}">暸解更多</a>
       </div>
       <div class="marketing-item">
         <h3 class="text-black">整合行銷服務</h3>
         <div class="marketing-icon">
           <img class="img-fluid" src="{{ asset('images/index/icon_index-5.png') }}" alt="">
         </div>
-        <a class="more-btn" href="#">暸解更多</a>
+        <a class="more-btn" href="{{ url('/contact') }}">暸解更多</a>
       </div>
       <div class="marketing-item">
         <h3 class="text-black">UGC彙整於官網</h3>
         <div class="marketing-icon">
           <img class="img-fluid" src="{{ asset('images/index/icon_index-6.png') }}" alt="">
         </div>
-        <a class="more-btn" href="#">暸解更多</a>
+        <a class="more-btn" href="{{ url('/contact') }}">暸解更多</a>
       </div>
     </div>
     <div class="d-sm-block d-md-none marketing-contents">
@@ -539,7 +469,7 @@
           <h3>UGC彙整於官網</h3>
         </div>
       </div>
-      <a class="more-btn" href="#">暸解更多</a>
+      <a class="more-btn" href="{{ url('/contact') }}">暸解更多</a>
     </div>
   </div>
 </div>

@@ -315,7 +315,7 @@
       </div>
     </div>
     <div class="more">
-      <a href="#">查看更多方案</a>
+      <a href="{{ url('/apply') }}">查看更多方案</a>
     </div>
   </div>
 </div>

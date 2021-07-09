@@ -30,9 +30,8 @@
           <option value="口碑行銷">口碑行銷</option>
           <option value="輿情監測">輿情監測</option>
           <option value="整合行銷服務">整合行銷服務</option>
-          <option value="UGC再利用">UGC再利用</option>
+          <option value="Letro(UGC再利用)">Letro(UGC再利用)</option>
           <option value="異業合作">異業合作</option>
-          <option value="上架諮詢">上架諮詢</option>
         </select>
       </div>
 
@@ -93,9 +92,8 @@
           <option value="口碑行銷">口碑行銷</option>
           <option value="輿情監測">輿情監測</option>
           <option value="整合行銷服務">整合行銷服務</option>
-          <option value="UGC再利用">UGC再利用</option>
+          <option value="Letro(UGC再利用)">Letro(UGC再利用)</option>
           <option value="異業合作">異業合作</option>
-          <option value="上架諮詢">上架諮詢</option>
         </select>
       </div>
       <div class="form-group row">

@@ -28,6 +28,11 @@ class HomeController extends Controller
         return view('front.contact');
     }
 
+    public function back()
+    {
+        return view('front.back');
+    }
+
     public function apply()
     {
         return view('front.apply');
@@ -109,7 +114,7 @@ class HomeController extends Controller
       $to2 = ['email'=>'hsinhuei.li@indexasia.com.tw',
       'name'=>'Hashtager申請上架'];
 
-      $test2 = ['email'=>'blueplustsai@gmail.com',
+      $test = ['email'=>'blueplustsai@gmail.com',
       'name'=>'Hashtager申請上架'];
 
       // $test = ['email'=>'okokis101@gmail.com',
@@ -149,9 +154,9 @@ class HomeController extends Controller
         $message->to($to2['email'], $to2['name'])->subject($subject);
         });
 
-      Mail::send('front.applyMail', $data, function($message) use ($from, $test2, $subject) {
+      Mail::send('front.applyMail', $data, function($message) use ($from, $test, $subject) {
         $message->from($from['email'], $from['name']);
-        $message->to($test2['email'], $test2['name'])->subject($subject);
+        $message->to($test['email'], $test['name'])->subject($subject);
         });
 
       return "寄信成功，將會有專人與您聯繫！";

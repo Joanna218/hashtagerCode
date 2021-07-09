@@ -145,7 +145,7 @@
     </div>
 
     <div class="more">
-      <a href="#">瞭解更多</a>
+      <a href="{{ url('/contact') }}">瞭解更多</a>
     </div>
   </div>
 </div>
