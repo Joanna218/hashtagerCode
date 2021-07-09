@@ -10,32 +10,38 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('front.home');
+        $title = "貼嗑|優勢特色";
+        return view('front.home', compact('title'));
     }
 
     public function ugc()
     {
-        return view('front.ugc');
+        $title = "貼嗑|UGC活動行銷";
+        return view('front.ugc', compact('title'));
     }
 
     public function service()
     {
-        return view('front.service');
+        $title = "貼嗑|配套服務";
+        return view('front.service', compact('title'));
     }
 
     public function contact()
     {
-        return view('front.contact');
+      $title = "貼嗑|聯絡我們";
+      return view('front.contact', compact('title'));
     }
 
     public function back()
     {
-        return view('front.back');
+      $title = "貼嗑|後台功能介紹";
+      return view('front.back', compact('title'));
     }
 
     public function apply()
     {
-        return view('front.apply');
+      $title = "貼嗑|上架諮詢";
+      return view('front.apply', compact('title'));
     }
 
     public function sendMail(Request $request)

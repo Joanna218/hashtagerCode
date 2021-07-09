@@ -3,7 +3,7 @@
 <!-- Add landing-2 to html element -->
 <html lang="en" class="landing-2 light-style">
 <head>
-    <title>{{ config('app.name') }}</title>
+    <title>{{ $title }}</title>
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
