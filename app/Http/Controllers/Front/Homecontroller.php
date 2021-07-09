@@ -44,6 +44,12 @@ class HomeController extends Controller
       return view('front.apply', compact('title'));
     }
 
+    public function question()
+    {
+      $title = "貼嗑|常見問題";
+      return view('front.question', compact('title'));
+    }
+
     public function sendMail(Request $request)
     {
       $from = ['email'=>'service@hashtager.com.tw',

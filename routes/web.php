@@ -25,4 +25,5 @@ Route::group(['as' => 'front.'], function() {
     Route::get('/service', [HomeController::class, 'service'])->name('service');
     Route::get('/apply', [HomeController::class, 'apply'])->name('apply');
     Route::get('/back', [HomeController::class, 'back'])->name('back');
+    Route::get('/question', [HomeController::class, 'question'])->name('question');
 });
