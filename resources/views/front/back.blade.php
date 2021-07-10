@@ -15,9 +15,14 @@
   <div class="container2">
   <div class="thoughts-contents">
       <div class="thoughts-box">
-        <div class="data-img">
+        <div class="label-bg">
+          <div class="triangle triangle-3"></div>
+        </div>
+
+
+        <!-- <div class="data-img">
           <img class="img-fluid d-none d-lg-block" src="{{ asset('images/back/function_icon_01@2x.png') }}"  alt="">
-          <!-- <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt=""> -->
+          <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt="">
         </div>
         <div class="thoughts-desc">
           <h3>企業擁有專屬後台<br>輕鬆管理所有報名資訊</h3>
@@ -25,10 +30,10 @@
             90%的消費者相信UGC貼文能加強影響他們的購買決定，並認為它會是品牌可信度及真實性的關鍵指標。
           </p>
         </div>
-        <img class="gray-triangle" src="{{ asset('images/ugc/1165@2x.png') }}" alt="">
+        <img class="gray-triangle" src="{{ asset('images/ugc/1165@2x.png') }}" alt=""> -->
       </div>
 
-      <div class="thoughts-box">
+      <!-- <div class="thoughts-box">
         <div class="data-img">
           <img class="img-fluid d-none d-lg-block" src="{{ asset('images/ugc/client78@2x.png') }}"  alt="">
           <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/78@2x.png') }}"  alt="">
@@ -42,7 +47,7 @@
           </p>
         </div>
         <img class="gray-triangle" src="{{ asset('images/ugc/1165@2x.png') }}" alt="">
-      </div>
+      </div> -->
     </div>
 
   </div>
