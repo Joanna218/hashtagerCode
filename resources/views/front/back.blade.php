@@ -70,8 +70,11 @@
 
     <div class="thoughts-contents">
       <div class="thoughts-box">
-        <div class="label-bg2">
+        <div class="d-none d-md-block label-bg2">
           <div class="triangle triangle-2"></div>
+        </div>
+        <div class="d-sm-block d-md-none label-bg1">
+          <div class="triangle triangle-1"></div>
         </div>
 
         <div class="desc-box">
@@ -106,8 +109,11 @@
       </div>
 
       <div class="thoughts-box">
-        <div class="label-bg1">
+        <div class="d-none d-md-block label-bg1">
           <div class="triangle triangle-1"></div>
+        </div>
+        <div class="d-sm-block d-md-none label-bg2">
+          <div class="triangle triangle-2"></div>
         </div>
 
         <div class="desc-box">

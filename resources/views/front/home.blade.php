@@ -39,7 +39,7 @@
   <!-- 平板以上 -->
   <div class="owl-carousel owl-theme d-none d-md-block">
     <div class="item">
-      <img src="{{ asset('images/nav/01_index_banner_1-3.jpg') }}" alt="輪播圖03" style="height:400px;width:100%;">
+      <img class="img-fluid" src="{{ asset('images/nav/01_index_banner_1-3.jpg') }}" alt="輪播圖03" style="width:100%;height:100%;">
       <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
         flex-direction: column;justify-content: center;margin-left: 10%;">
             <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">今天策劃，明天上線！</h2>
@@ -49,7 +49,7 @@
         </div>
     </div>
     <div class="item">
-      <img src="{{ asset('images/nav/01_index_banner_1-2.jpg') }}" alt="輪播圖02" style="height:400px;width:100%;">
+      <img class="img-fluid" src="{{ asset('images/nav/01_index_banner_1-2.jpg') }}" alt="輪播圖02" style="width:100%;height:100%;">
       <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
         flex-direction: column;justify-content: center;margin-left: 10%;">
             <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">⽉付3000，百位素⼈為你證⾔</h2>
@@ -59,7 +59,7 @@
         </div>
     </div>
     <div class="item">
-      <img src="{{ asset('images/nav/01_index_banner_1-1.jpg') }}" style="height:400px;width:100%;" alt="輪播圖01">
+      <img class="img-fluid" src="{{ asset('images/nav/01_index_banner_1-1.jpg') }}" style="width:100%;height:100%;" alt="輪播圖01">
       <div class="uk-position-left uk-position-small uk-text-left uk-light" style="display: flex;
         flex-direction: column;justify-content: center;margin-left: 10%;">
             <h2 class="uk-margin-remove" style="font-size: 60px;padding-bottom:20px;">超過8000位KOC任您挑選</h2>

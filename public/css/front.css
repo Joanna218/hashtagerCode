@@ -62,6 +62,10 @@ h4 {
   border-color: unset;
 }
 
+.form-control {
+  border: 1px solid #000;
+}
+
 #gototop {
   border-bottom: #e2e2e2 1px solid;
 }
@@ -677,7 +681,7 @@ h4 {
 }
 #tager-hot-event .container .tager-hot-event-content .box-event {
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.16);
-  padding: 20px;
+  padding: 15px 15px 0px 15px;
   margin: 0 10px;
   border-radius: 10px;
 }
@@ -685,7 +689,6 @@ h4 {
   color: #F58A07;
   font-size: 36px;
   margin-bottom: 20px;
-  padding-top: 25px;
 }
 #tager-hot-event .container .tager-hot-event-content .box-event .title {
   margin: 20px 0px;
@@ -698,7 +701,6 @@ h4 {
 #tager-hot-event .container .tager-hot-event-content .box-event .title p {
   margin: 0;
   margin-top: 10px;
-  margin-bottom: 24px;
   text-align: left;
   color: #000;
 }
@@ -1374,6 +1376,12 @@ footer #copy-rights .container {
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
+  width: 72%;
+}
+@media (max-width: 991.98px) {
+  #ugc-contents .bg-wrapper .gray-bgc .ugc-desc {
+    width: 100%;
+  }
 }
 #ugc-contents .bg-wrapper .gray-bgc .ugc-desc h1 {
   width: 95%;
@@ -1469,9 +1477,6 @@ footer #copy-rights .container {
 }
 #ugc-produce .bg-wrapper .triangle-bgc .desc {
   width: 80%;
-}
-#ugc-produce .bg-wrapper .triangle-bgc .desc h1 {
-  margin-bottom: 40px;
 }
 #ugc-produce .bg-wrapper .gray-bgc {
   width: 50%;
@@ -1901,7 +1906,9 @@ footer #copy-rights .container {
   border-radius: 10px;
 }
 #campaign-program .container .campaign-contents .campaign-box h2 {
-  font-weight: normal;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+  font-size: 30px;
 }
 #campaign-program .container .campaign-contents .campaign-box p {
   color: #000;
