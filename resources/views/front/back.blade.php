@@ -15,14 +15,13 @@
   <div class="container2">
     <div class="thoughts-contents">
       <div class="thoughts-box">
-        <div class="label-bg">
-          <div class="triangle triangle-2"></div>
+        <div class="label-bg1">
+          <div class="triangle triangle-1"></div>
         </div>
 
         <div class="desc-box">
           <div class="data-img">
-            <img class="d-none d-lg-block" src="{{ asset('images/back/function_icon_01@2x.png') }}"  alt="">
-            <img class="d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt="">
+            <img src="{{ asset('images/back/function_icon_01@2x.png') }}"  alt="">
           </div>
           <div class="thoughts-desc">
             <h3>企業擁有專屬後台<br>輕鬆管理所有報名資訊</h3>
@@ -44,14 +43,13 @@
       </div>
 
       <div class="thoughts-box">
-        <div class="label-bg bg2">
-          <div class="triangle triangle-2 triangle2"></div>
+        <div class="label-bg2 bg2">
+          <div class="triangle triangle-2"></div>
         </div>
 
         <div class="desc-box">
           <div class="data-img">
-            <img class="img-fluid d-none d-lg-block" src="{{ asset('images/back/function_icon_02@2x.png') }}"  alt="">
-            <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt="">
+            <img src="{{ asset('images/back/function_icon_02@2x.png') }}"  alt="">
           </div>
 
           <div class="thoughts-desc">
@@ -72,14 +70,13 @@
 
     <div class="thoughts-contents">
       <div class="thoughts-box">
-        <div class="label-bg bg2">
-          <div class="triangle triangle-2 triangle2"></div>
+        <div class="label-bg2">
+          <div class="triangle triangle-2"></div>
         </div>
 
         <div class="desc-box">
           <div class="data-img">
-            <img class="d-none d-lg-block" src="{{ asset('images/back/function_icon_03@2x.png') }}"  alt="">
-            <img class="d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt="">
+            <img src="{{ asset('images/back/function_icon_03@2x.png') }}"  alt="">
           </div>
           <div class="thoughts-desc">
             <h3>多功能報名系統<br>報名自動篩選</h3>
@@ -109,18 +106,17 @@
       </div>
 
       <div class="thoughts-box">
-        <div class="label-bg">
-          <div class="triangle triangle-2"></div>
+        <div class="label-bg1">
+          <div class="triangle triangle-1"></div>
         </div>
 
         <div class="desc-box">
           <div class="data-img">
-            <img class="img-fluid d-none d-lg-block" src="{{ asset('images/back/function_icon_04@2x.png') }}"  alt="">
-            <img class="img-fluid d-md-block d-lg-none" src="{{ asset('images/mobile/90@2x.png') }}"  alt="">
+            <img src="{{ asset('images/back/function_icon_04@2x.png') }}"  alt="">
           </div>
 
           <div class="thoughts-desc">
-            <h3 style="height: 72px;display: flex;align-items: center;">自動彙整活動UGC</h3>
+            <h3 class="last-title">自動彙整活動UGC</h3>
             <div class="dese-item">
               <img class="arrow" src="{{ asset('images/back/awesome-arrow-circle-right@2x.png') }}" alt="">
               <span>收集活動UGC並整理於活動頁面</span>

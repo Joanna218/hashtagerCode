@@ -2393,16 +2393,24 @@ footer {
 
 // 用戶心得，平板以下為手機排版
 #back {
-  // max-width: 1024px;
   margin: 0 auto;
   .container2 {
     padding: 0 1rem;
     max-width: 1200px;
     margin: 120px auto;
+    @include media-breakpoint-down(md) {
+      margin: 60px auto;
+    }
     .thoughts-contents {
       display: flex;
       justify-content: space-between;
       margin-bottom: 30px;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        margin-bottom: 0px;
+      }
       .thoughts-box {
         display: flex;
         height: 310px;
@@ -2411,14 +2419,58 @@ footer {
         position: relative;
         background-color: #fff;
         width: 48%;
-        .label-bg {
+        @include media-breakpoint-down(md) {
+          width: 85%;
+          margin-bottom: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+        }
+        h3 {
+          @include media-breakpoint-down(sm) {
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            margin-bottom: 5px;
+            margin-top: 20px;
+          }
+        }
+        .last-title {
+          height: 72px;
+          display: flex;
+          align-items: center;
+          @include media-breakpoint-down(sm) {
+            height: unset;
+            display: unset;
+            align-items: unset;
+          }
+        }
+        .label-bg1 {
           width: 30px;
           height: 100%;
           background-color: #F58A07;
           border-radius: 20px 0 0 20px ;
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            height: 30px;
+            padding-top: 30px;
+            border-radius: 20px 20px 0 0;
+          }
         }
-        .bg2 {
+
+        .label-bg2 {
+          width: 30px;
+          height: 100%;
           background-color: #FCBC28;
+          border-radius: 20px 0 0 20px ;
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            height: 30px;
+            padding-top: 30px;
+            border-radius: 20px 20px 0 0;
+          }
         }
 
         .triangle {
@@ -2426,7 +2478,7 @@ footer {
           margin: 0 5px;
           vertical-align: middle;
         }
-        .triangle-2 {
+        .triangle-1 {
           width: 30px;
           height: 60px;
           border-left: solid 30px #F58A07;
@@ -2436,14 +2488,46 @@ footer {
           top: 50%;
           transform: translateY(-50%);
           left: 2%;
+          @include media-breakpoint-down(sm) {
+            width: 60px;
+            height: 30px;
+            border-top: solid 30px #F58A07;
+            border-left: solid 30px transparent;
+            border-right: solid 30px transparent;
+            left: 50%;
+            top: 5%;
+            transform: translateX(-50%);
+          }
         }
-        .triangle2 {
+        .triangle-2 {
+          width: 30px;
+          height: 60px;
           border-left: solid 30px #FCBC28;
+          border-bottom: solid 30px transparent;
+          border-top: solid 30px transparent;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 2%;
+          @include media-breakpoint-down(sm) {
+            width: 60px;
+            height: 30px;
+            border-top: solid 30px #FCBC28;
+            border-left: solid 30px transparent;
+            border-right: solid 30px transparent;
+            left: 50%;
+            top: 5%;
+            transform: translateX(-50%);
+          }
         }
         .desc-box {
           padding: 25px 15px;
           display: flex;
           width: 100%;
+          @include media-breakpoint-down(sm) {
+            flex-direction: column;
+            align-items: center;
+          }
         }
         .data-img {
           height: 100%;
@@ -2453,6 +2537,9 @@ footer {
           margin-right: 20px;
           img {
             width: 110px;
+            @include media-breakpoint-down(sm) {
+              width: 80px;
+            }
           }
         }
         .thoughts-desc {
@@ -2487,32 +2574,6 @@ footer {
           right: -10px;
           bottom: -10px;
           z-index: -999;
-        }
-      }
-    }
-
-    // 平板以下 手機版顯示
-    @include media-breakpoint-down(md) {
-      margin-top: 60px;
-      margin-bottom: 60px;
-      padding: 0 .75rem;
-      h1 {
-        font-size: 30px;
-        line-height: 40px;
-      }
-      .thoughts-contents {
-        flex-direction: column;
-        padding: 0 .75rem;
-        .thoughts-box {
-          flex-direction: column;
-          // padding: 50px;
-          justify-content: center;
-          align-items: center;
-          margin: 40px 0px;
-          padding: 60px 20px;
-          .thoughts-desc {
-            width: 100%;
-          }
         }
       }
     }

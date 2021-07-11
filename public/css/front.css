@@ -2308,10 +2308,23 @@ footer #copy-rights .container {
   max-width: 1200px;
   margin: 120px auto;
 }
+@media (max-width: 991.98px) {
+  #back .container2 {
+    margin: 60px auto;
+  }
+}
 #back .container2 .thoughts-contents {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+@media (max-width: 991.98px) {
+  #back .container2 .thoughts-contents {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    margin-bottom: 0px;
+  }
 }
 #back .container2 .thoughts-contents .thoughts-box {
   display: flex;
@@ -2322,21 +2335,74 @@ footer #copy-rights .container {
   background-color: #fff;
   width: 48%;
 }
-#back .container2 .thoughts-contents .thoughts-box .label-bg {
+@media (max-width: 991.98px) {
+  #back .container2 .thoughts-contents .thoughts-box {
+    width: 85%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box h3 {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+}
+#back .container2 .thoughts-contents .thoughts-box .last-title {
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box .last-title {
+    height: unset;
+    display: unset;
+    align-items: unset;
+  }
+}
+#back .container2 .thoughts-contents .thoughts-box .label-bg1 {
   width: 30px;
   height: 100%;
   background-color: #F58A07;
   border-radius: 20px 0 0 20px;
 }
-#back .container2 .thoughts-contents .thoughts-box .bg2 {
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box .label-bg1 {
+    width: 100%;
+    height: 30px;
+    padding-top: 30px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+#back .container2 .thoughts-contents .thoughts-box .label-bg2 {
+  width: 30px;
+  height: 100%;
   background-color: #FCBC28;
+  border-radius: 20px 0 0 20px;
+}
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box .label-bg2 {
+    width: 100%;
+    height: 30px;
+    padding-top: 30px;
+    border-radius: 20px 20px 0 0;
+  }
 }
 #back .container2 .thoughts-contents .thoughts-box .triangle {
   display: inline-block;
   margin: 0 5px;
   vertical-align: middle;
 }
-#back .container2 .thoughts-contents .thoughts-box .triangle-2 {
+#back .container2 .thoughts-contents .thoughts-box .triangle-1 {
   width: 30px;
   height: 60px;
   border-left: solid 30px #F58A07;
@@ -2347,13 +2413,51 @@ footer #copy-rights .container {
   transform: translateY(-50%);
   left: 2%;
 }
-#back .container2 .thoughts-contents .thoughts-box .triangle2 {
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box .triangle-1 {
+    width: 60px;
+    height: 30px;
+    border-top: solid 30px #F58A07;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+  }
+}
+#back .container2 .thoughts-contents .thoughts-box .triangle-2 {
+  width: 30px;
+  height: 60px;
   border-left: solid 30px #FCBC28;
+  border-bottom: solid 30px transparent;
+  border-top: solid 30px transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+}
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box .triangle-2 {
+    width: 60px;
+    height: 30px;
+    border-top: solid 30px #FCBC28;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+  }
 }
 #back .container2 .thoughts-contents .thoughts-box .desc-box {
   padding: 25px 15px;
   display: flex;
   width: 100%;
+}
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box .desc-box {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #back .container2 .thoughts-contents .thoughts-box .data-img {
   height: 100%;
@@ -2364,6 +2468,11 @@ footer #copy-rights .container {
 }
 #back .container2 .thoughts-contents .thoughts-box .data-img img {
   width: 110px;
+}
+@media (max-width: 767.98px) {
+  #back .container2 .thoughts-contents .thoughts-box .data-img img {
+    width: 80px;
+  }
 }
 #back .container2 .thoughts-contents .thoughts-box .thoughts-desc {
   display: flex;
@@ -2394,31 +2503,6 @@ footer #copy-rights .container {
   right: -10px;
   bottom: -10px;
   z-index: -999;
-}
-@media (max-width: 991.98px) {
-  #back .container2 {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 0 0.75rem;
-  }
-  #back .container2 h1 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  #back .container2 .thoughts-contents {
-    flex-direction: column;
-    padding: 0 0.75rem;
-  }
-  #back .container2 .thoughts-contents .thoughts-box {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0px;
-    padding: 60px 20px;
-  }
-  #back .container2 .thoughts-contents .thoughts-box .thoughts-desc {
-    width: 100%;
-  }
 }
 
 /* ======= question ======== */
