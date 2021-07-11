@@ -2393,41 +2393,40 @@ footer {
 
 // 用戶心得，平板以下為手機排版
 #back {
-  max-width: 1024px;
+  // max-width: 1024px;
   margin: 0 auto;
   .container2 {
-    margin-top: 120px;
-    margin-bottom: 120px;
-    padding: 0;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 120px auto;
     .thoughts-contents {
       display: flex;
       justify-content: space-between;
-      @media (min-width: 1200px) {
-        justify-content: space-evenly;
-      }
+      margin-bottom: 30px;
       .thoughts-box {
         display: flex;
-        justify-content: space-between;
-        width: 200px;
-        height: 300px;
-        // padding: 25px 15px;
+        height: 310px;
         box-shadow: 0 0 20px 0 rgb(0 0 0 / 16%);
         border-radius: 20px;
         position: relative;
         background-color: #fff;
-
+        width: 48%;
         .label-bg {
           width: 30px;
           height: 100%;
           background-color: #F58A07;
           border-radius: 20px 0 0 20px ;
         }
+        .bg2 {
+          background-color: #FCBC28;
+        }
+
         .triangle {
           display: inline-block;
           margin: 0 5px;
           vertical-align: middle;
         }
-        .triangle-3 {
+        .triangle-2 {
           width: 30px;
           height: 60px;
           border-left: solid 30px #F58A07;
@@ -2436,26 +2435,49 @@ footer {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          left: 6%;
+          left: 2%;
+        }
+        .triangle2 {
+          border-left: solid 30px #FCBC28;
+        }
+        .desc-box {
+          padding: 25px 15px;
+          display: flex;
+          width: 100%;
         }
         .data-img {
-          width: 120px;
-          max-height: 120px;
+          height: 100%;
           display: flex;
           align-items: center;
+          margin-left: 20px;
+          margin-right: 20px;
+          img {
+            width: 110px;
+          }
         }
         .thoughts-desc {
           display: flex;
           flex-direction: column;
-          width: 400px;
+          width: 90%;
+          margin: 0px 10px;
+          // padding-right: 50px;
+          // padding-left: 20px;
+
           .thoughts-icon {
             width: 96px;
             height: 96px;
             margin: 0 auto;
           }
-          p {
-            margin-bottom: 0;
+          .dese-item {
             color: #000;
+            display: flex;
+            margin-top: 5px;
+            .arrow {
+              width: 16px;
+              height: 16px;
+              margin-right: 5px;
+              margin-top: 5px;
+            }
           }
         }
         .gray-triangle {
