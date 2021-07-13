@@ -2323,7 +2323,7 @@ footer #copy-rights .container {
 #back .container2 .thoughts-contents {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media (max-width: 991.98px) {
   #back .container2 .thoughts-contents {
@@ -2479,6 +2479,8 @@ footer #copy-rights .container {
 @media (max-width: 767.98px) {
   #back .container2 .thoughts-contents .thoughts-box .data-img img {
     width: 80px;
+    margin-left: 10px;
+    margin-right: 0px;
   }
 }
 #back .container2 .thoughts-contents .thoughts-box .thoughts-desc {
@@ -2556,9 +2558,15 @@ footer #copy-rights .container {
 }
 #question .container .question-content .question-box .question-desc p {
   color: #000;
+  padding-right: 20px;
 }
 #question .container .question-content .question-box .question-desc .campaign-process {
-  padding: 20px 0px;
+  padding: 20px 20px 20px 0px;
+}
+@media (max-width: 767.98px) {
+  #question .container .question-content .question-box .question-desc .campaign-process {
+    margin-left: -5px;
+  }
 }
 @media (max-width: 767.98px) {
   #question .container {

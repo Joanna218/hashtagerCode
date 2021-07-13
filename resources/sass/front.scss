@@ -2412,7 +2412,7 @@ footer {
     .thoughts-contents {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       @include media-breakpoint-down(md) {
         flex-direction: column;
         justify-content: unset;
@@ -2547,6 +2547,8 @@ footer {
             width: 110px;
             @include media-breakpoint-down(sm) {
               width: 80px;
+              margin-left: 10px;
+              margin-right: 0px;
             }
           }
         }
@@ -2633,10 +2635,14 @@ footer {
 
           p {
             color: #000;
+            padding-right: 20px;
           }
 
           .campaign-process {
-            padding: 20px 0px;
+            padding: 20px 20px 20px 0px;
+            @include media-breakpoint-down(sm) {
+              margin-left: -5px;
+            }
           }
         }
       }
