@@ -437,21 +437,21 @@
         <div class="marketing-icon">
           <img class="img-fluid" src="{{ asset('images/index/icon_index-4.png') }}" alt="">
         </div>
-        <a class="more-btn" href="{{ url('/contact') }}">暸解更多</a>
+        <a class="more-btn" href="{{ url('/apply') }}">暸解更多</a>
       </div>
       <div class="marketing-item">
         <h3 class="text-black">整合行銷服務</h3>
         <div class="marketing-icon">
           <img class="img-fluid" src="{{ asset('images/index/icon_index-5.png') }}" alt="">
         </div>
-        <a class="more-btn" href="{{ url('/contact') }}">暸解更多</a>
+        <a class="more-btn" href="{{ url('/apply') }}">暸解更多</a>
       </div>
       <div class="marketing-item">
         <h3 class="text-black">UGC彙整於官網</h3>
         <div class="marketing-icon">
           <img class="img-fluid" src="{{ asset('images/index/icon_index-6.png') }}" alt="">
         </div>
-        <a class="more-btn" href="{{ url('/contact') }}">暸解更多</a>
+        <a class="more-btn" href="{{ url('/apply') }}">暸解更多</a>
       </div>
     </div>
     <div class="d-sm-block d-md-none marketing-contents">
@@ -469,7 +469,7 @@
           <h3>UGC彙整於官網</h3>
         </div>
       </div>
-      <a class="more-btn" href="{{ url('/contact') }}">暸解更多</a>
+      <a class="more-btn" href="{{ url('/apply') }}">暸解更多</a>
     </div>
   </div>
 </div>
@@ -480,7 +480,7 @@
     <h1>開始辦活動</h1>
     <h3 class="d-none d-md-block">貼嗑一站式辦活動，讓你不費吹灰之力，輕鬆舉辦體驗活動</h3>
     <h3 class="d-sm-block d-md-none">貼嗑一站式辦活動，讓你不費吹灰之力，<br>輕鬆舉辦體驗活動</h3>
-    <a href="{{ url('contact') }}" class="go-btn">GO</a>
+    <a href="{{ url('apply') }}" class="go-btn">GO</a>
   </div>
 </div>
 @endsection

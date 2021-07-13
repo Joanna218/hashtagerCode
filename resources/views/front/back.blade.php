@@ -142,5 +142,14 @@
     </div>
   </div>
 </div>
+<!-- 開始辦活動 -->
+<div id="start-campaign">
+  <div class="container">
+    <h1>開始辦活動</h1>
+    <h3 class="d-none d-md-block">貼嗑一站式辦活動，讓你不費吹灰之力，輕鬆舉辦體驗活動</h3>
+    <h3 class="d-sm-block d-md-none">貼嗑一站式辦活動，讓你不費吹灰之力，<br>輕鬆舉辦體驗活動</h3>
+    <a href="{{ url('apply') }}" class="go-btn">GO</a>
+  </div>
+</div>
 
 @endsection

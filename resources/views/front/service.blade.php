@@ -225,7 +225,7 @@
     <img class="d-none d-md-block" src="{{ asset('images/service/service_img_05@2x.png') }}" alt="">
     <img class="d-sm-block d-md-none" src="{{ asset('images/mobile/mobile_service_img_05@2x.png') }}" alt="">
     <div class="more">
-      <a href="{{ url('contact') }}">瞭解Letro詳情</a>
+      <a href="{{ url('apply') }}">瞭解Letro詳情</a>
     </div>
   </div>
 </div>
@@ -236,7 +236,7 @@
     <h1>開始辦活動</h1>
     <h3 class="d-none d-md-block">貼嗑一站式辦活動，讓你不費吹灰之力，輕鬆舉辦體驗活動</h3>
     <h3 class="d-sm-block d-md-none">貼嗑一站式辦活動，讓你不費吹灰之力，<br>輕鬆舉辦體驗活動</h3>
-    <a href="{{ url('contact') }}" class="go-btn">GO</a>
+    <a href="{{ url('apply') }}" class="go-btn">GO</a>
   </div>
 </div>
 
