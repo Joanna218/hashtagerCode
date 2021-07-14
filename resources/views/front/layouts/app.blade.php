@@ -8,14 +8,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <!-- <meta property="og:title" content="nac nac自然愛最有型，秀出你家的甜蜜時光"/>
-    <meta property="og:description" content="萬元禮包等你拿！慶祝nac nac 30歲，官方IG開站啦！秀出你的nacstyle抽好禮" />
-    <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
-    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="Hashtag，貼嗑我要辦活動"/>
+    <meta property="og:description" content="Hashtag，今天策劃，明天上線" />
+    <!-- <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
+    <meta property="og:url" content="{{ url()->current() }}"> -->
     <meta property="og:type" content="website">
-    <meta name="description" content="萬元禮包等你拿！慶祝nac nac 30歲，官方IG開站啦！秀出你的nacstyle抽好禮">
-    <meta name="keywords" content="nac nac,nacnac30,nac style">
-    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}"> -->
+    <meta name="description" content="Hashtag，今天策劃，明天上線">
+    <meta name="keywords" content="Hashtag,貼嗑,我要辦活動,建立自己的IG口碑牆">>
+    <!-- <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}" -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700" rel="stylesheet">
