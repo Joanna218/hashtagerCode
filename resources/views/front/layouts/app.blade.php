@@ -15,7 +15,7 @@
     <meta property="og:type" content="website">
     <meta name="description" content="Hashtag，今天策劃，明天上線">
     <meta name="keywords" content="Hashtag,貼嗑,我要辦活動,建立自己的IG口碑牆">
-    <!-- <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}" -->
+    <link rel="icon" type="image/png" href="https://hashtager.com.tw/images/favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700" rel="stylesheet">
