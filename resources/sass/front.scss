@@ -207,7 +207,7 @@ h4 {
     margin-left: 1rem;
     color: black;
     font-size: 17px;
-    border-bottom: #fff 4px;
+    border-bottom: #fff 4px solid;
     @include media-breakpoint-down(lg) {
       margin-right: .5rem;
       margin-left: .5rem;
@@ -221,6 +221,7 @@ h4 {
     @include media-breakpoint-down(sm) {
       font-size: 26px;
       font-weight: 500;
+      border-bottom: #f2ae14 4px solid;
     }
   }
 

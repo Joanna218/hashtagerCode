@@ -178,7 +178,7 @@ h4 {
   margin-left: 1rem;
   color: black;
   font-size: 17px;
-  border-bottom: #fff 4px;
+  border-bottom: #fff 4px solid;
 }
 @media (max-width: 1199.98px) {
   #navs > .container-fluid .nav-link {
@@ -197,6 +197,7 @@ h4 {
   #navs > .container-fluid .nav-link {
     font-size: 26px;
     font-weight: 500;
+    border-bottom: #f2ae14 4px solid;
   }
 }
 #navs > .container-fluid .nav-item.active > .nav-link,

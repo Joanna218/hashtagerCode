@@ -29,48 +29,47 @@
       <!-- 手機版 -->
       <div class="wrapper justify-content-end align-items-center">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="{{ (request()->is('/')) ? 'nav-item active' : 'nav-item'}}">
             <a class="nav-link" href="{{ url('/') }}">優勢特色 <span class="sr-only">(current)</span></a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="{{ (request()->is('ugc')) ? 'nav-item active' : 'nav-item'}}">
             <a class="nav-link" href="{{ url('ugc') }}">UGC活動行銷</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">配套服務</a>
+          <li class="{{ (request()->is('service')) ? 'nav-item active' : 'nav-item'}}">
+            <a class="nav-link" href="{{ url('service') }}">配套服務</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">貼嗑運作模式</a>
+          <li class="{{ (request()->is('back')) ? 'nav-item active' : 'nav-item'}}">
+            <a class="nav-link" href="{{ url('back') }}">後台功能介紹</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">常見問題</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link nav-consultant-item" href="{{ url('/apply') }}">上架諮詢</a>
+          <li class="{{ (request()->is('question')) ? 'nav-item active' : 'nav-item'}}">
+            <a class="nav-link" href="{{ url('question') }}">常見問題</a>
+          </li>
+          <li class="">
+            <a class="nav-link nav-consultant-item" href="{{ url('apply') }}">上架諮詢</a>
           </li>
         </ul>
       </div>
 
       <!-- 電腦版 -->
-      <!-- <div class="d-none d-md-flex collapse navbar-collapse justify-content-end align-items-center"> -->
-      <div class="d-none d-md-flex collapse navbar-collapse align-items-center" style="justify-content: flex-end;">
+      <div class="d-none d-md-flex collapse navbar-collapse justify-content-end align-items-center">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="{{ (request()->is('/')) ? 'nav-item active' : 'nav-item'}}">
             <a class="nav-link" href="{{ url('/') }}">優勢特色 <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="{{ url('ugc') }}">UGC活動行銷</a> -->
+          <li class="{{ (request()->is('ugc')) ? 'nav-item active' : 'nav-item'}}">
+            <a class="nav-link" href="{{ url('ugc') }}">UGC活動行銷</a>
           </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#">配套服務</a> -->
+          <li class="{{ (request()->is('service')) ? 'nav-item active' : 'nav-item'}}">
+            <a class="nav-link" href="{{ url('service') }}">配套服務</a>
           </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#">貼嗑運作模式</a> -->
+          <li class="{{ (request()->is('back')) ? 'nav-item active' : 'nav-item'}}">
+            <a class="nav-link" href="{{ url('back') }}">後台功能介紹</a>
           </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#">常見問題</a> -->
+          <li class="{{ (request()->is('question')) ? 'nav-item active' : 'nav-item'}}">
+            <a class="nav-link" href="{{ url('question') }}">常見問題</a>
           </li>
           <li class="">
-            <a class="nav-link nav-consultant-item" href="{{ url('/apply') }}">上架諮詢</a>
+            <a class="nav-link nav-consultant-item" href="{{ url('apply') }}">上架諮詢</a>
           </li>
         </ul>
       </div>
