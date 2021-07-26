@@ -66,8 +66,33 @@ h4 {
   border: 1px solid #000;
 }
 
+#navs {
+  top: 36px;
+  left: 0;
+  right: 0;
+  z-index: 99998;
+  background: #fff;
+  box-shadow: 0px 1px 1px #ecece9;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  #navs {
+    top: 0px;
+  }
+}
+
+.scroll {
+  position: fixed;
+}
+
 #gototop {
   border-bottom: #e2e2e2 1px solid;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background: #fff;
+  width: 100%;
 }
 #gototop .gotobg {
   height: 36px;
