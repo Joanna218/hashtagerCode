@@ -297,7 +297,7 @@
 <!-- Modal -->
 <div class="modal fade" id="modal" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content" style="margin-top:300px;">
       <div class="modal-body">
         <span class="sending">傳送中....請稍候...</span>
         <span class="sendSucess">寄信成功，將會有專人與您聯繫！</span>
@@ -805,7 +805,6 @@
         'other-required': $('.other-required2').val(),
         '_token': "{{ csrf_token() }}"
       };
-      debugger;
       sendApplyMail(deskData);
     }
   });
